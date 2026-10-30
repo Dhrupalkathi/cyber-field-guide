@@ -9,6 +9,12 @@ on:
       - main
   workflow_dispatch:
 
+# Avoid overlapping builds/deployments for the same branch.
+# A newer main-branch change supersedes an older pending publish.
+concurrency:
+  group: cins-pages-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
