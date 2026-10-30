@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">CINS mark</title>
+  <desc id="desc">A shield-shaped network mark representing connected systems and cybersecurity.</desc>
+  <defs>
+    <linearGradient id="cins" x1="18" y1="16" x2="106" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#56DCE0"/>
+      <stop offset="1" stop-color="#3996E8"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#0C2033"/>
+  <path d="M64 15 103 30v29c0 27-16 43-39 55C41 102 25 86 25 59V30L64 15Z"
+        fill="none" stroke="url(#cins)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m43 51 21-12 21 12v26L64 89 43 77V51Z"
+        fill="none" stroke="#D9F7F5" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M64 39v50M43 51l42 26M85 51 43 77" stroke="#56DCE0" stroke-width="2.5" opacity=".78"/>
+  <circle cx="64" cy="39" r="5.5" fill="#56DCE0"/>
+  <circle cx="43" cy="51" r="5.5" fill="#D9F7F5"/>
+  <circle cx="85" cy="51" r="5.5" fill="#D9F7F5"/>
+  <circle cx="43" cy="77" r="5.5" fill="#56DCE0"/>
+  <circle cx="85" cy="77" r="5.5" fill="#56DCE0"/>
+  <circle cx="64" cy="89" r="5.5" fill="#D9F7F5"/>
+</svg>
