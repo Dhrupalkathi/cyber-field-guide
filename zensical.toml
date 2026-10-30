@@ -5,6 +5,13 @@ site_url = "https://dhrupalkathi.github.io/cyber-field-guide/"
 repo_url = "https://github.com/Dhrupalkathi/cyber-field-guide"
 repo_name = "CINS Cyber Field Guide"
 edit_uri = "edit/main/docs/"
+extra_css = [
+  "stylesheets/extra.css",
+]
+
+[project.markdown_extensions]
+attr_list = {}
+md_in_html = {}
 
 nav = [
   "index.md",
@@ -33,10 +40,14 @@ nav = [
 ]
 
 [project.theme]
+logo = "assets/cins-mark.svg"
+favicon = "assets/cins-mark.svg"
 features = [
   "navigation.tabs",
   "navigation.sections",
+  "navigation.path",
   "navigation.top",
+  "navigation.tracking",
   "search.suggest",
   "search.highlight",
   "toc.follow",
@@ -44,17 +55,16 @@ features = [
   "content.action.view",
 ]
 
-# Light and dark themes. Keep the palette simple so the content stays readable.
 [[project.theme.palette]]
 scheme = "default"
-primary = "indigo"
-accent = "cyan"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
 
 [[project.theme.palette]]
 scheme = "slate"
-primary = "indigo"
-accent = "cyan"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
