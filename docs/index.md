@@ -1,22 +1,35 @@
-# CINS Cyber Field Guide
+# Your cybersecurity learning journey starts here
 
 <div class="cins-hero" markdown>
 
-<span class="cins-eyebrow">CYBER INFORMATION & NETWORK SECURITY</span>
+<div class="cins-hero-layout" markdown>
 
-## Learn the foundations. Understand the tools. Practise safely.
+<div class="cins-hero-copy" markdown>
 
-A community-maintained cybersecurity learning hub for curious beginners, developing practitioners, and experienced contributors.
+<span class="cins-eyebrow">DAU · CINS CLUB</span>
 
-You do not need Kali Linux, expensive hardware, or previous cybersecurity experience to begin. Start with the fundamentals, choose a direction, and build practical skills one step at a time.
+## Learn cybersecurity. Build real skills.
+
+A community-maintained learning hub for curious beginners, developing practitioners, and experienced contributors.
+
+You do not need Kali Linux, expensive hardware, or previous cybersecurity experience to begin. Start with the foundations, choose a direction, and build practical skills one step at a time.
 
 <div class="cins-hero-actions" markdown>
 [Start learning](start-here/index.md){ .md-button .md-button--primary }
 [Explore resources](resources/index.md){ .md-button }
 </div>
 
+</div>
+
+<div class="cins-club-logo-wrap">
+  <img src="assets/dau-cins-club.webp" alt="DAU CINS Club official emblem" class="cins-club-logo" />
+  <span class="cins-club-logo-label">Cyber Information & Network Security</span>
+</div>
+
+</div>
+
 <div class="cins-hero-note">
-**Our principle:** understand the system before using the tool. Learn how to assess security—and how to protect, detect, investigate, respond, and recover.
+<strong>Our principle:</strong> understand the system before using the tool. Learn how to assess security—and how to protect, detect, investigate, respond, and recover.
 </div>
 
 </div>
@@ -25,15 +38,15 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
 <div class="grid cards" markdown>
 
--   :material-school: **I'm completely new**
+-   **Start from zero**
 
     ---
 
-    Start with computer basics, networking, Linux, and security fundamentals. No Kali installation required.
+    Learn computer basics, networking, Linux, and security fundamentals. No Kali installation required.
 
     [Begin here](start-here/index.md)
 
--   :material-tools: **I need to understand a tool**
+-   **Understand the tools**
 
     ---
 
@@ -41,7 +54,7 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
     [Open the tool library](tools/index.md)
 
--   :material-bookshelf: **Show me where to learn**
+-   **Find learning resources**
 
     ---
 
@@ -49,7 +62,7 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
     [Browse learning resources](resources/index.md)
 
--   :material-route: **Help me choose a direction**
+-   **Choose a learning path**
 
     ---
 
