@@ -9,9 +9,6 @@ extra_css = [
   "stylesheets/extra.css",
 ]
 
-[project.markdown_extensions]
-attr_list = {}
-md_in_html = {}
 
 nav = [
   "index.md",
@@ -68,3 +65,8 @@ primary = "custom"
 accent = "custom"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
+
+# Enable the documented HTML-in-Markdown and attribute-list extensions used by card grids.
+[project.markdown_extensions]
+attr_list = {}
+md_in_html = {}
