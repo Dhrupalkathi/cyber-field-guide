@@ -1,27 +1,40 @@
 # Networking Resources
 
-Networking knowledge is useful in penetration testing, SOC work, cloud security, forensics, and almost every other security specialty. Learn the concepts before relying on scanners.
+Networking is foundational to penetration testing, SOC work, cloud security, forensics, and almost every other security specialty. Learn how networks work before relying on scanners.
 
-## Recommended starting resources
+## Start with a structured course
 
 ### Cisco Networking Academy — Networking Basics
 
-- **Type:** Structured course
+- **Type:** Self-paced course
 - **Level:** Beginner
-- **Best for:** Network devices, basic connectivity, addressing, and introductory networking concepts.
-- **Suggested use:** Work through the course in order and make your own diagrams and notes.
-- **Access:** Check the current course and account requirements on the official site; availability can vary.
-- **Link:** [Cisco Networking Academy — Networking Basics](https://www.netacad.com/courses/networking-basics)
-- **Review state:** Link checked; course content not yet reviewed by this project.
+- **Suggested time:** Cisco lists approximately 22 hours.
+- **Prerequisites:** None listed by Cisco.
+- **Best for:** Network devices, media, protocols, IP addressing, basic LANs, and observing how data moves through a network.
+- **Why it is here:** It offers a coherent starting sequence rather than isolated tool demonstrations.
+- **Access:** Cisco currently lists the course as free. Account and enrollment steps may still be required.
+- **Link:** [Networking Basics](https://www.netacad.com/courses/networking-basics)
+- **Review state:** Provider course details checked on 31 October 2026; this project has not completed the whole course.
 
-### Bitten Tech — YouTube
+## Video learning
 
-- **Type:** YouTube channel and video series
-- **Level:** Beginner to intermediate, depending on the video
-- **Best for:** Supplementary explanations and practical cybersecurity context. The channel has a series titled "Networking for Hackers"; use its foundational episodes as a supplement, not as your only networking curriculum.
-- **Suggested use:** Learn a topic from a structured course first, then use relevant videos to reinforce it.
-- **Link:** [Bitten Tech on YouTube](https://www.youtube.com/@bittentech)
-- **Review state:** Channel link checked; individual videos and their technical accuracy have not yet been reviewed by this project.
+### Bitten Tech — Networking for Hackers
+
+- **Type:** YouTube channel / video series
+- **Level:** Beginner to intermediate, depending on the episode
+- **Best for:** Supplementary networking explanations framed around cybersecurity.
+- **Suggested use:** Use the series to reinforce topics after learning them in a structured course. Pause videos and draw your own diagrams; do not treat a video as a complete syllabus.
+- **Link:** [Bitten Tech YouTube channel](https://www.youtube.com/channel/UC3PsooDxvFG0aEBe4JVtAbg)
+- **Review state:** Channel and the existence of the Networking for Hackers series checked on 31 October 2026; individual videos have not been technically reviewed by this project.
+
+### NetworkChuck
+
+- **Type:** YouTube channel
+- **Level:** Beginner to intermediate
+- **Best for:** Engaging introductions to networking, IT certifications, Linux, virtual machines, and cloud topics.
+- **Suggested use:** Use it for motivation and supplementary demonstrations. Verify commands and configuration details against official documentation before using them.
+- **Link:** [NetworkChuck YouTube channel](https://www.youtube.com/@NetworkChuck)
+- **Review state:** Channel page checked on 31 October 2026; individual videos have not been reviewed by this project.
 
 ## What to learn before Nmap or Wireshark
 
@@ -38,9 +51,14 @@ Networking knowledge is useful in penetration testing, SOC work, cloud security,
 
 - Draw the path from your laptop to a website at a conceptual level.
 - Explain the difference between an IP address and a port.
-- Use a trusted public DNS learning example or a local test domain to understand DNS records.
+- Inspect DNS records for a domain you own or a safe training domain.
 - Open a sample packet capture and identify DNS, TCP, and HTTP/TLS traffic. Do not capture other people's traffic.
+- Explain what a firewall can and cannot infer from a connection.
+
+## Check your understanding
+
+Before moving to scanning, you should be able to explain what an IP address identifies, what a port represents, how DNS helps a client find a service, and the difference between TCP and UDP.
 
 ## Next step
 
-Once you can explain these concepts, continue to [Linux and command-line resources](linux.md) or start learning how to inspect network traffic.
+Continue to [Linux and command-line resources](linux.md), then learn packet analysis. Only scan systems that you own or are explicitly authorized to test.
