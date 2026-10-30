@@ -1,0 +1,133 @@
+/* CINS Cyber Field Guide — visual identity
+   Keep content readable in both light and dark modes. */
+
+:root > * {
+  --md-primary-fg-color: #10283f;
+  --md-primary-fg-color--light: #244866;
+  --md-primary-fg-color--dark: #091a2b;
+  --md-accent-fg-color: #087f8c;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 210;
+  --md-primary-fg-color: #0b1d2d;
+  --md-primary-fg-color--light: #17354d;
+  --md-primary-fg-color--dark: #061321;
+  --md-accent-fg-color: #55d6cf;
+  --md-default-bg-color: #0b1420;
+  --md-default-bg-color--light: #101e2d;
+  --md-code-bg-color: #101e2d;
+}
+
+/* Improve the documentation reading rhythm. */
+.md-typeset h1 {
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+
+.md-typeset h2 {
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.md-header {
+  box-shadow: 0 2px 18px rgba(4, 18, 32, 0.16);
+}
+
+.md-tabs {
+  background: var(--md-primary-fg-color--dark);
+}
+
+/* Homepage hero. */
+.cins-hero {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 2rem;
+  padding: clamp(1.4rem, 4vw, 3rem);
+  border: 1px solid rgba(64, 190, 205, 0.28);
+  border-radius: 1.15rem;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(42, 181, 190, 0.18), transparent 34%),
+    linear-gradient(135deg, rgba(16, 40, 63, 0.08), rgba(18, 130, 145, 0.07));
+}
+
+[data-md-color-scheme="slate"] .cins-hero {
+  background:
+    radial-gradient(circle at 88% 12%, rgba(42, 181, 190, 0.16), transparent 34%),
+    linear-gradient(135deg, #10243a, #102b3a 58%, #123846);
+}
+
+.cins-hero h2 {
+  max-width: 17ch;
+  margin: 0.65rem 0 0.85rem;
+  font-size: clamp(1.9rem, 4.7vw, 3.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.cins-hero > p {
+  max-width: 68ch;
+  font-size: 1.02rem;
+}
+
+.cins-eyebrow {
+  color: var(--md-accent-fg-color);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.cins-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.4rem 0 1rem;
+}
+
+.cins-hero-note {
+  max-width: 74ch;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(128, 160, 180, 0.25);
+  font-size: 0.86rem;
+  opacity: 0.9;
+}
+
+.cins-footer-note {
+  margin-top: 1.5rem;
+  padding: 1rem 1.15rem;
+  border-left: 3px solid var(--md-accent-fg-color);
+  border-radius: 0.25rem;
+  background: var(--md-code-bg-color);
+  font-size: 0.88rem;
+}
+
+/* Consistent, quiet cards rather than high-contrast decoration. */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  border-radius: 0.8rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 3px 14px rgba(12, 34, 52, 0.05);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid > .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 22px rgba(12, 34, 52, 0.11);
+}
+
+.md-typeset .grid.cards > ul > li > hr {
+  border-bottom-color: var(--md-accent-fg-color);
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .grid.cards > ul > li,
+  .md-typeset .grid > .card {
+    transition: none;
+  }
+  .md-typeset .grid.cards > ul > li:hover,
+  .md-typeset .grid > .card:hover {
+    transform: none;
+  }
+}
