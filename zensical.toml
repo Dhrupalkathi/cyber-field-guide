@@ -1,0 +1,60 @@
+[project]
+site_name = "CINS Cyber Field Guide"
+site_description = "A practical, community-maintained cybersecurity learning hub: foundations, tools, resources, labs, and learning paths."
+site_url = "https://dhrupalkathi.github.io/cyber-field-guide/"
+repo_url = "https://github.com/Dhrupalkathi/cyber-field-guide"
+repo_name = "CINS Cyber Field Guide"
+edit_uri = "edit/main/docs/"
+
+nav = [
+  "index.md",
+  { "Start Here" = [
+    "start-here/index.md",
+    "start-here/learning-order.md",
+  ] },
+  { "Tool Library" = [
+    "tools/index.md",
+  ] },
+  { "Learn & Practise" = [
+    "resources/index.md",
+    { "Networking" = "resources/networking.md" },
+    { "Linux & Kali" = "resources/linux.md" },
+    { "Web Security" = "resources/web-security.md" },
+    { "Blue Team & SOC" = "resources/blue-team.md" },
+  ] },
+  { "Learning Paths" = [
+    "learning-paths/index.md",
+  ] },
+  { "Club Hub" = [
+    "club/index.md",
+    "club/safety-and-ethics.md",
+    "club/contributing.md",
+  ] },
+]
+
+[project.theme]
+features = [
+  "navigation.tabs",
+  "navigation.sections",
+  "navigation.top",
+  "search.suggest",
+  "search.highlight",
+  "toc.follow",
+  "content.action.edit",
+  "content.action.view",
+]
+
+# Light and dark themes. Keep the palette simple so the content stays readable.
+[[project.theme.palette]]
+scheme = "default"
+primary = "indigo"
+accent = "cyan"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "indigo"
+accent = "cyan"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
