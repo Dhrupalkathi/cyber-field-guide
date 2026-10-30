@@ -9,7 +9,6 @@ extra_css = [
   "stylesheets/extra.css",
 ]
 
-
 nav = [
   "index.md",
   { "Start Here" = [
@@ -25,6 +24,12 @@ nav = [
     { "Linux & Kali" = "resources/linux.md" },
     { "Web Security" = "resources/web-security.md" },
     { "Blue Team & SOC" = "resources/blue-team.md" },
+    { "Digital Forensics" = "resources/digital-forensics.md" },
+    { "Cloud & Containers" = "resources/cloud-and-containers.md" },
+    { "Mobile & Reverse Engineering" = "resources/mobile-and-reverse-engineering.md" },
+    { "CTFs & Practice" = "resources/ctf-and-practice.md" },
+    { "YouTube Channels" = "resources/video-channels.md" },
+    { "Communities & Careers" = "resources/communities-and-careers.md" },
   ] },
   { "Learning Paths" = [
     "learning-paths/index.md",
@@ -66,7 +71,7 @@ accent = "custom"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
 
-# Enable the documented HTML-in-Markdown and attribute-list extensions used by card grids.
+# HTML-in-Markdown and attribute-list support for homepage cards and buttons.
 [project.markdown_extensions]
 attr_list = {}
 md_in_html = {}
