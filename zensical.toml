@@ -37,8 +37,8 @@ nav = [
 ]
 
 [project.theme]
-logo = "assets/cins-mark.svg"
-favicon = "assets/cins-mark.svg"
+logo = "assets/cins-shield.webp"
+favicon = "assets/cins-shield.webp"
 features = [
   "navigation.tabs",
   "navigation.sections",
