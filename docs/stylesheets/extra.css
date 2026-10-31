@@ -374,3 +374,158 @@
     transform: none;
   }
 }
+
+
+/* ==========================================================
+   IMMERSIVE LAYER — Three.js hero + scroll reveals
+   The 3D canvas is decorative; all important content remains
+   in HTML. The script automatically pauses when off-screen.
+   ========================================================== */
+
+.cins-emblem-stage {
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+  min-height: 310px;
+}
+
+/* Three.js canvas behind the official club crest. */
+.cins-3d-canvas {
+  position: absolute;
+  z-index: 1;
+  inset: -12%;
+  width: 124%;
+  height: 124%;
+  pointer-events: none;
+}
+.cins-club-logo {
+  position: relative;
+  z-index: 2;
+}
+.cins-emblem-orbit-dot {
+  z-index: 3;
+}
+.cins-club-logo-label,
+.cins-scene-caption {
+  z-index: 3;
+}
+.cins-scene-caption {
+  position: absolute;
+  top: 0.2rem;
+  left: 50%;
+  width: max-content;
+  max-width: 100%;
+  transform: translateX(-50%);
+  color: #967536;
+  font-size: 0.54rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-align: center;
+  opacity: 0.76;
+}
+[data-md-color-scheme="slate"] .cins-scene-caption {
+  color: #e4ca87;
+}
+
+/* Richer orbital halos while the WebGL scene is active. */
+.cins-emblem-stage.cins-3d-ready::before {
+  width: 230px;
+  height: 230px;
+  border-color: rgba(199, 166, 91, 0.56);
+  box-shadow:
+    0 0 26px rgba(199, 166, 91, 0.12),
+    0 0 70px rgba(199, 166, 91, 0.09),
+    inset 0 0 40px rgba(199, 166, 91, 0.08);
+}
+.cins-emblem-stage.cins-3d-ready::after {
+  width: 310px;
+  height: 132px;
+  border-color: rgba(199, 166, 91, 0.58);
+  box-shadow: 0 0 24px rgba(199, 166, 91, 0.1);
+}
+.cins-emblem-stage.cins-3d-ready .cins-club-logo {
+  box-shadow:
+    0 14px 34px rgba(0, 0, 0, 0.3),
+    0 0 22px rgba(199, 166, 91, 0.18);
+}
+
+/* Static fallback if WebGL or the pinned CDN module is unavailable. */
+.cins-emblem-stage.cins-3d-fallback::before {
+  animation: cins-fallback-pulse 5s ease-in-out infinite alternate;
+}
+.cins-emblem-stage.cins-3d-fallback::after {
+  animation: cins-fallback-orbit 18s linear infinite;
+}
+@keyframes cins-fallback-pulse {
+  from { opacity: 0.55; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1.05); }
+}
+@keyframes cins-fallback-orbit {
+  from { transform: rotate(-27deg); }
+  to { transform: rotate(333deg); }
+}
+
+/* Scroll reveal: applied by the module after JavaScript is ready. */
+.cins-motion-ready .cins-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 650ms cubic-bezier(0.2, 0.75, 0.25, 1),
+    transform 650ms cubic-bezier(0.2, 0.75, 0.25, 1);
+  transition-delay: var(--cins-reveal-delay, 0ms);
+}
+.cins-motion-ready .cins-reveal.cins-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Main content settles into place on page changes. */
+.md-content__inner {
+  animation: cins-page-enter 480ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+@keyframes cins-page-enter {
+  from { opacity: 0.82; transform: translateY(9px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Give cards a more tactile, responsive hover state. */
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-5px) scale(1.008);
+}
+
+/* Respect reduced-motion preferences and remove expensive effects. */
+@media (prefers-reduced-motion: reduce) {
+  .md-content__inner,
+  .cins-emblem-stage.cins-3d-fallback::before,
+  .cins-emblem-stage.cins-3d-fallback::after {
+    animation: none !important;
+  }
+  .cins-motion-ready .cins-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .md-typeset .grid.cards > ul > li:hover {
+    transform: none;
+  }
+  .cins-3d-canvas {
+    display: none;
+  }
+}
+
+/* Compact devices receive fewer particles and a smaller render buffer
+   in JavaScript, while the emblem remains visible above the fold. */
+@media (max-width: 700px) {
+  .cins-emblem-stage {
+    min-height: 245px;
+  }
+  .cins-3d-canvas {
+    inset: -8%;
+    width: 116%;
+    height: 116%;
+  }
+  .cins-scene-caption {
+    top: 0;
+    font-size: 0.48rem;
+  }
+}
