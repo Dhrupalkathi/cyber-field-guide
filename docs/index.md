@@ -1,4 +1,4 @@
-# Your cybersecurity learning journey starts here
+# CINS Cyber Field Guide
 
 <div class="cins-hero" markdown>
 
@@ -6,35 +6,36 @@
 
 <div class="cins-hero-copy" markdown>
 
-<span class="cins-eyebrow">DAU · CINS CLUB</span>
+<span class="cins-eyebrow">DAU · CYBER INFORMATION & NETWORK SECURITY</span>
 
-## Learn cybersecurity. Build real skills.
+## Understand the system. Secure what matters.
 
-A community-maintained learning hub for curious beginners, developing practitioners, and experienced contributors.
+A practical cybersecurity learning hub for students who want to move from first principles to real-world security skills—through clear explanations, carefully selected tools, trusted learning resources, and safe hands-on practice.
 
-You do not need Kali Linux, expensive hardware, or previous cybersecurity experience to begin. Start with the foundations, choose a direction, and build practical skills one step at a time.
+You can begin with no Kali Linux installation and no prior cybersecurity experience. Build the foundations first, then choose a direction and progress at your own pace.
 
 <div class="cins-hero-actions" markdown>
-[Start learning](start-here/index.md){ .md-button .md-button--primary }
-[Explore resources](resources/index.md){ .md-button }
+[Start from zero](start-here/index.md){ .md-button .md-button--primary }
+[Explore learning resources](resources/index.md){ .md-button }
 </div>
 
 </div>
 
-<div class="cins-club-logo-wrap">
-  <img src="assets/dau-cins-club.webp" alt="DAU CINS Club official emblem" class="cins-club-logo" />
-  <span class="cins-club-logo-label">Cyber Information & Network Security</span>
+<div class="cins-emblem-stage">
+  <span class="cins-emblem-orbit-dot"></span>
+  <img src="assets/dau-cins-club.webp" alt="Official DAU CINS Club emblem" class="cins-club-logo" />
+  <span class="cins-club-logo-label">Learn · Practise · Defend</span>
 </div>
 
 </div>
 
 <div class="cins-hero-note">
-<strong>Our principle:</strong> understand the system before using the tool. Learn how to assess security—and how to protect, detect, investigate, respond, and recover.
+<strong>The idea:</strong> learn how systems work, understand how they fail, and develop the skills to assess, protect, detect, investigate, respond, and recover.
 </div>
 
 </div>
 
-## Choose your next step
+## Find your way in
 
 <div class="grid cards" markdown>
 
@@ -42,39 +43,39 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
     ---
 
-    Learn computer basics, networking, Linux, and security fundamentals. No Kali installation required.
+    Computer fundamentals, networking, Linux, and security basics. No specialist setup required.
 
-    [Begin here](start-here/index.md)
+    [Begin the first steps](start-here/index.md)
 
 -   **Understand the tools**
 
     ---
 
-    Learn what a tool does, when to use it, its prerequisites, safe examples, limitations, and official sources.
+    Learn what a tool does, when it is useful, how to install it, how to read its output, and what its limits are.
 
     [Open the tool library](tools/index.md)
 
--   **Find learning resources**
+-   **Find trusted resources**
 
     ---
 
-    Explore courses, websites, YouTube channels, documentation, CTFs, and hands-on practice platforms.
+    Explore courses, websites, YouTube channels, official documentation, books, CTFs, and practice labs.
 
-    [Browse learning resources](resources/index.md)
+    [Browse the resource library](resources/index.md)
 
 -   **Choose a learning path**
 
     ---
 
-    Follow a sequence into networking, web security, SOC, forensics, cloud, and other specializations.
+    Follow a structured route into networking, web security, SOC, forensics, cloud, and other specialties.
 
     [Explore learning paths](learning-paths/index.md)
 
 </div>
 
-## Cybersecurity is more than penetration testing
+## Cybersecurity is a complete discipline
 
-This guide is deliberately designed to represent the complete security lifecycle—not just offensive tools.
+A strong practitioner understands both how security failures happen and how systems are protected. This guide gives offensive assessment and defensive operations equal importance.
 
 <div class="grid cards" markdown>
 
@@ -82,60 +83,60 @@ This guide is deliberately designed to represent the complete security lifecycle
 
     ---
 
-    OSINT, asset discovery, vulnerability assessment, web and network testing, and controlled security labs.
+    OSINT, asset discovery, reconnaissance, vulnerability assessment, and authorized application and network testing.
 
 -   **Protect and harden**
 
     ---
 
-    Secure configuration, identity and access management, patching, secure coding, and cloud security.
+    Secure configuration, identity and access management, patching, secure coding, endpoint protection, and cloud security.
 
 -   **Detect and investigate**
 
     ---
 
-    Network monitoring, logs, SIEM, threat hunting, digital forensics, and malware analysis in isolated labs.
+    Network monitoring, logs, SIEM, threat hunting, digital forensics, malware analysis, and reverse engineering.
 
 -   **Respond and recover**
 
     ---
 
-    Incident handling, evidence preservation, containment, backups, recovery, and lessons learned.
+    Incident handling, evidence preservation, containment, backups, recovery planning, and lessons learned.
 
 </div>
 
-## What makes this guide different?
+## Choose a subject to explore
 
-- **Beginner-first:** concepts come before tools; unfamiliar terms are explained.
-- **Resource-rich:** every learning area connects to courses, videos, official documentation, and practical labs.
-- **Balanced:** offensive assessment and defensive security receive deliberate, visible coverage.
-- **Honest about verification:** pages distinguish link checks, content reviews, and lab-tested examples.
-- **Built to be handed over:** content is stored in portable Markdown and changes are reviewed through GitHub.
-
-## Explore the first resource collections
-
-| Area | First places to explore |
+| Area | Good first places to start |
 |---|---|
 | Networking | Cisco Networking Academy, Bitten Tech |
 | Linux | OverTheWire Bandit, official Kali documentation |
 | Web security | PortSwigger Web Security Academy, OWASP Juice Shop, DVWA |
 | Blue team and SOC | TryHackMe, LetsDefend, Wazuh documentation, Security Onion documentation |
 
-These are starting recommendations. See each resource page for prerequisites, access notes, and what the project has—and has not—verified.
+These are starting points, not endorsements of every course or claim that all material has been independently tested. Each resource page records its prerequisites, access notes, and review status.
 
-## Trust and safety
+## How this guide earns your trust
+
+- **Beginner-first:** unfamiliar terms are explained; concepts come before commands.
+- **Resource-rich:** every learning area connects to courses, videos, documentation, and practice.
+- **Balanced:** offensive testing and defensive security have dedicated coverage.
+- **Honest about freshness:** pages distinguish link checks, technical reviews, and lab-tested examples.
+- **Built for handover:** content is stored in portable files and reviewed changes are recorded.
+
+## Practise responsibly
 
 Only test systems you own or have explicit permission to assess. Use local labs, sample data, and platforms that specifically authorize the exercise. Never publish secrets, private data, or instructions for unauthorized access.
 
-[Read our safety and ethics rules](club/safety-and-ethics.md).
+[Read the safety and ethics rules](club/safety-and-ethics.md).
 
 ---
 
 <div class="cins-footer-note" markdown>
 
-**CINS Cyber Field Guide** · A growing community knowledge base.
+**CINS Cyber Field Guide** · A growing student-built knowledge base.
 
-This project is currently hosted in an individual GitHub account and is intended to support the CINS community. Its formal status as an official club resource requires club approval. Contributions are welcome, and technical changes are reviewed before publication.
+This project is hosted in an individual GitHub account and is intended to support the CINS community. Its formal status as an official club resource requires club approval. Contributions and corrections are welcome.
 
 [How to contribute](club/contributing.md) · [View the source repository](https://github.com/Dhrupalkathi/cyber-field-guide)
 
