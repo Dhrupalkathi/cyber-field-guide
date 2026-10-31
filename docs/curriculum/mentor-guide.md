@@ -4,7 +4,7 @@
 > This is the existing CINS Stage 0/Stage 1 curriculum, split into smaller website pages for navigation. Its scope and sequence are preserved. It is a working draft, not a claim of formal DAU/CINS approval.
 
 
-# Delivery guidance for CINS mentors
+## Delivery guidance for CINS mentors
 
 ## Teaching approach
 
@@ -44,7 +44,7 @@
 
 ---
 
-# Resource maintenance and review
+## Resource maintenance and review
 
 The curriculum should be reviewed at least once per academic year and whenever a platform changes a course, retires a path or changes access conditions.
 
@@ -82,7 +82,7 @@ A link being reachable does not mean the course has been completed or its teachi
 
 ---
 
-# Final checklist before publishing these stages
+## Final checklist before publishing these stages
 
 - [ ] Stage 0 explains cybersecurity beyond hacking.
 - [ ] Ethics, scope, permission and safe lab boundaries are explicit.
