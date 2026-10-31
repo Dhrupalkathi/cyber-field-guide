@@ -38,6 +38,7 @@ nav = [
     "club/index.md",
     "club/safety-and-ethics.md",
     "club/contributing.md",
+    "club/design-system.md",
   ] },
 ]
 
@@ -57,19 +58,20 @@ features = [
   "content.action.view",
 ]
 
-[[project.theme.palette]]
-scheme = "default"
-primary = "custom"
-accent = "custom"
-toggle.icon = "lucide/sun"
-toggle.name = "Switch to dark mode"
-
+# Dark mode is the first-visit presentation; the reader can switch to light mode.
 [[project.theme.palette]]
 scheme = "slate"
 primary = "custom"
 accent = "custom"
-toggle.icon = "lucide/moon"
+toggle.icon = "lucide/sun"
 toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to dark mode"
 
 # HTML-in-Markdown and attribute-list support for homepage cards and buttons.
 [project.markdown_extensions]
