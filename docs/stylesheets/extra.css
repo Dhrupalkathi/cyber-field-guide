@@ -1,5 +1,4 @@
-/* CINS Cyber Field Guide
-   Simple, readable styling for light and dark themes. */
+/* CINS Cyber Field Guide — clean, simple light and dark styling */
 
 :root > * {
   --md-primary-fg-color: #10283f;
@@ -19,121 +18,94 @@
   --md-code-bg-color: #101e2d;
 }
 
-/* Headings and top navigation */
-.md-typeset h1 {
-  font-weight: 800;
-  letter-spacing: -0.035em;
-}
-
+/* Clear headings and a subtle header shadow */
+.md-typeset h1,
 .md-typeset h2 {
-  font-weight: 750;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
+.md-typeset h1 { font-weight: 800; }
+.md-typeset h2 { font-weight: 750; }
+.md-header { box-shadow: 0 2px 14px rgba(4, 18, 32, 0.10); }
 
-.md-header {
-  box-shadow: 0 2px 16px rgba(4, 18, 32, 0.12);
-}
-
-/* Light mode: keep the tab bar light and its labels readable. */
+/* Light mode: a soft, light navigation bar with dark readable labels */
 [data-md-color-scheme="default"] .md-tabs {
-  background: #f3f6f9;
-  border-bottom: 1px solid #e2e9ef;
+  background: #f3f6f9 !important;
+  border-bottom: 1px solid #e1e8ee;
 }
-
 [data-md-color-scheme="default"] .md-tabs__link {
-  color: #18364d;
-  opacity: 0.88;
+  color: #18364d !important;
+  opacity: 0.9;
 }
-
 [data-md-color-scheme="default"] .md-tabs__link:hover,
 [data-md-color-scheme="default"] .md-tabs__link--active {
-  color: #087f8c;
+  color: #087f8c !important;
   opacity: 1;
 }
 
-/* Dark mode: use a deep navy strip with soft, high-contrast labels. */
+/* Dark mode: preserve the navy navigation bar and pale labels */
 [data-md-color-scheme="slate"] .md-tabs {
-  background: #071523;
+  background: #071523 !important;
   border-bottom: 1px solid #1b3348;
 }
-
 [data-md-color-scheme="slate"] .md-tabs__link {
-  color: #d6e3ed;
-  opacity: 0.86;
+  color: #d6e3ed !important;
+  opacity: 0.88;
 }
-
 [data-md-color-scheme="slate"] .md-tabs__link:hover,
 [data-md-color-scheme="slate"] .md-tabs__link--active {
-  color: #62d7d1;
+  color: #62d7d1 !important;
   opacity: 1;
 }
 
 /* Homepage hero */
 .cins-hero {
   margin: 0 0 2rem;
-  padding: clamp(1.25rem, 3vw, 2.2rem);
-  border: 1px solid rgba(64, 190, 205, 0.28);
+  padding: clamp(1.2rem, 3vw, 2.1rem);
+  border: 1px solid rgba(64, 160, 180, 0.25);
   border-radius: 1rem;
-  background:
-    radial-gradient(circle at 88% 12%, rgba(42, 181, 190, 0.15), transparent 34%),
-    linear-gradient(135deg, #f6f9fb, #edf6f7);
+  background: linear-gradient(135deg, #f7f9fb, #edf5f6);
 }
-
 [data-md-color-scheme="slate"] .cins-hero {
-  background:
-    radial-gradient(circle at 88% 12%, rgba(42, 181, 190, 0.16), transparent 34%),
-    linear-gradient(135deg, #10243a, #102b3a 58%, #123846);
+  background: linear-gradient(135deg, #10243a, #102b3a 60%, #123846);
+  border-color: rgba(64, 190, 205, 0.28);
 }
-
 .cins-hero-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 148px;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.4rem;
 }
-
-.cins-hero-copy {
-  min-width: 0;
-}
-
+.cins-hero-copy { min-width: 0; }
 .cins-hero-copy h2 {
   max-width: 23ch;
   margin: 0.6rem 0 0.8rem;
   font-size: clamp(1.8rem, 3.6vw, 2.65rem);
-  line-height: 1.1;
+  line-height: 1.12;
   letter-spacing: -0.04em;
 }
-
-.cins-hero-copy > p {
-  max-width: 58ch;
-  font-size: 0.98rem;
-}
-
+.cins-hero-copy > p { max-width: 58ch; }
 .cins-eyebrow {
   color: var(--md-accent-fg-color);
   font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.13em;
 }
-
 .cins-club-logo-wrap {
   width: 100%;
   max-width: 148px;
   margin-inline: auto;
   padding: 0.3rem;
-  border: 1px solid rgba(202, 169, 82, 0.7);
+  border: 1px solid rgba(202, 169, 82, 0.65);
   border-radius: 0.85rem;
   background: #050505;
-  box-shadow: 0 8px 22px rgba(5, 18, 30, 0.16);
+  box-shadow: 0 6px 18px rgba(5, 18, 30, 0.14);
 }
-
 .cins-club-logo {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 0.55rem;
 }
-
 .cins-club-logo-label {
   display: block;
   margin: 0.4rem 0.15rem 0.2rem;
@@ -145,23 +117,37 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
 .cins-hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
   margin: 1.15rem 0 0.4rem;
 }
-
 .cins-hero-note {
   margin-top: 1.2rem;
   padding-top: 0.85rem;
   border-top: 1px solid rgba(128, 160, 180, 0.3);
   font-size: 0.84rem;
   line-height: 1.6;
-  opacity: 0.9;
 }
 
+/* Cards: calm borders, consistent corners, gentle movement */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.8rem;
+  box-shadow: 0 3px 12px rgba(12, 34, 52, 0.05);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid > .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(12, 34, 52, 0.10);
+}
+.md-typeset .grid.cards > ul > li > hr {
+  border-bottom-color: var(--md-accent-fg-color);
+  opacity: 0.4;
+}
 .cins-footer-note {
   margin-top: 1.5rem;
   padding: 1rem 1.15rem;
@@ -171,51 +157,20 @@
   font-size: 0.88rem;
 }
 
-/* Clean cards with a restrained hover effect. */
-.md-typeset .grid.cards > ul > li,
-.md-typeset .grid > .card {
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.75rem;
-  box-shadow: 0 3px 12px rgba(12, 34, 52, 0.045);
-  transition: transform 150ms ease, box-shadow 150ms ease;
-}
-
-.md-typeset .grid.cards > ul > li:hover,
-.md-typeset .grid > .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(12, 34, 52, 0.1);
-}
-
-.md-typeset .grid.cards > ul > li > hr {
-  border-bottom-color: var(--md-accent-fg-color);
-  opacity: 0.42;
-}
-
+/* Small screens */
 @media (max-width: 650px) {
-  .cins-hero-layout {
-    grid-template-columns: 1fr;
-  }
-
+  .cins-hero-layout { grid-template-columns: 1fr; }
   .cins-club-logo-wrap {
     grid-row: 1;
     justify-self: start;
     max-width: 108px;
     margin: 0;
   }
-
-  .cins-hero-copy h2 {
-    font-size: clamp(1.8rem, 7vw, 2.4rem);
-  }
+  .cins-hero-copy h2 { font-size: clamp(1.8rem, 7vw, 2.4rem); }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .md-typeset .grid.cards > ul > li,
-  .md-typeset .grid > .card {
-    transition: none;
-  }
-
+  .md-typeset .grid > .card { transition: none; }
   .md-typeset .grid.cards > ul > li:hover,
-  .md-typeset .grid > .card:hover {
-    transform: none;
-  }
+  .md-typeset .grid > .card:hover { transform: none; }
 }
