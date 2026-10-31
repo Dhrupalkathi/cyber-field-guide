@@ -6,7 +6,6 @@
 
 Programming is taught alongside Stage 1. It supports the whole cybersecurity journey and continues in later stages; students do not need to finish an entire programming course before continuing.
 
-# Parallel Programming Track — Starts in Stage 1
 
 Programming is not a separate stage that students must finish before cybersecurity. It is a parallel skill track. Python begins in Stage 1 and continues through Stages 2–5. Other languages are introduced only when the curriculum needs them.
 
@@ -245,7 +244,7 @@ The objective is to learn programming, not to produce code by copying prompts.
 
 ---
 
-# Continuous programming progression after Stage 1
+## Continuous programming progression after Stage 1
 
 | Stage | Programming development |
 |---|---|
