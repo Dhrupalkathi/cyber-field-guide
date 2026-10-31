@@ -1,4 +1,3 @@
-# Stage 1 — Computer Fundamentals
 
 > **Status: Working curriculum draft v1.0 · Last resource review: 31 October 2026.**  
 > This is the existing CINS Stage 0/Stage 1 curriculum, split into smaller website pages for navigation. Its scope and sequence are preserved. It is a working draft, not a claim of formal DAU/CINS approval.
@@ -347,7 +346,7 @@ A student completes Stage 1 when they can explain the computer fundamentals, per
 
 ---
 
-# How Stage 1 connects to later stages
+## How Stage 1 connects to later stages
 
 | Later stage | How Stage 1 supports it |
 |---|---|
