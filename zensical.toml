@@ -15,11 +15,19 @@ nav = [
     "start-here/index.md",
     "start-here/learning-order.md",
   ] },
+  { "Curriculum" = [
+    "curriculum/index.md",
+    { "Stage 0 — Orientation" = "curriculum/stage-0.md" },
+    { "Stage 1 — Computer Fundamentals" = "curriculum/stage-1-computer-fundamentals.md" },
+    { "Stage 1 — Python Track" = "curriculum/stage-1-python-track.md" },
+    { "Mentor Guide" = "curriculum/mentor-guide.md" },
+  ] },
   { "Tool Library" = [
     "tools/index.md",
   ] },
   { "Learn & Practise" = [
     "resources/index.md",
+    { "Stage 0 & 1 — Foundations" = "resources/stage-0-and-1.md" },
     { "Networking" = "resources/networking.md" },
     { "Linux & Kali" = "resources/linux.md" },
     { "Web Security" = "resources/web-security.md" },
