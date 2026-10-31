@@ -42,8 +42,8 @@ nav = [
 ]
 
 [project.theme]
-logo = "assets/cins-shield.webp"
-favicon = "assets/cins-shield.webp"
+logo = "assets/dau-cins-club.webp"
+favicon = "assets/dau-cins-club.webp"
 features = [
   "navigation.tabs",
   "navigation.sections",
