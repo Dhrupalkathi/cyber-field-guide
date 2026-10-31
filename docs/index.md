@@ -21,10 +21,11 @@ You can begin with no Kali Linux installation and no prior cybersecurity experie
 
 </div>
 
-<div class="cins-emblem-stage">
+<div class="cins-emblem-stage" aria-label="Animated three-dimensional golden cybersecurity network around the official CINS Club crest">
   <span class="cins-emblem-orbit-dot"></span>
   <img src="assets/dau-cins-club.webp" alt="Official DAU CINS Club emblem" class="cins-club-logo" />
   <span class="cins-club-logo-label">Learn · Practise · Defend</span>
+  <span class="cins-scene-caption">CONNECTED SYSTEMS · SHARED KNOWLEDGE</span>
 </div>
 
 </div>
