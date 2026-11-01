@@ -1,10 +1,10 @@
 # Stage 0 and Stage 1 — Learning Resources
 
-> **Resource review date: 31 October 2026.** Official provider pages were checked for the descriptions below. CINS has not completed every course or independently tested every exercise. Access rules, subscriptions, and course structure can change; check the provider before assigning work.
+> **Resource review date: 31 October 2026.** Official provider pages were checked for the descriptions below. CINS has not completed every course or independently verified every course section. Access rules, subscriptions, and course structure can change; check the provider before assigning work.
 
 This page follows the [CINS Stage 0/1 curriculum](../curriculum/index.md). It is intentionally short. Newcomers should not be overwhelmed with dozens of courses.
 
-## Stage 0 — Cybersecurity orientation and safe practice
+## Stage 0 — Cybersecurity orientation and safety
 
 ### TryHackMe — Pre Security (selected section only)
 
@@ -12,7 +12,7 @@ This page follows the [CINS Stage 0/1 curriculum](../curriculum/index.md). It is
 - **Level:** Beginner
 - **Use in CINS:** Use the current **Introduction to Cyber Security** section for introductory exposure to offensive security, defensive security, and cybersecurity careers.
 - **Do not assign the whole path as Stage 0.** The 2026 path also contains computer-fundamentals, operating-system, networking, and web material. Use the computer-fundamentals section selectively for Stage 1; defer operating-system, networking, and web sections to their corresponding CINS stages.
-- **Access:** Check room-level free/paid access before assigning a required activity.
+- **Access:** Check room-level free/paid access before recommending a required course section.
 - **Official link:** [TryHackMe Pre Security](https://tryhackme.com/path/outline/presecurity)
 - **Review note:** TryHackMe announced a Pre Security refresh on 18 February 2026. The current path page was checked on 31 October 2026. CINS has not completed the full path.
 
@@ -23,7 +23,7 @@ This page follows the [CINS Stage 0/1 curriculum](../curriculum/index.md). It is
 - **Use in CINS:** Short reading for personal-security habits: recognize and report phishing, use strong passwords, enable multi-factor authentication, and update software.
 - **Best use:** Pair it with Stage 0's private Personal Security Check-up. Students must not submit passwords, recovery codes, or sensitive account screenshots.
 - **Official link:** [CISA Secure Our World](https://www.cisa.gov/secure-our-world)
-- **Review note:** CISA's official Secure Our World material describes these four practical actions. This is awareness guidance, not a technical course.
+- **Review note:** CISA's official Secure Our World material describes these four protective habits. This is awareness guidance, not a technical course.
 
 ### NIST — Cybersecurity Basics (mentor/optional reading)
 
@@ -46,7 +46,7 @@ This page follows the [CINS Stage 0/1 curriculum](../curriculum/index.md). It is
 
 ### Khan Academy — Computers and the Internet (selected units)
 
-- **Type:** Free online learning course with videos, practice, and mastery checks
+- **Type:** Free online learning course with videos, examples, and mastery checks
 - **Level:** Beginner
 - **Use in CINS:** Select **Unit 1: Digital Information** and **Unit 2: Computers** for bits/bytes, binary, hexadecimal, text representation, computer components, CPU, memory, input/output, and files.
 - **Defer:** Unit 3: The Internet and networking-related material to Stage 2. Units on online data security can be used later when they align with the security curriculum.
@@ -61,7 +61,7 @@ This page follows the [CINS Stage 0/1 curriculum](../curriculum/index.md). It is
 - **Current provider details checked:** Cisco currently lists it as free, beginner-level, self-paced, approximately six hours, with three labs.
 - **Prerequisites:** None are listed by the provider.
 - **Official link:** [Computer Hardware Basics](https://www.netacad.com/courses/computer-hardware-basics)
-- **Review note:** This is optional enrichment, not a prerequisite. Students do not need to disassemble their own laptop or buy hardware.
+- **Review note:** This is optional enrichment, not a prerequisite. Learners do not need to disassemble their own laptop or buy hardware.
 
 ### TryHackMe — Pre Security (Computer Fundamentals section only)
 
@@ -78,7 +78,7 @@ This page follows the [CINS Stage 0/1 curriculum](../curriculum/index.md). It is
 
 - **Type:** Structured OpenCourseWare course with lectures, problem sets, and final project
 - **Level:** Beginner; designed for learners with or without prior programming experience
-- **Use in CINS:** The primary structured Python resource. Select the material that maps to Stage 1: functions and variables, conditionals, loops, and suitable introductory practice with collections and testing.
+- **Use in CINS:** The primary structured Python resource. Select the material that maps to Stage 1: functions and variables, conditionals, loops, and suitable introductory learning with collections and code verification.
 - **Do not force the entire course into Stage 1.** CS50P also covers exceptions, libraries, file I/O, regular expressions, object-oriented programming, and other subjects. Later topics can be revisited in future CINS stages.
 - **Software:** The course says a web browser is sufficient; students may also use their own computer.
 - **Access:** OpenCourseWare course materials can be followed free. An edX account is needed if a learner wants to submit problem sets/final project for feedback through the course workflow; a verified certificate is a separate option.
@@ -114,4 +114,4 @@ For each recommended video, contributors should link to the exact playlist or vi
 - Optional enrichment must be clearly labelled.
 - Stage 0/1 learners should not be sent to Nmap, Burp Suite, Kali Linux, SIEM deployments, or exploitation tools.
 - Course modules that mix several CINS stages must be assigned selectively.
-- Record whether a link was checked, the content reviewed, or the exercise actually completed. These are different levels of verification.
+- Record whether a link was checked, the content reviewed, or the course section completed. These are different levels of verification.
