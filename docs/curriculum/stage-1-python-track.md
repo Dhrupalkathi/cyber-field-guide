@@ -1,7 +1,5 @@
 # Parallel Programming Track — Python
 
-> **Status: Working curriculum draft v1.0 · Last resource review: 31 October 2026.**  
-> This is the existing CINS Stage 0/Stage 1 curriculum, split into smaller website pages for navigation. Its scope and sequence are preserved. It is a working draft, not a claim of formal DAU/CINS approval.
 
 Programming is taught alongside Stage 1. It supports the whole cybersecurity journey and continues in later stages; students do not need to finish an entire programming course before continuing.
 
