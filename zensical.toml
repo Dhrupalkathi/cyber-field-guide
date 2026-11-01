@@ -25,7 +25,7 @@ nav = [
   { "Tool Library" = [
     "tools/index.md",
   ] },
-  { "Learn & Practise" = [
+  { "Learning Resources" = [
     "resources/index.md",
     { "Stage 0 & 1 — Foundations" = "resources/stage-0-and-1.md" },
     { "Networking" = "resources/networking.md" },
@@ -35,7 +35,7 @@ nav = [
     { "Digital Forensics" = "resources/digital-forensics.md" },
     { "Cloud & Containers" = "resources/cloud-and-containers.md" },
     { "Mobile & Reverse Engineering" = "resources/mobile-and-reverse-engineering.md" },
-    { "CTFs & Practice" = "resources/ctf-and-practice.md" },
+    { "CTFs & Labs" = "resources/ctf-and-practice.md" },
     { "YouTube Channels" = "resources/video-channels.md" },
     { "Communities & Careers" = "resources/communities-and-careers.md" },
   ] },
