@@ -2,7 +2,6 @@
 > **Status: Working curriculum draft v1.0 · Last resource review: 31 October 2026.**  
 > This is the existing CINS Stage 0/Stage 1 curriculum, split into smaller website pages for navigation. Its scope and sequence are preserved. It is a working draft, not a claim of formal DAU/CINS approval.
 
-
 # Stage 1 — Computer Fundamentals
 
 **Level:** Beginner  
@@ -10,6 +9,18 @@
 **Prerequisites:** Stage 0 recommended; no prior computer-science knowledge required  
 **Parallel track:** Introductory Python programming starts here  
 **Purpose:** Build a mental model of how computers represent information, process instructions, store data and run software. This gives students the vocabulary needed for networking, operating systems and cybersecurity in later stages.
+
+## AI-guided learning — explore the topic you choose
+
+There are no fixed class exercises or graded practical assignments in this stage. When you want practical understanding, choose any Stage 1 topic and ask an AI assistant to act as a patient tutor. It can provide explanations, worked examples, diagrams in text, fictional troubleshooting scenarios, simple demonstrations, or interactive questions based on your current level.
+
+You can start with this prompt:
+
+> I am learning CINS Stage 1 and I am a beginner. Help me understand **[topic]** by explaining the concept simply, showing a worked example, and then guiding me through an example one step at a time. Ask questions and adapt to my answers. Keep the material within Stage 1; do not require Kali Linux, system-administration commands, specialist tools, or paid software. Tell me which details I should verify in official documentation.
+
+Verify important claims and code with reliable sources before relying on them. Do not run commands or install software suggested by AI unless you understand what they do and have checked the official instructions. Never provide passwords, tokens, personal records, or private files to an AI tool.
+
+**Publishing what you learn:** After you understand and verify a topic, you may create your own notes, diagrams, explanations, or beginner resource and submit it to the CINS repository. Publish only after human review for correctness, clarity, safety, privacy, and source attribution. Do not copy AI output directly as if it were verified material.
 
 ## Stage 1: exit outcomes
 
@@ -47,16 +58,6 @@ A student can:
 - Classify examples as input, output, storage or processing components.
 - Draw a simple input–process–output model for an everyday task.
 
-### Practice
-
-Ask students to map how a laptop handles a simple task such as typing a document: keyboard input, application processing, RAM, storage and screen output.
-
-### Checkpoint
-
-Given a device diagram, label the main components and explain the role of at least five of them.
-
----
-
 ## Module 1.2 — Inside a computer: hardware and architecture basics
 
 ### Topics
@@ -92,18 +93,6 @@ A student can:
 - Identify major components in a desktop or laptop diagram.
 - Explain at a high level what happens between pressing the power button and reaching the login screen.
 
-### Practice activities
-
-1. **Component matching:** match component cards to their functions.
-2. **Performance scenarios:** discuss whether a slow computer is more likely to be limited by CPU, RAM, storage or another factor. Students must justify what evidence they would check rather than guess.
-3. **Boot sequence storyboard:** arrange a simplified sequence from power-on and firmware initialisation to operating-system loading and login.
-
-### Checkpoint
-
-A student explains why adding storage does not automatically solve a lack-of-RAM problem, and why a CPU upgrade is not the answer to every performance issue.
-
----
-
 ## Module 1.3 — How computers represent data
 
 ### Topics
@@ -125,18 +114,6 @@ A student can:
 - Read simple binary values and convert small values between binary and decimal with guidance.
 - Explain why hexadecimal is commonly used when viewing low-level data.
 - Explain why character encoding matters when text is transferred or displayed.
-
-### Practice activities
-
-- Convert a few small whole numbers between binary and decimal.
-- Represent short text using a supplied character table.
-- Compare the approximate size of a text file, image, audio file and video.
-
-### Checkpoint
-
-A student can explain why a computer uses binary and identify a situation where hexadecimal or character encoding is useful.
-
----
 
 ## Module 1.4 — Software, operating systems and program execution
 
@@ -166,18 +143,6 @@ A student can:
 - Explain the difference between a program stored on disk and a process running in memory.
 - Explain why drivers and updates exist.
 
-### Practice activities
-
-- Sort examples into firmware, operating-system software, utilities and applications.
-- Use the normal task manager or system monitor, if available, to observe running applications and resource use. This is observational only; students should not terminate unfamiliar system processes.
-- Explain what happens when a user opens an application.
-
-### Checkpoint
-
-A student can explain, in their own words, what the operating system manages and what a process represents.
-
----
-
 ## Module 1.5 — Files, folders, filesystems and executable files
 
 ### Topics
@@ -203,18 +168,6 @@ A student can:
 - Identify common file categories without assuming an extension guarantees file type or safety.
 - Explain the difference between source code and a running program.
 
-### Practice activities
-
-- Inspect the properties of supplied, harmless sample files.
-- Organise a set of sample documents into a sensible directory structure.
-- Identify suspicious-looking file names in a fictional scenario and explain why they should not be opened without verification.
-
-### Checkpoint
-
-A student can explain what a file extension tells them, what it does not guarantee, and how a program becomes a running process.
-
----
-
 ## Module 1.6 — Virtualisation and isolated environments
 
 ### Topics
@@ -236,16 +189,6 @@ A student can:
 - Explain why a VM is not automatically safe simply because it is virtual.
 - Recognise when a browser-based lab is a better first choice than installing a local lab.
 
-### Practice activity
-
-Provide three example lab designs and ask students which is safest for a beginner, what could expose the host, and what precautions are needed. Do not require students to install a hypervisor in this module.
-
-### Checkpoint
-
-A student can draw a basic host/guest diagram and name three isolation precautions.
-
----
-
 ## Module 1.7 — Basic troubleshooting and technical thinking
 
 ### Topics
@@ -265,86 +208,6 @@ A student can:
 - Suggest a testable explanation.
 - Perform a safe, reversible check.
 - Record the result so another person can understand what happened.
-
-### Practice activity — The slow laptop
-
-Give students a fictional case: a laptop has become slow, an application freezes and storage is almost full. Students should list observations and safe checks, then explain which evidence would help distinguish a storage issue from a memory or CPU issue.
-
-### Checkpoint
-
-A student submits a short troubleshooting record containing the symptom, hypothesis, check, result and next step.
-
----
-
-## Stage 1 — Practical computer activities
-
-These activities connect computer concepts to observable evidence without moving ahead into networking or system administration.
-
-| Activity | Student task | Evidence |
-|---|---|---|
-| Computer map | Label CPU, RAM, storage, motherboard, GPU and input/output devices on a diagram. | Annotated diagram. |
-| CPU/RAM/storage scenario | Explain which component is responsible for different tasks and what evidence is needed to diagnose a slowdown. | Short written explanation. |
-| Data representation | Convert small binary values and explain bits, bytes and character encoding. | Worksheet or quiz. |
-| Software categories | Classify firmware, operating-system software, applications and utilities. | Classification exercise. |
-| Process observation | Use the normal task manager/system monitor to observe applications and resource usage without terminating unknown processes. | Observation notes. |
-| File investigation | Inspect harmless sample file names, extensions, paths and properties. | File information table. |
-| Virtualisation diagram | Draw host, guest and snapshot relationships. | Lab diagram. |
-| Troubleshooting | Work through the fictional slow-laptop scenario. | Troubleshooting record. |
-
----
-
-## Stage 1 — Consolidation and assessment
-
-### Required deliverables
-
-**Deliverable 1A — Computer Fundamentals Notebook**
-
-A concise set of notes or diagrams covering:
-
-- Computer input, processing, storage and output.
-- CPU, RAM and long-term storage.
-- Binary, bits and bytes.
-- Hardware, software and operating-system roles.
-- Files, paths, extensions, programs and processes.
-- Virtual machines and isolation.
-
-**Deliverable 1B — Python Exercises**
-
-A small collection of original programs showing:
-
-- Variables and types.
-- Conditions.
-- Loops.
-- Functions.
-- Lists or dictionaries.
-- Debugging and testing.
-
-**Deliverable 1C — Final Project**
-
-The Cyber Fundamentals Quiz or an instructor-approved project with equivalent complexity.
-
-**Deliverable 1D — Troubleshooting Record**
-
-One completed troubleshooting exercise showing observation, hypothesis, test, result and next step.
-
-### Assessment rubric
-
-| Dimension | Suggested weight | What a satisfactory result looks like |
-|---|---:|---|
-| Computer concepts | 25% | Explains the main components and how they work together. |
-| Data and software concepts | 15% | Understands basic data representation, files and program execution. |
-| Programming | 30% | Writes and explains a small Python programme using the Stage 1 concepts. |
-| Troubleshooting | 10% | Uses evidence and a systematic process rather than guessing. |
-| Documentation | 10% | Provides readable notes, test cases and project instructions. |
-| Safe practice | 10% | Handles software, files and lab activities responsibly. |
-
-**Safety is also a pass/fail condition.** A serious violation of lab scope or mishandling of sensitive data cannot be offset by a high score elsewhere.
-
-### Stage 1 completion standard
-
-A student completes Stage 1 when they can explain the computer fundamentals, perform the practical activities, write and debug a small Python programme, and document their work. Students should be allowed to revise and retry rather than being permanently blocked by one assessment.
-
----
 
 ## How Stage 1 connects to later stages
 
