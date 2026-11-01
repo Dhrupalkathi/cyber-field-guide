@@ -1,7 +1,6 @@
 # CINS Cybersecurity Learning Journey
 
-> **Status: Working curriculum draft v1.0 · Last resource review: 31 October 2026.**  
-> This is the existing CINS Stage 0/Stage 1 curriculum, split into smaller website pages for navigation. Its scope and sequence are preserved. It is a working draft, not a claim of formal DAU/CINS approval.
+
 
 This is the common starting point for a learner who may have **zero experience with cybersecurity, programming, Linux, or Kali Linux**.
 
