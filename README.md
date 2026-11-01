@@ -1,8 +1,8 @@
 # CINS Cyber Field Guide
 
-**A practical, community-maintained learning hub for cybersecurity.**
+**A community-maintained learning hub for cybersecurity.**
 
-Tools are only one part of learning security. This project brings together beginner foundations, carefully described tools, trusted learning resources, hands-on practice, and balanced learning paths across both offensive and defensive security.
+Tools are only one part of learning security. This project brings together beginner foundations, carefully described tools, trusted learning resources, curated labs, self-directed learning, and balanced learning paths across both offensive and defensive security.
 
 > **Project status:** Content development. The Stage 0/1 curriculum and first resource map are published as working drafts on the content branch for review. Tool pages are being researched in batches. A link check is not a claim that a course has been completed or a command has been tested.
 
@@ -21,7 +21,7 @@ The guide is intended to support the CINS (Cyber Information and Network Securit
 | **Start Here** | Find your first steps and understand what is required before using specialist tools. |
 | **Curriculum** | Follow the common Stage 0/1 foundation and the parallel Python track, with explicit boundaries for later stages. |
 | **Tool Library** | Understand what tools do, when to use them, how to install them, safe examples, limitations, and alternatives. |
-| **Learn & Practise** | Find courses, websites, videos, official documentation, CTFs, and practical labs. |
+| **Learning Resources** | Find courses, websites, videos, official documentation, CTFs, and guided labs. |
 | **Learning Paths** | Follow a sensible sequence from foundations into a chosen security specialty. |
 | **Club Hub** | Find ethics and safety rules, project ideas, contribution guidance, and handover information. |
 
@@ -43,7 +43,7 @@ We will use explicit review labels rather than pretending every page is always c
 - **Draft** — being written; not yet checked by a second contributor.
 - **Link checked** — the cited source link was opened, but the content or commands may not have been tested.
 - **Reviewed** — a contributor checked the technical claims against reliable sources.
-- **Lab tested** — the stated example was tested in the documented local or authorized lab.
+- **Lab verified** — the stated lab was completed or its setup was independently checked in a documented, authorized environment.
 - **Needs review** — an update or concern has been reported.
 - **Archived** — kept for historical context but no longer recommended for current use.
 
