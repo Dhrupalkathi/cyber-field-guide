@@ -12,7 +12,7 @@
 
 ## AI-guided learning — explore the topic you choose
 
-There are no fixed class exercises or graded practical assignments in this stage. When you want practical understanding, choose any Stage 1 topic and ask an AI assistant to act as a patient tutor. It can provide explanations, worked examples, diagrams in text, fictional troubleshooting scenarios, simple demonstrations, or interactive questions based on your current level.
+This stage has no compulsory worksheets, fixed tasks, or grades. When you want practical understanding, choose any Stage 1 topic and ask an AI assistant to act as a patient tutor. It can provide explanations, worked examples, diagrams in text, fictional troubleshooting scenarios, simple demonstrations, or interactive questions based on your current level.
 
 You can start with this prompt:
 
