@@ -6,7 +6,7 @@ A tool is useful only when you understand the problem it helps solve. This libra
 
 **Stage 0 and Stage 1 do not require cybersecurity tools.** Newcomers can complete these stages with a browser, ordinary system applications (such as a file manager, calculator, and task manager/system monitor), and a browser-based Python environment if they choose the parallel programming track.
 
-Do not require Kali Linux, Nmap, Burp Suite, a SIEM, or an exploitation framework to pass the first two stages. Tool installation begins only when a later curriculum module explains why the tool is needed and provides a safe practice environment.
+Do not require Kali Linux, Nmap, Burp Suite, a SIEM, or an exploitation framework to pass the first two stages. Tool installation begins only when a later curriculum module explains why the tool is needed and provides a safe, authorized lab environment.
 
 See the [Stage 0/1 curriculum](../curriculum/index.md) and [Stage 0/1 resource directory](../resources/stage-0-and-1.md).
 
@@ -42,7 +42,7 @@ Every substantial entry must answer:
 3. Who should learn it, and what prerequisites are needed?
 4. What operating systems and versions are currently supported?
 5. Where are the official project, documentation, and installation sources?
-6. How can it be tried safely in a local or explicitly authorized lab?
+6. How can it be explored safely in a local or explicitly authorized lab?
 7. What do common options mean, and how should output be interpreted?
 8. What are its limitations, false positives, maintenance status, and alternatives?
 9. How does it support assessment **and/or** defense?
@@ -52,7 +52,7 @@ Every substantial entry must answer:
 
 - Prefer official upstream documentation and release notes.
 - Do not invent installation commands or copy them from unverified videos.
-- Separate "link checked", "content reviewed", and "lab tested".
+- Separate "link checked", "content reviewed", and "lab verified".
 - Use localhost, sample files, owned systems, or intentionally vulnerable training targets in examples.
 - No instructions for unauthorized access, credential theft, persistence, evasion, malware deployment, or disruption.
 - Explain edition limits and costs (for example, Burp Suite Community versus Professional).
