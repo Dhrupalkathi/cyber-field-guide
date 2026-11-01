@@ -1,7 +1,5 @@
 # Stage 0/1 — Mentor Guidance and Content Quality
 
-> **Status: Working curriculum draft v1.0 · Last resource review: 31 October 2026.**  
-> This guide supports the working CINS Stage 0/Stage 1 curriculum. It is not a claim of formal DAU/CINS approval.
 
 ## Mentor approach
 
