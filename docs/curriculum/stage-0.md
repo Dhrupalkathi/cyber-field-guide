@@ -11,7 +11,7 @@
 
 ## AI-guided learning — explore the topic you choose
 
-There are no fixed class exercises or graded practical assignments in this stage. When you want practical understanding, choose any Stage 0 topic and use an AI assistant as a personal learning guide.
+There are no compulsory worksheets, predefined tasks, or graded tests in this stage. When you want practical understanding, choose any Stage 0 topic and use an AI assistant as a personal learning guide.
 
 Ask it to explain the topic in plain language, then give you realistic fictional scenarios, guided reasoning, examples, role-based situations, or a short interactive question-and-answer session. Tell it that you are a complete beginner and ask it to stay within Stage 0.
 
@@ -32,7 +32,7 @@ By the end of Stage 0, a student should be able to:
 3. Distinguish a vulnerability, threat, attack, risk and security control at an introductory level.
 4. Explain why permission, scope, privacy and responsible disclosure matter.
 5. Decide whether a proposed security activity is inside or outside an authorised environment.
-6. Identify safe beginner practice environments and explain basic lab precautions.
+6. Identify safe beginner learning environments and explain basic lab precautions.
 7. Apply basic personal account and device security practices.
 8. Identify several cybersecurity roles without feeling required to choose one immediately.
 
@@ -117,7 +117,7 @@ The ability to use a tool does not give someone permission to use it against a s
 3. **Follow the programme or lab rules.** A vulnerability disclosure policy or bug bounty programme may allow some actions and prohibit others. Read the current rules before starting.
 4. **Use the minimum activity necessary.** Do not access, copy, modify or expose data that is not needed to demonstrate an issue.
 5. **Protect privacy.** Do not inspect or share another person's private information.
-6. **Avoid disruption.** Do not perform denial-of-service testing, destructive actions or high-volume activity unless a separately authorised, separately authorised, supervised activity explicitly permits it.
+6. **Avoid disruption.** Do not perform denial-of-service testing, destructive actions or high-volume activity unless a separately authorised, supervised activity explicitly permits it.
 7. **Stop when the scope is unclear or sensitive data appears.** Preserve only the minimum information needed to report the issue through the approved channel.
 8. **Report responsibly.** Follow the organisation's disclosure process and do not publish details prematurely.
 
