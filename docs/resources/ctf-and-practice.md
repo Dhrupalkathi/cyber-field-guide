@@ -1,6 +1,6 @@
-# CTFs & Practical Labs
+# CTFs & Labs
 
-A CTF (Capture the Flag) is a structured challenge where learners solve security or programming problems in an environment designed for practice. CTFs are useful, but they are not a replacement for learning networking, operating systems, programming, and security concepts.
+A CTF (Capture the Flag) is a structured challenge where learners solve security or programming problems in an environment designed for authorized learning. CTFs are useful, but they are not a replacement for learning networking, operating systems, programming, and security concepts.
 
 ## Complete beginners
 
@@ -26,20 +26,20 @@ A CTF (Capture the Flag) is a structured challenge where learners solve security
 - **Link:** [picoCTF](https://picoctf.org/)
 - **Review state:** Official platform link checked; individual challenge availability may vary by event.
 
-## Web security practice
+## Web security labs
 
 ### PortSwigger Web Security Academy
 
 - **Type:** Guided web-security labs
 - **Level:** Beginner to advanced
-- **Best for:** Learning web vulnerabilities through written lessons and interactive practice.
+- **Best for:** Learning web vulnerabilities through written lessons and interactive labs.
 - **Link:** [Web Security Academy](https://portswigger.net/web-security)
 
 ### Hacker101 CTF
 
 - **Type:** Web security course and CTF
 - **Level:** Beginner to intermediate
-- **Best for:** Learning web-security concepts and practising on purpose-built challenges.
+- **Best for:** Learning web-security concepts and working through purpose-built challenges.
 - **Access:** HackerOne describes Hacker101 as a free class with video lessons and CTF challenges.
 - **Link:** [Hacker101](https://www.hacker101.com/)
 - **CTF:** [Hacker101 CTF](https://ctf.hacker101.com/)
@@ -48,12 +48,12 @@ A CTF (Capture the Flag) is a structured challenge where learners solve security
 ### OWASP Juice Shop and DVWA
 
 - **Type:** Intentionally vulnerable local applications
-- **Level:** Beginner to advanced, depending on exercise
-- **Best for:** Practising web testing in a deliberately vulnerable environment.
+- **Level:** Beginner to advanced, depending on challenge
+- **Best for:** Learning web testing in a deliberately vulnerable environment.
 - **Links:** [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/) · [DVWA](https://github.com/digininja/DVWA)
 - **Safety:** Keep vulnerable apps isolated; never expose them to the public internet.
 
-## Broader hands-on learning
+## Additional guided lab platforms
 
 ### Hack The Box Academy
 
@@ -88,7 +88,7 @@ A CTF (Capture the Flag) is a structured challenge where learners solve security
 - **Link:** [CTFtime](https://ctftime.org/)
 - **Review state:** Calendar destination linked; event listings and organizer quality must be checked individually.
 
-## Rules before starting a lab
+## Safety rules before starting a lab
 
 - Read the platform's current rules and scope.
 - Keep testing inside the named lab or target environment.
@@ -96,6 +96,6 @@ A CTF (Capture the Flag) is a structured challenge where learners solve security
 - Do not publish challenge flags, paid walkthroughs, or other learners' private data.
 - Write down what concept the challenge taught you. Solving a challenge without understanding it is not a learning outcome.
 
-## Recommended practice habit
+## Recommended learning note-taking habit
 
-For every challenge, record: **goal → concept → evidence → solution idea → what you learned → what to read next**. Keep notes original and never store real passwords, tokens, or private target data in public write-ups.
+When you finish a challenge, record: **goal → concept → evidence → solution idea → what you learned → what to read next**. Keep notes original and never store real passwords, tokens, or private target data in public write-ups.

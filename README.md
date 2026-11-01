@@ -1,10 +1,10 @@
 # CINS Cyber Field Guide
 
-**A practical, community-maintained learning hub for cybersecurity.**
+**A community-maintained learning hub for cybersecurity.**
 
-Tools are only one part of learning security. This project brings together beginner foundations, carefully described tools, trusted learning resources, hands-on practice, and balanced learning paths across both offensive and defensive security.
+Tools are only one part of learning security. This project brings together beginner foundations, carefully described tools, trusted learning resources, curated labs, self-directed learning, and balanced learning paths across both offensive and defensive security.
 
-> **Project status:** Early build / Day 2. Content is being assembled and reviewed. A page marked as a draft is not a claim that every command, course, or external resource has been independently tested.
+> **Project status:** Content development. The Stage 0/1 curriculum and first resource map are published as working drafts on the content branch for review. Tool pages are being researched in batches. A link check is not a claim that a course has been completed or a command has been tested.
 
 ## Who is this for?
 
@@ -18,9 +18,10 @@ The guide is intended to support the CINS (Cyber Information and Network Securit
 
 | Section | What it helps you do |
 |---|---|
-| **Start Here** | Build computing, networking, Linux, and security foundations before installing specialist tools. |
+| **Start Here** | Find your first steps and understand what is required before using specialist tools. |
+| **Curriculum** | Follow the common Stage 0/1 foundation and the parallel Python track, with explicit boundaries for later stages. |
 | **Tool Library** | Understand what tools do, when to use them, how to install them, safe examples, limitations, and alternatives. |
-| **Learn & Practise** | Find courses, websites, videos, official documentation, CTFs, and practical labs. |
+| **Learning Resources** | Find courses, websites, videos, official documentation, CTFs, and guided labs. |
 | **Learning Paths** | Follow a sensible sequence from foundations into a chosen security specialty. |
 | **Club Hub** | Find ethics and safety rules, project ideas, contribution guidance, and handover information. |
 
@@ -29,10 +30,11 @@ The guide covers both sides of security: **assess and test** as well as **protec
 ## How to use the guide
 
 1. Start with [Start Here](docs/start-here/index.md) if you are new.
-2. Use [Learn & Practise](docs/resources/index.md) to find learning material and labs.
-3. Use the [Tool Library](docs/tools/index.md) when you need to understand a particular tool.
-4. Follow a [Learning Path](docs/learning-paths/index.md) instead of trying to learn every domain at once.
-5. Read the [Safety and Ethics Rules](docs/club/safety-and-ethics.md) before using security tools.
+2. Follow the [Stage 0/1 curriculum](docs/curriculum/index.md) and [its curated resources](docs/resources/stage-0-and-1.md).
+3. Use [Learn & Practise](docs/resources/index.md) to find learning material and labs.
+4. Use the [Tool Library](docs/tools/index.md) when you need to understand a particular tool.
+5. Follow a [Learning Path](docs/learning-paths/index.md) instead of trying to learn every domain at once.
+6. Read the [Safety and Ethics Rules](docs/club/safety-and-ethics.md) before using security tools.
 
 ## Content quality labels
 
@@ -41,7 +43,7 @@ We will use explicit review labels rather than pretending every page is always c
 - **Draft** — being written; not yet checked by a second contributor.
 - **Link checked** — the cited source link was opened, but the content or commands may not have been tested.
 - **Reviewed** — a contributor checked the technical claims against reliable sources.
-- **Lab tested** — the stated example was tested in the documented local or authorized lab.
+- **Lab verified** — the stated lab was completed or its setup was independently checked in a documented, authorized environment.
 - **Needs review** — an update or concern has been reported.
 - **Archived** — kept for historical context but no longer recommended for current use.
 
@@ -67,4 +69,4 @@ The Zensical version is pinned in `requirements.txt` to avoid unreviewed build c
 
 ## Current project stage
 
-This is the foundation, not the finished catalogue. The first milestone is a small, useful site with clear navigation, beginner onboarding, an initial balanced resource directory, and reliable publishing. More tools and domains will be added only when entries can be properly sourced and reviewed.
+The current milestone is to make the common foundation reliable: Stage 0 orientation, Stage 1 computer fundamentals, the parallel Python track, and a curated resource map. Specialist tool entries and advanced learning paths will be added in verified batches. The visual theme is intentionally frozen; future effort is focused on learning quality, accuracy, and maintainability.

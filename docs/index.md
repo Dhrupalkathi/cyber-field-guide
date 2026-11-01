@@ -12,7 +12,7 @@
 
 A community-maintained learning hub for curious beginners, developing practitioners, and experienced contributors.
 
-You do not need Kali Linux, expensive hardware, or previous cybersecurity experience to begin. Start with the foundations, choose a direction, and build practical skills one step at a time.
+You do not need Kali Linux, expensive hardware, or previous cybersecurity experience to begin. Start with the foundations, choose a direction, and build understanding one step at a time.
 
 <div class="cins-hero-actions" markdown>
 [Start learning](start-here/index.md){ .md-button .md-button--primary }
@@ -58,7 +58,7 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
     ---
 
-    Explore courses, websites, YouTube channels, documentation, CTFs, and hands-on practice platforms.
+    Explore courses, websites, YouTube channels, documentation, CTFs, and guided learning platforms, virtual labs, and CTFs.
 
     [Browse learning resources](resources/index.md)
 
@@ -109,7 +109,7 @@ This guide is deliberately designed to represent the complete security lifecycle
 - **Beginner-first:** concepts come before tools; unfamiliar terms are explained.
 - **Resource-rich:** every learning area connects to courses, videos, official documentation, and practical labs.
 - **Balanced:** offensive assessment and defensive security receive deliberate, visible coverage.
-- **Honest about verification:** pages distinguish link checks, content reviews, and lab-tested examples.
+- **Honest about verification:** pages distinguish link checks, content reviews, and lab-verified material.
 - **Built to be handed over:** content is stored in portable Markdown and changes are reviewed through GitHub.
 
 ## Explore the first resource collections
@@ -125,7 +125,7 @@ These are starting recommendations. See each resource page for prerequisites, ac
 
 ## Trust and safety
 
-Only test systems you own or have explicit permission to assess. Use local labs, sample data, and platforms that specifically authorize the exercise. Never publish secrets, private data, or instructions for unauthorized access.
+Only test systems you own or have explicit permission to assess. Use local labs, sample data, and platforms that explicitly authorize the activity. Never publish secrets, private data, or instructions for unauthorized access.
 
 [Read our safety and ethics rules](club/safety-and-ethics.md).
 
