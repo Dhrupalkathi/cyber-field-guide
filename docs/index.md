@@ -125,7 +125,7 @@ These are starting recommendations. See each resource page for prerequisites, ac
 
 ## Trust and safety
 
-Only test systems you own or have explicit permission to assess. Use local labs, sample data, and platforms that specifically authorize the exercise. Never publish secrets, private data, or instructions for unauthorized access.
+Only test systems you own or have explicit permission to assess. Use local labs, sample data, and platforms that explicitly authorize the activity. Never publish secrets, private data, or instructions for unauthorized access.
 
 [Read our safety and ethics rules](club/safety-and-ethics.md).
 
