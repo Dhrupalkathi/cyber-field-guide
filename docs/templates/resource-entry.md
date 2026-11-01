@@ -1,6 +1,6 @@
 # [Resource title]
 
-> **Review status:** Draft / Link checked / Content reviewed / Practice tested / Needs review / Archived  
+> **Review status:** Draft / Link checked / Content reviewed / Lab verified / Needs review / Archived  
 > **Last checked:** YYYY-MM-DD  
 > **Type:** Course / Website / Video / Documentation / Book / Lab / Community  
 > **Level:** Beginner / Intermediate / Advanced  
@@ -37,8 +37,8 @@ Give a recommended sequence. Do not copy paid course content, private walkthroug
 
 - Link checked:
 - Content reviewed:
-- Practice completed:
+- Course/lab completion:
 - Reviewer:
 - Notes / known limitations:
 
-A reachable link is not the same as a course review. Never claim a resource has been completed or tested unless that work was actually done.
+A reachable link is not the same as a course review. Never claim a resource or lab has been completed or verified unless that work was actually done.
