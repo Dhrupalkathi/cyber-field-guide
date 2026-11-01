@@ -9,7 +9,7 @@ Programming is not a separate stage that students must finish before cybersecuri
 
 ## AI-guided learning — learn Python your way
 
-There are no fixed coding exercises or graded programming assignments in this track. Choose any Python topic from the outcomes below and ask an AI assistant to teach it at your current level. You can ask for a plain-language explanation, a worked example, code walkthrough, debugging help, or an interactive coding conversation.
+This track has no compulsory coding tasks or grades. Choose any Python topic from the outcomes below and ask an AI assistant to teach it at your current level. You can ask for a plain-language explanation, a worked example, code walkthrough, debugging help, or an interactive coding conversation.
 
 You can start with this prompt:
 
