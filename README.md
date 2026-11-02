@@ -57,8 +57,10 @@ Start with [contribution guide](docs/club/contributing.md) and the [CINS content
 
 ## Technology
 
-The content is stored in portable Markdown files. The site is built with [Zensical](https://zensical.org/docs/) and published through GitHub Pages. The Zensical version is pinned in `requirements.txt`; upgrades are deliberate and should be tested before merging.
+The content is stored in portable Markdown files. The site is built with [Zensical](https://zensical.org/docs/) and published through GitHub Pages. The Zensical version is pinned in requirements.txt; upgrades are deliberate and should be tested before merging.
 
 ## Current focus
 
-The current content focus is to keep the Stage 0/1 curriculum clear, consolidate external resources without duplicates, and add tool entries in carefully reviewed batches. The visual theme is frozen; future changes should focus on learning quality, accuracy, accessibility, and maintainability.
+Stage 2 has begun with the published [Networking curriculum](docs/curriculum/stage-2-networking.md). The next curriculum parts will follow the agreed order: Linux, Windows, then Internet and Web fundamentals. Tool and resource entries will continue to grow alongside the curriculum, with sources and review status made explicit.
+
+The visual system may evolve when changes improve learning clarity, accessibility, responsive behaviour, or useful visualisation. Preserve the CINS identity and test changes in both light and dark modes, on mobile layouts, and with reduced-motion preferences.
