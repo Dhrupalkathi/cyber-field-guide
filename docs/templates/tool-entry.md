@@ -1,22 +1,23 @@
 # [Tool name]
 
-> **Page status:** Draft / Link checked / Reviewed / Lab tested / Needs review / Archived  
+> **Page status:** Draft / Link checked / Content reviewed / Lab verified / Needs review / Archived  
 > **Last checked:** YYYY-MM-DD  
 > **Difficulty:** Beginner / Intermediate / Advanced  
 > **Domain:** [Domain]  
+> **CINS curriculum fit:** Stage 0 / Stage 1 / Stage 2 subject / After Stage 2 — specialist / Reference  
 > **Perspective:** Defensive / Assessment / Dual-use
 
 ## What does it do?
 
 Explain the tool in plain language in two or three sentences. Avoid marketing language.
 
-## When would you use it?
+## When is it useful?
 
-Describe legitimate, concrete use cases and where it fits in a security workflow.
+Describe legitimate use cases and the security workflow it supports.
 
-## Prerequisites
+## Prerequisites and authorization
 
-List the concepts, permissions, hardware, operating-system knowledge, and lab setup needed first.
+List the concepts, permissions, hardware, operating-system knowledge, and lab setup needed first. State any required scope or authorization clearly.
 
 ## Official sources
 
@@ -27,13 +28,13 @@ List the concepts, permissions, hardware, operating-system knowledge, and lab se
 
 Do not recommend third-party download mirrors unless there is a clear, documented reason.
 
-## Installation
+## Installation and setup
 
-Document supported operating systems and the official installation method. Distinguish tested instructions from instructions copied from upstream documentation.
+Document supported operating systems and the official installation method. Distinguish instructions that were tested from instructions only checked against upstream documentation.
 
-## Safe first exercise
+## Safe demonstration
 
-Use localhost, a sample file, a local virtual machine, or a deliberately vulnerable training target. Explain the scope and expected result. Do not provide real-world unauthorized exploitation steps.
+Use localhost, a sample file, an owned system, or a deliberately vulnerable training target. Explain the scope, prerequisites, expected result, and what the example does not demonstrate. Do not provide real-world unauthorized exploitation steps.
 
 ## Understanding the output
 
@@ -41,7 +42,7 @@ Explain important fields, options, and common false positives or limitations.
 
 ## Defensive relevance
 
-Explain how the tool can support prevention, monitoring, detection, investigation, or remediation—or why it is primarily an assessment tool.
+Explain how the tool can support prevention, monitoring, detection, investigation, response, recovery, or authorized assessment.
 
 ## Limitations and alternatives
 
@@ -53,7 +54,7 @@ List important limitations and credible alternatives.
 - Supported operating systems checked:
 - Version or release checked:
 - Installation tested on:
-- Example tested in:
+- Demonstration tested in:
 - Reviewer:
 - Last review date:
 
