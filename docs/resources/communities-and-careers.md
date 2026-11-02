@@ -1,57 +1,46 @@
 # Communities & Career Resources
 
-Cybersecurity is a collaborative field. Communities can help learners ask questions, receive feedback, attend events, and contribute to real projects. Choose communities carefully: a large member count does not prove that a group is safe, useful, or genuine.
+Communities can help learners ask questions, receive feedback, attend events, and contribute to real projects. Choose communities carefully: a large member count does not prove that a group is safe, useful, or genuine.
+
+This page focuses on **communities and career participation**. Technical frameworks, product communities, and CTF event calendars are listed in their relevant subject pages to avoid duplicate descriptions.
 
 ## Professional and technical communities
 
 ### OWASP Local Chapters
 
-- **Type:** Local application-security community chapters
-- **Best for:** Talks, meetups, training, and connecting with application-security practitioners.
+> **CINS stage fit:** All stages — optional community participation; individual sessions have their own prerequisites  
+> **Type:** Local application-security chapters
+
+Chapters host talks, meetups, training, and opportunities to connect with application-security practitioners.
+
 - **Access:** OWASP says local chapter meetings are free and open to members and non-members.
 - **Find a chapter:** [OWASP Chapters](https://owasp.org/chapters)
-- **Review state:** Official chapter directory checked on 31 October 2026. Check the current local chapter's event page before attending.
-
-### Wazuh Community
-
-- **Type:** Product and open-source technical community
-- **Best for:** Asking questions, learning from other users, following product discussions, and contributing to the project.
-- **Official starting point:** [Wazuh Getting Started and Community](https://documentation.wazuh.com/current/getting-started/index.html)
-- **Review state:** Official documentation checked on 31 October 2026.
+- **Review state:** Official chapter directory checked 31 October 2026. Check the current local chapter event page before attending.
 
 ### FIRST Community Resources
 
-- **Type:** Professional incident-response and security-team resources
-- **Best for:** Learning about CSIRT operations, incident communication, malware-analysis capability development, and response-team practices.
-- **Important:** This is primarily a professional resource collection, not a beginner social chat group.
-- **Link:** [FIRST Community Resources](https://www.first.org/community-resources)
-- **Review state:** Official FIRST page checked on 31 October 2026.
+> **CINS stage fit:** After Stage 2 — professional incident-response reference  
+> **Type:** Professional incident-response and security-team resources
 
-## Career and skill frameworks
+Provides material related to CSIRT operations, incident communication, malware-analysis capability development, and response-team practices.
 
-### NIST NICE Framework
+- **Audience note:** This is primarily a professional resource collection, not a beginner social chat group.
+- **Official resource:** [FIRST Community Resources](https://www.first.org/community-resources)
+- **Review state:** Official FIRST page checked 31 October 2026.
 
-- **Type:** Cybersecurity workforce and skills framework
-- **Level:** Beginner to professional
-- **Best for:** Understanding cybersecurity work through tasks, knowledge, skills, and work roles. It helps learners explore what different roles actually do instead of choosing a career from tool names alone.
-- **Link:** [Getting Started with the NICE Framework](https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center/getting-started)
-- **Review state:** Official NIST resource checked on 31 October 2026.
+## Career exploration
 
-### MITRE ATT&CK and D3FEND
+### Understand cybersecurity roles
 
-- **Type:** Technical knowledge bases
-- **Best for:** Connecting adversary behavior with defensive techniques and developing a shared technical vocabulary.
-- **Links:** [ATT&CK](https://attack.mitre.org/) · [D3FEND](https://d3fend.mitre.org/)
-- **Note:** These are references for analysis and engineering, not career courses.
+The [NIST NICE Framework](foundations.md) is catalogued in Foundations & Computing because it is useful for Stage 0 career awareness as well as later role exploration. It describes cybersecurity work through tasks, knowledge, skills, and work roles.
 
-## Find events and practice with others
+## Where related technical communities and events are listed
 
-### CTFtime
+- For the **Wazuh community**, see the Wazuh entry in [Blue Team & SOC Resources](blue-team.md).
+- For **MITRE ATT&CK and D3FEND**, see [Blue Team & SOC Resources](blue-team.md).
+- For **CTF competitions and event calendars**, see [CTFs & Labs](ctf-and-practice.md).
 
-- **Type:** CTF event calendar
-- **Best for:** Discovering competitions where students can participate as teams.
-- **Link:** [CTFtime](https://ctftime.org/)
-- **Safety:** Check event rules, organizer identity, and permitted scope before participating.
+These are internal references to the canonical entries, not duplicate listings.
 
 ## Community safety rules
 
@@ -63,4 +52,4 @@ Cybersecurity is a collaborative field. Communities can help learners ask questi
 
 ## About local and club communities
 
-The guide should only list a CINS/DAU Discord, Telegram, WhatsApp, or other invite link after the club provides an official, current link and authorizes publication. We will not invent invite links or recommend random groups merely to fill a directory.
+The guide should list a CINS/DAU Discord, Telegram, WhatsApp, or other invite link only after the club provides an official, current link and authorizes publication. We will not invent invite links or recommend random groups merely to fill a directory.
