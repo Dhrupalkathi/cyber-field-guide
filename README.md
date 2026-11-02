@@ -53,7 +53,7 @@ Read [Safety and Ethics](docs/club/safety-and-ethics.md) before using security t
 
 You do not need to be an expert to improve the guide. You can report a broken link, suggest a resource, correct a typo, clarify a beginner explanation, or submit a carefully sourced technical page.
 
-Start with [CONTRIBUTING.md](CONTRIBUTING.md) and the [CINS content standards](docs/club/content-standards.md). Proposed changes are reviewed before they become part of the published guide.
+Start with [contribution guide](docs/club/contributing.md) and the [CINS content standards](docs/club/content-standards.md). Proposed changes are reviewed before they become part of the published guide.
 
 ## Technology
 
