@@ -2,17 +2,17 @@
 
 A tool is useful only when you understand the problem it helps solve. This library explains tools; it is not a shopping list or a shortcut around learning the underlying concepts.
 
-## First rule: foundations before specialist tools
+## Foundations before specialist tools
 
-**Stage 0 and Stage 1 do not require cybersecurity tools.** Newcomers can complete these stages with a browser, ordinary system applications (such as a file manager, calculator, and task manager/system monitor), and a browser-based Python environment if they choose the parallel programming track.
+**Stage 0 and Stage 1 do not require cybersecurity tools.** Newcomers can learn with a browser, ordinary system applications, and a browser-based Python environment for the parallel programming track.
 
-Do not require Kali Linux, Nmap, Burp Suite, a SIEM, or an exploitation framework to pass the first two stages. Tool installation begins only when a later curriculum module explains why the tool is needed and provides a safe, authorized lab environment.
+Do not require Kali Linux, Nmap, Burp Suite, a SIEM, or an exploitation framework for the first two stages. A tool belongs in the learner's progression only when the relevant curriculum introduces the underlying concept and a safe, authorized environment.
 
-See the [Stage 0/1 curriculum](../curriculum/index.md) and [Foundations & Computing resources](../resources/foundations.md).
+See the [Curriculum](../curriculum/index.md) and [Foundations & Computing resources](../resources/foundations.md).
 
 ## Planned tool domains
 
-The catalogue is intentionally broad enough to cover offensive and defensive security. Individual entries will be added in small batches only after official-source research and review.
+The catalogue is designed to cover offensive and defensive security. Individual entries will be added in small batches after official-source research and review.
 
 | Domain | Example tools to research | Main purpose |
 |---|---|---|
@@ -22,7 +22,7 @@ The catalogue is intentionally broad enough to cover offensive and defensive sec
 | Web and API security | Burp Suite Community, OWASP ZAP, mitmproxy, ffuf | Test applications in authorized labs and assess application behavior |
 | Vulnerability and configuration assessment | Greenbone/OpenVAS, Trivy, Checkov | Identify weaknesses and configuration risk |
 | Network and endpoint defense | Wazuh, Zeek, Suricata, Security Onion | Collect telemetry, monitor, detect, and investigate |
-| Detection engineering | YARA, Sigma, SIEM query tools | Create and test repeatable detections |
+| Detection engineering | YARA, Sigma, SIEM query tools | Create and evaluate repeatable detections |
 | Digital forensics and incident response | Autopsy, Volatility 3, Velociraptor, Plaso | Preserve, collect, and examine digital evidence |
 | Identity and Active Directory | BloodHound Community Edition, Microsoft identity/security tools | Understand identity relationships and harden access |
 | Cloud and containers | Trivy, Checkov, cloud-native audit tools | Reduce configuration and software-supply-chain risk |
@@ -31,33 +31,20 @@ The catalogue is intentionally broad enough to cover offensive and defensive sec
 | Wireless security | Aircrack-ng and platform-specific diagnostic tools | Understand and assess wireless security only in owned/authorized labs |
 | Cryptography and secure development | OpenSSL, Semgrep, language-native test tools | Understand cryptographic use and find coding weaknesses |
 
-This is a research queue, not a statement that every tool is suitable for beginners or currently verified. The [Curriculum](../curriculum/index.md) defines when a tool belongs in a learner's progression; the tool library does not create a separate sequence. Some tools are dual-use and require stronger authorization, lab isolation, and mentor review.
+This is a research queue, not a statement that every tool is suitable for beginners or currently verified. Some tools are dual-use and require stronger authorization, lab isolation, and mentor review. The Curriculum defines progression; this catalogue does not create a separate learning sequence.
 
-## What every tool page must contain
+## What a tool entry should cover
 
-Every substantial entry must answer:
+A complete entry explains the tool's purpose, legitimate use, prerequisites, supported systems, official installation sources, a safe bounded demonstration, output interpretation, limitations, alternatives, and verification history.
 
-1. What does it do, in plain language?
-2. Which security task or workflow does it support?
-3. Who should learn it, and what prerequisites are needed?
-4. What operating systems and versions are currently supported?
-5. Where are the official project, documentation, and installation sources?
-6. How can it be explored safely in a local or explicitly authorized lab?
-7. What do common options mean, and how should output be interpreted?
-8. What are its limitations, false positives, maintenance status, and alternatives?
-9. Which security workflow does it support: assessment, protection, detection, investigation, response, or recovery?
-10. When was the information checked, and what exactly was verified?
+Use the [tool-entry template](../templates/tool-entry.md) for the complete fields and review record. Do not publish a tool merely because it appears in a popular video or list.
 
 ## Quality and safety rules
 
 - Prefer official upstream documentation and release notes.
 - Do not invent installation commands or copy them from unverified videos.
-- Separate "link checked", "content reviewed", and "lab verified".
-- Use localhost, sample files, owned systems, or intentionally vulnerable training targets in examples.
-- No instructions for unauthorized access, credential theft, persistence, evasion, malware deployment, or disruption.
+- Distinguish link checks, content review, and lab verification.
+- Keep examples within localhost, sample files, owned systems, or intentionally vulnerable training targets.
+- Do not include instructions for unauthorized access, credential theft, persistence, evasion, malware deployment, or disruption.
 - Explain edition limits and costs (for example, Burp Suite Community versus Professional).
-- If upstream maintenance is unclear or a tool is archived, say so visibly.
-
-## Tool-page template
-
-Use [the tool-page template](../templates/tool-entry.md) when proposing a new entry. A tool should not be published simply because it appears in a popular video or list.
+- Mark archived or unclear upstream maintenance visibly.
