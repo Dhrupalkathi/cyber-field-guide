@@ -63,7 +63,7 @@ Do not infer price, course content, prerequisites, or supported systems from thi
 
 Never claim a course, lab, tool installation, or command has been tested when it has only been read about.
 
-## 6. Internal consistency
+## 6. Internal consistency and presentation
 
 Before submitting a change:
 1. Search for the resource URL or title to avoid duplicates.
@@ -73,4 +73,11 @@ Before submitting a change:
 5. Check internal links and remove links to deleted pages.
 6. Do not add a new global roadmap. The Curriculum page owns the progression.
 
-The visual theme is frozen. Contributions should not modify the visual system unless fixing a genuine accessibility or functional defect.
+Visual and interaction improvements are welcome when they make learning clearer, improve accessibility, or make the site easier to use. Keep the CINS identity recognisable and check:
+- Both light and dark colour schemes.
+- Mobile and narrow-screen layouts.
+- Keyboard access and readable focus states for interactive elements.
+- Colour contrast and meaningful text alternatives for diagrams.
+- Reduced-motion preferences for animated elements.
+
+Avoid decoration that competes with the lesson. A visualisation should explain a real concept, be technically accurate, and have a text explanation for readers who cannot or do not use the visual.
