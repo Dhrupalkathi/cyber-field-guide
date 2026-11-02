@@ -1,72 +1,64 @@
 # CINS Cyber Field Guide
 
-**A community-maintained learning hub for cybersecurity.**
+**A community-maintained learning and reference hub for cybersecurity.**
 
-Tools are only one part of learning security. This project brings together beginner foundations, carefully described tools, trusted learning resources, curated labs, self-directed learning, and balanced learning paths across both offensive and defensive security.
-
-> **Project status:** Content development. The Stage 0/1 curriculum and first resource map are published as working drafts on the content branch for review. Tool pages are being researched in batches. A link check is not a claim that a course has been completed or a command has been tested.
+The guide brings together the CINS curriculum, a subject-based learning-resource library, and a tool reference library. It is designed for newcomers who may have no prior cybersecurity experience, while remaining useful to developing and experienced learners.
 
 ## Who is this for?
 
-- **Newcomers:** students who are starting from zero and may not have Kali Linux installed.
-- **Developing learners:** students who know the basics and want guided tools, labs, and projects.
-- **Experienced contributors:** learners who can review technical content, improve examples, and mentor others.
+- **Newcomers:** students starting from zero; Kali Linux is not a prerequisite.
+- **Developing learners:** students who want reliable resources, tools, and deeper subject references.
+- **Contributors:** learners who can improve explanations, verify sources, and maintain individual subject areas.
 
-The guide is intended to support the CINS (Cyber Information and Network Security) community and other cybersecurity learners. It is currently hosted in an individual GitHub account; it should not be described as an official club publication or endorsement unless the club explicitly approves that status.
+The guide is intended to support the CINS (Cyber Information and Network Security) community and other cybersecurity learners. It is hosted in an individual GitHub account and should not be described as an officially adopted club publication unless the club explicitly approves that status.
 
-## What will be here?
+## Where to find things
 
-| Section | What it helps you do |
+| Section | Its single responsibility |
 |---|---|
-| **Start Here** | Find your first steps and understand what is required before using specialist tools. |
-| **Curriculum** | Follow the common Stage 0/1 foundation and the parallel Python track, with explicit boundaries for later stages. |
-| **Tool Library** | Understand what tools do, when to use them, how to install them, safe examples, limitations, and alternatives. |
-| **Learning Resources** | Find courses, websites, videos, official documentation, CTFs, and guided labs. |
-| **Learning Paths** | Follow a sensible sequence from foundations into a chosen security specialty. |
-| **Club Hub** | Find ethics and safety rules, project ideas, contribution guidance, and handover information. |
+| **Start Here** | Direct a visitor to the right part of the guide. |
+| **Curriculum** | Define the CINS stage sequence and show published versus planned curriculum. |
+| **Tool Library** | Explain individual tools, prerequisites, safe use, limitations, and official sources. |
+| **Learning Resources** | Catalogue external courses, websites, videos, documentation, labs, and communities by subject. |
+| **Club Hub** | Explain safety, contribution, content-quality, and handover rules. |
 
-The guide covers both sides of security: **assess and test** as well as **protect, detect, investigate, respond, and recover**.
+The curriculum is the only source of truth for learning progression. Resource pages are organised by subject, not by a competing global roadmap. Each resource is listed once in its primary location and carries a **CINS stage-fit** label. Cross-stage resources specify which sections fit which stages.
 
 ## How to use the guide
 
-1. Start with [Start Here](docs/start-here/index.md) if you are new.
-2. Follow the [Stage 0/1 curriculum](docs/curriculum/index.md) and [its curated resources](docs/resources/stage-0-and-1.md).
-3. Use [Learn & Practise](docs/resources/index.md) to find learning material and labs.
-4. Use the [Tool Library](docs/tools/index.md) when you need to understand a particular tool.
-5. Follow a [Learning Path](docs/learning-paths/index.md) instead of trying to learn every domain at once.
-6. Read the [Safety and Ethics Rules](docs/club/safety-and-ethics.md) before using security tools.
+1. If you are new, open [Start Here](docs/start-here/index.md).
+2. Use the [Curriculum](docs/curriculum/index.md) to understand the CINS stages.
+3. Browse [Learning Resources](docs/resources/index.md) by subject.
+4. Use the [Tool Library](docs/tools/index.md) when you need to understand a specific tool.
+5. Read the [Safety and Ethics Rules](docs/club/safety-and-ethics.md) before working with security labs or tools.
 
-## Content quality labels
+## Content quality
 
-We will use explicit review labels rather than pretending every page is always current:
+Resource and tool pages should distinguish between:
+- **Link checked:** the official destination was opened.
+- **Content reviewed:** a contributor checked the description against reliable sources.
+- **Lab verified:** the described lab or setup was independently completed or checked in an authorized environment.
+- **Needs review:** an update, access change, or possible error has been reported.
+- **Archived:** retained for reference but no longer recommended as current.
 
-- **Draft** — being written; not yet checked by a second contributor.
-- **Link checked** — the cited source link was opened, but the content or commands may not have been tested.
-- **Reviewed** — a contributor checked the technical claims against reliable sources.
-- **Lab verified** — the stated lab was completed or its setup was independently checked in a documented, authorized environment.
-- **Needs review** — an update or concern has been reported.
-- **Archived** — kept for historical context but no longer recommended for current use.
+A link check is not a claim that a course was completed or a command was tested.
 
-A review date is not a guarantee that a third-party tool has not changed since then.
+## Safety
 
-## Safety first
+Only test systems that you own or for which you have explicit permission. Prefer deliberately designed training environments and local labs. Do not publish secrets, personal information, stolen data, or harmful payloads.
 
-Only test systems that you own or for which you have explicit permission. Prefer intentionally vulnerable training labs and local test environments. Do not use this guide to access accounts, networks, devices, or data without authorization. Do not publish secrets, personal information, stolen data, or harmful payloads.
-
-Read the complete [Safety and Ethics Rules](docs/club/safety-and-ethics.md).
+Read [Safety and Ethics](docs/club/safety-and-ethics.md) before using security tools or labs.
 
 ## Contributing
 
-You do not need to be an expert to improve this project. You can report a broken link, suggest a learning resource, correct a typo, improve a beginner explanation, or submit a reviewed technical page.
+You do not need to be an expert to improve the guide. You can report a broken link, suggest a resource, correct a typo, clarify a beginner explanation, or submit a carefully sourced technical page.
 
-Start with [CONTRIBUTING.md](CONTRIBUTING.md). Proposed changes are reviewed before they become part of the main guide.
+Start with [CONTRIBUTING.md](CONTRIBUTING.md) and the [CINS content standards](docs/club/content-standards.md). Proposed changes are reviewed before they become part of the published guide.
 
 ## Technology
 
-The content is stored in ordinary Markdown files so it can be read, edited, backed up, and moved to another documentation platform. The site is built with [Zensical](https://zensical.org/docs/) and is designed for publication through GitHub Pages.
+The content is stored in portable Markdown files. The site is built with [Zensical](https://zensical.org/docs/) and published through GitHub Pages. The Zensical version is pinned in `requirements.txt`; upgrades are deliberate and should be tested before merging.
 
-The Zensical version is pinned in `requirements.txt` to avoid unreviewed build changes. Upgrade it deliberately after checking its release notes and confirming that the site still builds.
+## Current focus
 
-## Current project stage
-
-The current milestone is to make the common foundation reliable: Stage 0 orientation, Stage 1 computer fundamentals, the parallel Python track, and a curated resource map. Specialist tool entries and advanced learning paths will be added in verified batches. The visual theme is intentionally frozen; future effort is focused on learning quality, accuracy, and maintainability.
+The current content focus is to keep the Stage 0/1 curriculum clear, consolidate external resources without duplicates, and add tool entries in carefully reviewed batches. The visual theme is frozen; future changes should focus on learning quality, accuracy, accessibility, and maintainability.
