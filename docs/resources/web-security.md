@@ -1,79 +1,84 @@
-# Web and API Security Resources
+# Web & API Security Resources
 
-Web security starts with understanding how browsers, servers, and applications communicate. Learn HTTP before attempting vulnerability labs.
+> **CINS stage fit:** After Stage 2 — Internet and Web fundamentals. Specialist web-security material belongs after learners understand HTTP, browser behavior, sessions, and basic databases. A numbered specialist stage has not yet been assigned in the published curriculum.
 
-## Learn the fundamentals
+This page is the canonical home for web and API security resources, including the relevant learning platforms and deliberately vulnerable applications.
+
+## Guided learning
 
 ### PortSwigger Web Security Academy
 
-- **Type:** Written learning material and interactive labs
-- **Level:** Beginner to advanced
-- **Best for:** HTTP, authentication, access control, injection, cross-site scripting, server-side request forgery, API testing, and other web-security topics.
-- **Access:** PortSwigger describes the Academy as free, including its learning materials and interactive labs. Burp Suite product editions have separate capabilities and pricing.
-- **Suggested route:** HTTP basics → authentication → access control → common vulnerabilities → API testing → advanced topics.
-- **Link:** [Web Security Academy](https://portswigger.net/web-security)
-- **Tool documentation:** [Burp Suite documentation](https://portswigger.net/burp/documentation)
-- **Review state:** Official pages checked on 31 October 2026; individual lab completion has not been tested by this project.
+> **Level:** Beginner to advanced · **Type:** Written lessons and interactive labs
 
-## Authoritative testing references
+Covers HTTP, authentication, access control, injection, cross-site scripting, server-side request forgery, API testing, and other web-security topics.
+
+- **CINS stage fit:** After Stage 2 — web-security specialization.
+- **Access:** PortSwigger describes the Academy learning material and labs as free. Burp Suite product editions have separate capabilities and pricing.
+- **Suggested topics:** HTTP basics, authentication, access control, common vulnerabilities, API testing, then advanced topics. Follow the learner's prerequisites rather than trying to complete everything at once.
+- **Official resource:** [Web Security Academy](https://portswigger.net/web-security)
+- **Tool documentation:** [Burp Suite documentation](https://portswigger.net/burp/documentation)
+- **Review state:** Official pages checked 31 October 2026; CINS has not completed every lab.
+
+## Testing and secure-development references
 
 ### OWASP Web Security Testing Guide (WSTG)
 
-- **Type:** Open testing methodology and reference guide
-- **Level:** Intermediate; useful as a reference after HTTP and web fundamentals
-- **Best for:** Structuring web-application security tests and writing consistent findings.
-- **Version note:** OWASP lists version 4.2 as the stable release while version 5.0 is under development. Do not confuse the development/latest content with a stable release.
+> **Level:** Intermediate · **Type:** Testing methodology and reference guide
+
+A structured reference for web-application security testing and consistent reporting.
+
+- **CINS stage fit:** After Stage 2 — use after HTTP and web fundamentals.
+- **Version note:** OWASP listed version 4.2 as the stable release while version 5.0 was under development when checked. Confirm the current release status before citing a specific test case.
 - **Stable guide:** [WSTG v4.2](https://owasp.org/www-project-web-security-testing-guide/)
 - **Project repository:** [OWASP WSTG on GitHub](https://github.com/OWASP/wstg)
-- **Review state:** Project release status checked on 31 October 2026.
+- **Review state:** Project release status checked 31 October 2026.
 
 ### OWASP Cheat Sheet Series
 
-- **Type:** Secure-development reference
-- **Level:** Beginner to advanced, depending on topic
-- **Best for:** Practical defensive guidance for developers and application-security learners.
-- **Link:** [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
-- **Review state:** Official project link checked; each individual cheat sheet should be reviewed for its topic and update date.
+> **Level:** Beginner to advanced, depending on topic · **Type:** Secure-development reference
 
-### OWASP API Security
+Developer-oriented guidance for implementing and reviewing security controls.
 
-- **Type:** API security knowledge and risk reference
-- **Level:** Intermediate
-- **Best for:** Understanding API-specific risks and designing security tests and controls.
-- **Link:** [OWASP API Security Project](https://owasp.org/www-project-api-security/)
-- **Review state:** Official project link checked.
+- **CINS stage fit:** Reference — useful during later web-security and secure-development study.
+- **Official resource:** [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
+- **Review state:** Official project link checked; individual cheat sheets should be checked for their topic and update date.
 
-## Safe practice applications
+### OWASP API Security Project
+
+> **Level:** Intermediate · **Type:** API security knowledge and risk reference
+
+Explains API-specific risks and supports security design and testing.
+
+- **CINS stage fit:** After Stage 2 — API-security specialization.
+- **Official resource:** [OWASP API Security Project](https://owasp.org/www-project-api-security/)
+- **Review state:** Official project page checked 31 October 2026.
+
+## Deliberately vulnerable learning applications
 
 ### OWASP Juice Shop
 
-- **Type:** Intentionally vulnerable training application
-- **Level:** Beginner to advanced
-- **Best for:** Practising web-application security in a deliberately vulnerable environment.
+> **Level:** Beginner to advanced, depending on the challenge · **Type:** Intentionally vulnerable web application
+
+A training application designed for learning about web-application security.
+
+- **CINS stage fit:** After Stage 2 — authorized web-security lab.
 - **Safety:** Run it locally or use an explicitly authorized training instance. Do not expose a vulnerable deployment to the public internet.
-- **Link:** [OWASP Juice Shop project](https://owasp.org/www-project-juice-shop/)
-- **Review state:** Official project page checked.
+- **Official resource:** [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)
+- **Review state:** Official project page checked 31 October 2026.
 
 ### Damn Vulnerable Web Application (DVWA)
 
-- **Type:** Intentionally vulnerable web application
-- **Level:** Beginner to intermediate
-- **Best for:** Introductory web vulnerability exercises in a controlled local lab.
+> **Level:** Beginner to intermediate · **Type:** Intentionally vulnerable web application
+
+A deliberately vulnerable PHP/MySQL application for controlled web-security learning.
+
+- **CINS stage fit:** After Stage 2 — introductory web-security lab.
 - **Safety:** Keep the installation isolated and never deploy it as a public-facing website.
-- **Link:** [DVWA official repository](https://github.com/digininja/DVWA)
-- **Review state:** Official source repository checked.
+- **Official source:** [DVWA repository](https://github.com/digininja/DVWA)
+- **Review state:** Official source repository checked 31 October 2026.
 
-## Learn these concepts first
+## Important tool distinction
 
-- HTTP methods, status codes, headers, and request bodies.
-- Cookies, sessions, authentication, and authorization.
-- HTML forms and browser developer tools.
-- Same-origin policy and browser security boundaries.
-- Databases and basic SQL.
-- How servers validate input and enforce access control.
+Burp Suite Community Edition and Professional Edition do not have identical capabilities. Tool pages must label edition-specific features and current pricing accurately instead of assuming every learner has Professional.
 
-## Tool note
-
-Burp Suite Community Edition and Professional Edition do not have identical capabilities. Label edition-specific features and pricing accurately instead of assuming every learner has Professional.
-
-Practice only against the Academy, local training applications, or targets for which you have explicit authorization.
+Only use the Academy, local training applications, or targets for which you have explicit authorization.
