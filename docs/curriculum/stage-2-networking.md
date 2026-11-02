@@ -55,6 +55,7 @@ A network lets devices exchange information and share services. A laptop reachin
 - **Network interface:** the hardware or virtual interface through which a device connects, such as Ethernet or Wi-Fi.
 - **Network types:** PAN (personal), LAN (local), WLAN (wireless local), and WAN (wide-area). The Internet is a global network of interconnected networks; it is not the same thing as the Web.
 - **Physical and logical topology:** the physical connections and the logical paths or relationships used for communication.
+- **Common physical/logical layouts:** star (devices connect through a central switch or access point), point-to-point (a direct link between two endpoints), and mesh (multiple interconnections that can provide alternate paths). A logical star can be built over physical infrastructure that is more complex; describe the topology being discussed.
 - **Network performance:** bandwidth/capacity, throughput, latency, jitter, and packet loss. These describe different properties; high advertised bandwidth does not guarantee low latency or a stable connection.
 - **Standards and protocols:** agreed rules that allow equipment and software from different vendors to communicate.
 
@@ -213,6 +214,14 @@ For many familiar IPv4 subnets, one address identifies the network and one is th
 
 For example, **192.168.10.21/24** and **192.168.10.45/24** are in the same **192.168.10.0/24** subnet. **192.168.20.8/24** is in a different subnet. The prefix is what makes that comparison possible.
 
+For a conventional **192.168.10.0/24** IPv4 subnet:
+
+- **192.168.10.0** is the network address.
+- **192.168.10.255** is the directed broadcast address.
+- **192.168.10.1–192.168.10.254** are the conventional host addresses available for assignment.
+
+This is a worked example for a normal subnet, not a universal rule for every prefix. Point-to-point **/31** networks are a special case and do not reserve a directed broadcast address in the usual way.
+
 At this stage, understand what a prefix means and be comfortable with common examples such as **/24**. Detailed subnet design and repeated manual subnet calculations can be developed later when they are needed.
 
 ### IPv6 fundamentals
@@ -276,6 +285,7 @@ DNS does not mean "the Internet". An application may use cached data, a local na
 - A **default gateway** is the next-hop router a host uses when it has no more specific route for a destination.
 - A **routing table** contains destination prefixes and the information used to choose an outgoing interface and/or next hop.
 - A router examines the destination IP address, consults its forwarding information, and sends the packet towards the next hop.
+- When several routing-table entries match a destination, routers normally use **longest-prefix match**: the most specific matching route (the one with the most leading network bits) wins. A default route such as **0.0.0.0/0** is the least-specific fallback when no more-specific route matches.
 - Routers do not need to know the complete end-to-end path. Each router makes a forwarding decision for the next step.
 - **Traceroute** tools infer parts of a path using responses to probes; results can be incomplete because networks may filter or deprioritise those probes.
 
