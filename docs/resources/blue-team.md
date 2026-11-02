@@ -1,143 +1,149 @@
-# Blue Team, SOC, and Defensive Security Resources
+# Blue Team, SOC & Defensive Security Resources
 
-Blue team is not simply "the opposite of hacking". It includes preventing incidents, monitoring systems, investigating evidence, responding to threats, and improving resilience.
+> **CINS stage fit:** After Stage 2 foundations. The resources on this page support later defensive-security and SOC specialisation; exact numbered stage assignments will be made when those later curriculum stages are written.
 
-A beginner can start blue-team learning without running a SIEM or installing a large security platform. Begin with logs, networking, Windows/Linux basics, and guided investigations.
+Blue team includes prevention, monitoring, detection, investigation, incident response, and recovery. Beginners do not need to install a SIEM first. Understand operating systems, networking, logs, and security concepts before deploying large platforms.
 
-## Start with guided learning
+## Guided defensive learning
 
 ### TryHackMe — Cyber Security 101
 
-- **Type:** Broad beginner learning path
-- **Level:** Beginner
-- **Best for:** First exposure to both offensive and defensive security. It includes defensive-security introductions, SOC fundamentals, digital-forensics fundamentals, incident-response fundamentals, logs, SIEM, IDS, and defensive tools.
-- **Why it matters:** This path helps newcomers see cybersecurity as a complete field rather than a penetration-testing-only activity.
-- **Link:** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
-- **Review state:** Current path contents checked on 31 October 2026.
+> **Level:** Beginner · **Type:** Broad guided learning path
+
+Introduces both offensive and defensive security. Its defensive coverage includes SOC fundamentals, digital-forensics and incident-response basics, logs, SIEM, IDS, and defensive tools.
+
+- **CINS stage fit:** After Stage 2 foundations — broad cybersecurity introduction. Use the relevant defensive sections when the later CINS cybersecurity-core material is available.
+- **Official resource:** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
+- **Review state:** Current path contents checked 31 October 2026.
 
 ### TryHackMe — SOC Level 1
 
-- **Type:** Guided role-oriented learning path
-- **Level:** Beginner to intermediate
-- **Best for:** SOC workflows, alert triage, log analysis, SIEM, endpoint monitoring, phishing analysis, and incident handling.
-- **Link:** [SOC Level 1](https://tryhackme.com/path/outline/blueteam)
-- **Review state:** Current path checked on 31 October 2026.
+> **Level:** Beginner to intermediate · **Type:** Role-oriented learning path
 
-**Keep paths current:** TryHackMe retired its older Cyber Defence path and refreshed SOC Level 1 in February 2026. Do not copy old roadmaps that tell learners to follow the retired "Cyber Defence" path. Use current SOC Level 1 / SOC Level 2 pages and check the platform's change notices.
+Covers SOC workflows, alert triage, log analysis, SIEM, endpoint monitoring, phishing analysis, and incident handling.
+
+- **CINS stage fit:** After Stage 2 — SOC specialisation; basic networking, Windows/Linux, and log knowledge are helpful.
+- **Official resource:** [SOC Level 1](https://tryhackme.com/path/outline/blueteam)
+- **Review state:** Current path checked 31 October 2026.
+
+**Path freshness:** TryHackMe retired its older Cyber Defence path and refreshed SOC Level 1 in February 2026. Older roadmaps may still refer to the retired path. Check the current provider page and change notices before recommending a path.
 
 ### LetsDefend — SOC Analyst Learning Path
 
-- **Type:** Guided SOC learning and simulated alert investigations
-- **Level:** Beginner to intermediate
-- **Best for:** Learning alert investigation, event analysis, phishing analysis, incident management, and SOC workflows.
-- **Access:** Some paths or features may require paid membership. Check access before making it a required club assignment.
-- **Link:** [SOC Analyst Learning Path](https://app.letsdefend.io/path/soc-analyst-learning-path)
-- **Review state:** Provider path and help page checked on 31 October 2026; the project has not completed the path.
+> **Level:** Beginner to intermediate · **Type:** Guided SOC learning and simulated alert investigations
 
-## Practise defensive investigations
+Covers alert investigation, event analysis, phishing analysis, incident management, and SOC workflows.
+
+- **CINS stage fit:** After Stage 2 and introductory log analysis — SOC specialisation.
+- **Access:** Some paths or features may require paid membership. Check current access before recommending it as a club resource.
+- **Official resource:** [SOC Analyst Learning Path](https://app.letsdefend.io/path/soc-analyst-learning-path)
+- **Review state:** Provider path and help page checked 31 October 2026; CINS has not completed the path.
+
+## Defensive investigation platforms
 
 ### CyberDefenders
 
-- **Type:** Browser-based blue-team labs
-- **Level:** Beginner to advanced, depending on the lab
-- **Best for:** DFIR, threat hunting, threat intelligence, endpoint forensics, cloud forensics, and malware-analysis scenarios.
-- **Access:** The platform advertises free starting access; check the account and lab-specific conditions.
-- **Why it is useful:** Many labs can be attempted in a browser without building a full SOC environment first.
-- **Link:** [CyberDefenders Blue Team Labs](https://cyberdefenders.org/blue-team-labs/)
-- **Review state:** Official platform description checked on 31 October 2026.
+> **Level:** Beginner to advanced, depending on the lab · **Type:** Browser-based defensive investigation platform
+
+Covers DFIR, threat hunting, threat intelligence, endpoint forensics, cloud forensics, and malware-analysis scenarios.
+
+- **CINS stage fit:** After Stage 2 — defensive investigation and DFIR learning; choose labs by their stated prerequisites.
+- **Access:** The provider advertises free starting access; account and lab conditions may vary.
+- **Official resource:** [CyberDefenders Blue Team Labs](https://cyberdefenders.org/blue-team-labs/)
+- **Review state:** Official platform description checked 31 October 2026.
 
 ### Blue Team Labs Online (BTLO)
 
-- **Type:** Investigation challenges and downloadable evidence exercises
-- **Level:** Intermediate; some challenges may be approachable earlier
-- **Best for:** Practising investigations using phishing emails, logs, packet captures, memory dumps, incident-response scenarios, and forensic artifacts.
-- **Access:** The provider currently describes free challenges and a paid PRO subscription for investigation labs. Pricing and inclusions can change.
-- **Important:** BTLO itself says it is designed for defenders who already have some experience with security tools and investigations. Use it after basic log and network skills, not as the very first lesson.
-- **Link:** [Blue Team Labs Online](https://blueteamlabs.online/)
-- **Review state:** Provider FAQ and platform page checked on 31 October 2026.
+> **Level:** Intermediate · **Type:** Defensive investigation challenges
 
-## Tools and platforms to learn after the fundamentals
+Uses sample evidence such as phishing emails, logs, packet captures, memory dumps, and incident-response artifacts.
+
+- **CINS stage fit:** After Stage 2 and basic security-tool/log familiarity — intermediate defensive investigation.
+- **Access:** The provider describes free challenges and paid PRO investigations; current pricing and inclusions may change.
+- **Readiness note:** The provider says the platform is designed for defenders who already have some experience with security tools and investigations.
+- **Official resource:** [Blue Team Labs Online](https://blueteamlabs.online/)
+- **Review state:** Provider FAQ and platform page checked 31 October 2026.
+
+## Defensive platforms and tools
 
 ### Wazuh
 
-- **Type:** Open-source security monitoring platform with SIEM/XDR capabilities
-- **Level:** Intermediate
-- **Best for:** Endpoint telemetry, file-integrity monitoring, security event collection, vulnerability detection, and investigation workflows.
+> **Level:** Intermediate · **Type:** Open-source security monitoring platform with SIEM/XDR capabilities
+
+Supports endpoint telemetry, file-integrity monitoring, security event collection, vulnerability detection, and investigation workflows.
+
+- **CINS stage fit:** After Stage 2 — endpoint monitoring and SOC learning.
 - **Start here:** [Wazuh Getting Started](https://documentation.wazuh.com/current/getting-started/index.html)
-- **Hardware reality:** The current all-in-one quickstart recommends approximately 4 vCPU, 8 GiB RAM, and 50 GB storage for a small deployment of 1–25 agents with 90 days of indexed data. This is not a lightweight first tool for every student laptop.
-- **Link:** [Wazuh Quickstart](https://documentation.wazuh.com/current/quickstart.html)
-- **Review state:** Official documentation and quickstart requirements checked on 31 October 2026; this project has not deployed it.
+- **Hardware note:** The all-in-one quickstart checked by this project recommended approximately 4 vCPU, 8 GiB RAM, and 50 GB storage for a small deployment. Review current requirements before installing; this is not lightweight software for every student laptop.
+- **Official quickstart:** [Wazuh Quickstart](https://documentation.wazuh.com/current/quickstart.html)
+- **Review state:** Official documentation and requirements checked 31 October 2026; CINS has not deployed it.
 
 ### Security Onion
 
-- **Type:** Network security monitoring and analysis platform
-- **Level:** Intermediate to advanced
-- **Best for:** Network visibility, alert investigation, hunting, and security operations.
-- **Prerequisites:** Networking knowledge and a suitably resourced, isolated lab. Review official hardware and deployment requirements before installing.
-- **Link:** [Security Onion Documentation](https://docs.securityonion.net/)
-- **Review state:** Official documentation link checked; deployment not tested by this project.
+> **Level:** Intermediate to advanced · **Type:** Network security monitoring and analysis platform
 
-## Frameworks and authoritative references
+Supports network visibility, alert investigation, hunting, and security operations.
+
+- **CINS stage fit:** After Stage 2 networking foundations — network-monitoring specialisation.
+- **Prerequisites:** Networking knowledge and a suitably resourced, isolated lab. Review the official hardware and deployment requirements before installing.
+- **Official resource:** [Security Onion Documentation](https://docs.securityonion.net/)
+- **Review state:** Official documentation link checked; deployment has not been tested by CINS.
+
+## Defensive frameworks and authoritative references
 
 ### MITRE ATT&CK
 
-- **Type:** Knowledge base of adversary tactics and techniques
-- **Level:** Beginner to advanced
-- **Best for:** Describing observed adversary behavior in a shared vocabulary and mapping detection coverage. ATT&CK is a reference knowledge base, not a complete training course.
-- **Link:** [MITRE ATT&CK](https://attack.mitre.org/)
+> **Level:** Beginner to advanced · **Type:** Adversary-behavior knowledge base
+
+Provides a shared vocabulary for describing observed adversary behavior and mapping detection coverage. It is a reference knowledge base, not a complete training course.
+
+- **CINS stage fit:** Reference — useful in later defensive, threat-intelligence, and security-engineering study.
+- **Official resource:** [MITRE ATT&CK](https://attack.mitre.org/)
 
 ### MITRE D3FEND
 
-- **Type:** Defensive countermeasure knowledge graph
-- **Level:** Intermediate to advanced
-- **Best for:** Exploring defensive techniques and how countermeasures relate to adversary techniques.
-- **Important:** D3FEND provides a vocabulary and relationship model; it does not automatically prescribe or rank the best control for a particular organization.
-- **Link:** [MITRE D3FEND](https://d3fend.mitre.org/)
+> **Level:** Intermediate to advanced · **Type:** Defensive countermeasure knowledge graph
+
+Provides a vocabulary and relationship model for exploring defensive techniques. It does not automatically prescribe or rank the best control for a particular organization.
+
+- **CINS stage fit:** Reference — useful in later defensive engineering.
+- **Official resource:** [MITRE D3FEND](https://d3fend.mitre.org/)
 
 ### NIST Cybersecurity Framework 2.0
 
-- **Type:** Cybersecurity risk-management framework
-- **Level:** Beginner to advanced
-- **Best for:** Connecting security work across Govern, Identify, Protect, Detect, Respond, and Recover.
-- **Link:** [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+> **Level:** Beginner to advanced · **Type:** Cybersecurity risk-management framework
+
+Connects security outcomes across Govern, Identify, Protect, Detect, Respond, and Recover.
+
+- **CINS stage fit:** Reference — useful across later curriculum stages and for understanding security as a complete discipline.
+- **Official resource:** [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 
 ### NIST SP 800-61 Revision 3
 
-- **Type:** Incident-response guidance
-- **Level:** Intermediate to advanced
-- **Best for:** Understanding how incident response connects with cybersecurity risk management and the CSF 2.0.
-- **Version note:** Rev. 3 was finalized in April 2025 and supersedes Rev. 2. Prefer Rev. 3 for current guidance.
-- **Link:** [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final)
+> **Level:** Intermediate to advanced · **Type:** Incident-response guidance
+
+Explains how incident response connects with cybersecurity risk management and the CSF 2.0.
+
+- **CINS stage fit:** After Stage 2 — incident-response reference.
+- **Version note:** Revision 3 was finalized in April 2025 and supersedes Revision 2.
+- **Official resource:** [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final)
 
 ### Microsoft Learn — Security Operations Analyst (SC-200)
 
-- **Type:** Role-based training and certification preparation
-- **Level:** Intermediate
-- **Best for:** Microsoft Sentinel, Defender XDR, KQL, threat hunting, investigation, and response.
+> **Level:** Intermediate · **Type:** Role-based training and certification preparation
+
+Covers Microsoft Sentinel, Defender XDR, KQL, threat hunting, investigation, and response in Microsoft environments.
+
+- **CINS stage fit:** After Stage 2 — Microsoft security-operations specialisation.
 - **Prerequisites:** Windows, networking, cloud, and security fundamentals are helpful.
-- **Access:** Microsoft Learn training material is available online; the certification exam is paid and its price varies by country.
-- **Link:** [SC-200 certification and learning resources](https://learn.microsoft.com/en-us/credentials/exams/sc-200/)
-- **Review state:** Current Microsoft Learn page checked on 31 October 2026.
+- **Access:** Microsoft Learn training is online; the certification exam is paid and the price varies by country.
+- **Official resource:** [SC-200 certification and learning resources](https://learn.microsoft.com/en-us/credentials/exams/sc-200/)
+- **Review state:** Current Microsoft Learn page checked 31 October 2026.
 
-## A first defensive practice project
+## Related subject pages
 
-Use a supplied sample log or packet capture—not another person's live traffic.
+- For forensic tools and evidence-handling references, see [Digital Forensics](digital-forensics.md).
+- For cloud-specific resources, see [Cloud & Containers](cloud-and-containers.md).
+- For the video educator 13Cubed, see [YouTube Channels](video-channels.md).
 
-1. Record the source and time range of the evidence.
-2. Identify what appears unusual.
-3. Separate observed facts from assumptions.
-4. Explain possible impact and what additional evidence is needed.
-5. Recommend a proportionate defensive action.
-6. Write a short incident note another analyst could understand.
-
-## Suggested blue-team learning order
-
-1. Networking and operating-system fundamentals.
-2. Logs, timestamps, users, processes, and basic Windows/Linux administration.
-3. TryHackMe Cyber Security 101 defensive modules.
-4. A small guided SOC alert-investigation exercise.
-5. TryHackMe SOC Level 1 or LetsDefend.
-6. CyberDefenders or BTLO challenges.
-7. Only then deploy a local SIEM or network-monitoring platform if the hardware and lab environment are suitable.
-
-The club should later build separate paths for SOC analysis, detection engineering, threat hunting, DFIR, endpoint security, cloud defense, and security architecture.
+Each external platform is described in its primary subject location only. Related pages link here rather than repeat its full entry.
