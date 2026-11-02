@@ -4,12 +4,12 @@ This page is the **single source of truth for the CINS learning structure**. It 
 
 ## Curriculum map
 
-| Stage | Scope | Status |
+| Stage | Scope | Site availability |
 |---|---|---|
-| **Stage 0 — Orientation and Cybersecurity Awareness** | What cybersecurity covers, security domains, ethics, authorization, safe learning, personal security, and career awareness. | Published |
-| **Stage 1 — Computer Fundamentals** | Computer components, data representation, software, files, processes, virtualisation concepts, and troubleshooting concepts. | Published |
-| **Parallel track — Python** | Introductory computational thinking and Python, taught alongside Stage 1 and continued in later stages. | Published |
-| **Stage 2 — Technology Foundations** | Networking first, followed by Linux, Windows, and Internet/Web fundamentals. | Sequence agreed; detailed curriculum not yet published |
+| **Stage 0 — Orientation and Cybersecurity Awareness** | What cybersecurity covers, security domains, ethics, authorization, safe learning, personal security, and career awareness. | Published on this site |
+| **Stage 1 — Computer Fundamentals** | Computer components, data representation, software, files, processes, virtualisation concepts, and troubleshooting concepts. | Published on this site |
+| **Parallel track — Python** | Introductory computational thinking and Python, taught alongside Stage 1 and continued in later stages. | Published on this site |
+| **Stage 2 — Technology Foundations** | Networking first, followed by Linux, Windows, and Internet/Web fundamentals. | Sequence agreed; detailed pages not published |
 | **Stage 3 — Cybersecurity Core** | Shared cybersecurity concepts that connect foundations to security work. | Planned |
 | **Stage 4 — Domain Exploration** | Guided exposure to offensive and defensive domains, investigation, engineering, and operations. | Planned |
 | **Stage 5 — Specialisation and Advanced Study** | Deeper study in selected fields based on prerequisites and learner interest. | Planned |
