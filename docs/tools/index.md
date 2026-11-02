@@ -8,7 +8,7 @@ A tool is useful only when you understand the problem it helps solve. This libra
 
 Do not require Kali Linux, Nmap, Burp Suite, a SIEM, or an exploitation framework to pass the first two stages. Tool installation begins only when a later curriculum module explains why the tool is needed and provides a safe, authorized lab environment.
 
-See the [Stage 0/1 curriculum](../curriculum/index.md) and [Stage 0/1 resource directory](../resources/stage-0-and-1.md).
+See the [Stage 0/1 curriculum](../curriculum/index.md) and [Foundations & Computing resources](../resources/foundations.md).
 
 ## Planned tool domains
 
@@ -31,7 +31,7 @@ The catalogue is intentionally broad enough to cover offensive and defensive sec
 | Wireless security | Aircrack-ng and platform-specific diagnostic tools | Understand and assess wireless security only in owned/authorized labs |
 | Cryptography and secure development | OpenSSL, Semgrep, language-native test tools | Understand cryptographic use and find coding weaknesses |
 
-This is a research queue, not a statement that every tool is suitable for beginners or currently verified. Some tools are dual-use and require stronger authorization, lab isolation, and mentor review.
+This is a research queue, not a statement that every tool is suitable for beginners or currently verified. The [Curriculum](../curriculum/index.md) defines when a tool belongs in a learner's progression; the tool library does not create a separate sequence. Some tools are dual-use and require stronger authorization, lab isolation, and mentor review.
 
 ## What every tool page must contain
 
@@ -45,7 +45,7 @@ Every substantial entry must answer:
 6. How can it be explored safely in a local or explicitly authorized lab?
 7. What do common options mean, and how should output be interpreted?
 8. What are its limitations, false positives, maintenance status, and alternatives?
-9. How does it support assessment **and/or** defense?
+9. Which security workflow does it support: assessment, protection, detection, investigation, response, or recovery?
 10. When was the information checked, and what exactly was verified?
 
 ## Quality and safety rules
