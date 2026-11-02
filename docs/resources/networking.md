@@ -1,64 +1,55 @@
 # Networking Resources
 
-Networking is foundational to penetration testing, SOC work, cloud security, forensics, and almost every other security specialty. Learn how networks work before relying on scanners.
+> **CINS stage fit:** Stage 2 — Networking. The Stage 2 sequence is agreed, but the detailed networking curriculum has not yet been published.
 
-## Start with a structured course
+This page is the canonical location for networking courses and cross-stage resources that include networking material. It does not define a second CINS learning sequence; use the [Curriculum](../curriculum/index.md) for the official stage structure.
+
+## Cross-stage resource: introductory computing, security, and networking
+
+### TryHackMe — Pre Security
+
+> **CINS stage fit:** Stage 0, Stage 1, and Stage 2 — selected sections only  
+> **Level:** Beginner · **Type:** Guided learning path with interactive rooms
+
+This path spans several subjects. Use only the sections that match the current CINS stage:
+
+- **Stage 0:** the introductory cybersecurity material, including the introduction to the field and its offensive/defensive domains.
+- **Stage 1:** the Computer Fundamentals material that supports the CINS computer-fundamentals topics.
+- **Stage 2:** use networking-related material when the detailed CINS Stage 2 networking curriculum is published and the relevant sections are mapped.
+
+Do not use the platform's overall path order as a replacement for CINS progression. Defer operating-system administration and web material until those subjects are introduced in the CINS curriculum.
+
+- **Access:** Room-level free/paid access can vary; check the current platform page before relying on a room.
+- **Official resource:** [TryHackMe Pre Security](https://tryhackme.com/path/outline/presecurity)
+- **Review state:** Current path outline checked 31 October 2026. TryHackMe announced a Pre Security refresh on 18 February 2026; CINS has not completed the full path.
+
+## Networking course
 
 ### Cisco Networking Academy — Networking Basics
 
-- **Type:** Self-paced course
-- **Level:** Beginner
-- **Suggested time:** Cisco lists approximately 22 hours.
-- **Prerequisites:** None listed by Cisco.
-- **Best for:** Network devices, media, protocols, IP addressing, basic LANs, and observing how data moves through a network.
-- **Why it is here:** It offers a coherent starting sequence rather than isolated tool demonstrations.
-- **Access:** Cisco currently lists the course as free. Account and enrollment steps may still be required.
-- **Link:** [Networking Basics](https://www.netacad.com/courses/networking-basics)
-- **Review state:** Provider course details checked on 31 October 2026; this project has not completed the whole course.
+> **CINS stage fit:** Stage 2 — Networking  
+> **Level:** Beginner · **Type:** Self-paced course
 
-## Video learning
+Covers network devices, media, protocols, IP addressing, basic LANs, and how data moves through a network.
 
-### Bitten Tech — Networking for Hackers
+- **Prerequisites:** Cisco lists no prerequisites.
+- **Access:** Cisco listed the course as free when checked; account and enrollment steps may apply.
+- **Official resource:** [Networking Basics](https://www.netacad.com/courses/networking-basics)
+- **Review state:** Provider course details checked 31 October 2026; CINS has not completed the whole course.
 
-- **Type:** YouTube channel / video series
-- **Level:** Beginner to intermediate, depending on the episode
-- **Best for:** Supplementary networking explanations framed around cybersecurity.
-- **Suggested use:** Use the series to reinforce topics after learning them in a structured course. Pause videos and draw your own diagrams; do not treat a video as a complete syllabus.
-- **Link:** [Bitten Tech YouTube channel](https://www.youtube.com/channel/UC3PsooDxvFG0aEBe4JVtAbg)
-- **Review state:** Channel and the existence of the Networking for Hackers series checked on 31 October 2026; individual videos have not been technically reviewed by this project.
+## Networking video supplements
 
-### NetworkChuck
+Video channels are catalogued once in the [YouTube Channels directory](video-channels.md). For networking-specific viewing, see the **Bitten Tech** and **NetworkChuck** entries there. Individual videos should be chosen by topic and checked for age/version relevance.
 
-- **Type:** YouTube channel
-- **Level:** Beginner to intermediate
-- **Best for:** Engaging introductions to networking, IT certifications, Linux, virtual machines, and cloud topics.
-- **Suggested use:** Use it for motivation and supplementary demonstrations. Verify commands and configuration details against official documentation before using them.
-- **Link:** [NetworkChuck YouTube channel](https://www.youtube.com/@NetworkChuck)
-- **Review state:** Channel page checked on 31 October 2026; individual videos have not been reviewed by this project.
+## Concepts covered in this subject area
 
-## What to learn before Nmap or Wireshark
+- IPv4 addresses and subnet basics.
+- MAC addresses and the role of ARP.
+- DNS and name resolution.
+- TCP versus UDP.
+- Ports and common services.
+- Routing, gateways, and NAT.
+- HTTP and HTTPS.
+- Basic firewall concepts.
 
-1. IPv4 addresses and subnet basics.
-2. MAC addresses and the role of ARP.
-3. DNS and how names resolve to addresses.
-4. TCP versus UDP.
-5. Ports and common services.
-6. Routing, gateways, and NAT.
-7. HTTP and HTTPS.
-8. Basic firewall concepts.
-
-## Practical exercises
-
-- Draw the path from your laptop to a website at a conceptual level.
-- Explain the difference between an IP address and a port.
-- Inspect DNS records for a domain you own or a safe training domain.
-- Open a sample packet capture and identify DNS, TCP, and HTTP/TLS traffic. Do not capture other people's traffic.
-- Explain what a firewall can and cannot infer from a connection.
-
-## Check your understanding
-
-Before moving to scanning, you should be able to explain what an IP address identifies, what a port represents, how DNS helps a client find a service, and the difference between TCP and UDP.
-
-## Next step
-
-Continue to [Linux and command-line resources](linux.md), then learn packet analysis. Only scan systems that you own or are explicitly authorized to test.
+These concepts are useful prerequisites for later network monitoring and security tools. Do not scan or capture traffic from systems or networks without explicit authorization.

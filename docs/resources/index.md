@@ -1,58 +1,52 @@
 # Learning Resources
 
-Tools tell you **what you can use**. Learning resources teach you **what to understand, where to learn it, and how to continue learning**. This directory is a first-class part of the guide.
+This is a **subject-based reference library**, not a second learning roadmap. The [Curriculum](../curriculum/index.md) defines the CINS stage sequence. Use this directory when you need an external course, website, video, official reference, lab, or community for a particular subject.
 
-A good resource is not automatically a good first resource. Check its prerequisites and the CINS stage it belongs to before starting.
+## Browse by subject
 
-## Follow the CINS sequence
+| Subject | What belongs here |
+|---|---|
+| [Foundations & Computing](foundations.md) | Cybersecurity awareness, computer fundamentals, and beginner programming resources. |
+| [Networking](networking.md) | Networking courses and cross-stage resources that include networking topics. |
+| [Linux & Kali](linux.md) | Linux learning resources and specialist-distribution documentation. |
+| [Web & API Security](web-security.md) | Web-security learning, testing references, and deliberately vulnerable applications. |
+| [Blue Team & SOC](blue-team.md) | Defensive security, SOC learning, detection references, and defensive platforms. |
+| [Digital Forensics](digital-forensics.md) | Forensic tools, evidence handling, and incident-investigation references. |
+| [Cloud & Containers](cloud-and-containers.md) | Cloud fundamentals, containers, and platform-security documentation. |
+| [Mobile & Reverse Engineering](mobile-and-reverse-engineering.md) | Mobile security standards and reverse-engineering resources. |
+| [CTFs & Labs](ctf-and-practice.md) | General challenge platforms, CTF calendars, and cross-domain lab directories. |
+| [YouTube Channels](video-channels.md) | Video educators and channels, catalogued once by channel. |
+| [Communities & Careers](communities-and-careers.md) | Professional communities, events, and career-related resources. |
 
-1. **[Stage 0 & 1 foundation resources](stage-0-and-1.md)** — cybersecurity awareness, safety, computer fundamentals, and Python.
-2. **[Networking](networking.md)** — networking courses, channels, protocols, packet analysis, and network fundamentals. This is the next technical foundation after Stage 1.
-3. **[Linux & Kali](linux.md)** — Linux foundations, command-line learning, Kali documentation, and guided labs. Follow the CINS sequence: Networking first, then Linux.
-4. **[Web & API security](web-security.md)** — HTTP, web testing guides, safe vulnerable apps, and interactive labs.
-5. **[Blue team & SOC](blue-team.md)** — security operations, SIEM, alert triage, detection, and defensive frameworks.
-6. **[Digital forensics & incident response](digital-forensics.md)** — evidence handling, memory/disk investigations, DFIR learning, and forensic education.
-7. **[Cloud & containers](cloud-and-containers.md)** — cloud fundamentals, identity, container basics, and platform security references.
-8. **[Mobile & reverse engineering](mobile-and-reverse-engineering.md)** — mobile app security standards and software reverse-engineering education.
-9. **[CTFs & Labs](ctf-and-practice.md)** — beginner challenges, authorized labs, blue-team investigation scenarios, and CTF platforms.
-10. **[YouTube channels](video-channels.md)** — supplementary video educators, with notes about what each channel is best for.
-11. **[Communities & careers](communities-and-careers.md)** — professional communities, career frameworks, and ways to participate responsibly.
+## How CINS stage-fit labels work
 
-## Resource types
+Every resource entry includes a **CINS stage fit** label:
 
-- **Courses:** structured lessons with prerequisites and learning outcomes.
-- **Websites and platforms:** guided learning environments and technical references.
-- **YouTube channels and playlists:** supplementary explanations and demonstrations.
-- **Official documentation:** the primary source for installation, configuration, supported behavior, and product changes.
-- **Labs and CTFs:** controlled learning environments.
-- **Books and standards:** deeper explanations and authoritative reference material.
-- **Communities:** places to ask questions, contribute, and learn with others.
+- **Stage 0 — Orientation**
+- **Stage 1 — Computer Fundamentals**
+- **Stage 1 — Parallel Python Track**
+- **Stage 2 — Networking / Linux / Windows / Internet & Web**
+- **After Stage 2 — Specialist learning**
+- **Reference — Useful across stages**
 
-## How we evaluate a resource
+A label tells you when the resource is relevant to the CINS curriculum. It does not claim that CINS has completed or endorsed the provider's entire course. If a resource spans multiple stages, its entry identifies the relevant sections and what should be deferred.
 
-Each listing should explain:
-- subject and learning outcomes;
-- difficulty and prerequisites;
-- which CINS stage/module it supports;
-- format and language, where known;
-- account, hardware, subscription, or cost requirements;
-- why it is recommended and where it fits in a learning sequence;
-- whether the link, content, or lab information was actually checked.
+## One resource, one full entry
 
-### Review labels
+A course, website, video channel, or lab platform is described in one primary subject page only. Other pages may link to that entry, but should not copy its full description. For example, a cross-stage platform may appear under Networking because that is its main subject entry, while the same platform can still be useful to learners in Stage 0 or Stage 1 when the listed sections are explicitly mapped to those stages.
 
-- **Link checked:** the destination was opened and matched the stated provider/resource.
-- **Content reviewed:** a contributor inspected the learning material and checked that the description is fair.
-- **Lab verified:** a contributor completed the stated lab or independently checked the lab setup.
-- **Needs review:** a user reported a change, broken link, access issue, or possible inaccuracy.
-- **Archived:** retained for context but no longer recommended as a current starting point.
+This prevents the same provider from appearing repeatedly in Foundations, Networking, Linux, and Labs with slightly different descriptions.
 
-A link check is not the same as completing a course. A course listing is not an endorsement of every claim made by the provider.
+## Review labels
 
-## Access and cost
+- **Link checked:** the official destination was opened and matched the named resource.
+- **Content reviewed:** a contributor checked the description against the provider's current material.
+- **Lab verified:** a contributor completed or independently checked the stated lab/setup in an authorized environment.
+- **Needs review:** a change, broken link, access issue, or possible inaccuracy has been reported.
+- **Archived:** retained for reference but no longer recommended.
 
-Free tiers, subscriptions, course names, exam prices, and platform policies change. The page records the access conditions seen during the last review, but the provider's current page is the source of truth. Do not assume that every room, module, lab, certificate, or downloadable artifact is free.
+A link check is not the same as completing a course or testing a command. Access, prices, course names, and provider policies can change; check the official provider page before relying on them.
 
-## Contribute a resource
+## Contributing a resource
 
-Use [the resource-entry template](../templates/resource-entry.md). Prefer official provider links, write an original description, and never copy paid course material or private lab answers into this repository.
+Use the [resource-entry template](../templates/resource-entry.md). Before adding anything, search for its official URL and title so the guide does not acquire a duplicate entry. Follow the [CINS content standards](../club/content-standards.md).

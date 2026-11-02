@@ -1,6 +1,6 @@
 [project]
 site_name = "CINS Cyber Field Guide"
-site_description = "A practical, community-maintained cybersecurity learning hub: foundations, tools, resources, labs, and learning paths."
+site_description = "A practical, community-maintained cybersecurity learning hub: foundations, tools, resources, and curriculum."
 site_url = "https://dhrupalkathi.github.io/cyber-field-guide/"
 repo_url = "https://github.com/Dhrupalkathi/cyber-field-guide"
 repo_name = "CINS Cyber Field Guide"
@@ -13,7 +13,6 @@ nav = [
   "index.md",
   { "Start Here" = [
     "start-here/index.md",
-    "start-here/learning-order.md",
   ] },
   { "Curriculum" = [
     "curriculum/index.md",
@@ -27,10 +26,10 @@ nav = [
   ] },
   { "Learning Resources" = [
     "resources/index.md",
-    { "Stage 0 & 1 — Foundations" = "resources/stage-0-and-1.md" },
+    { "Foundations & Computing" = "resources/foundations.md" },
     { "Networking" = "resources/networking.md" },
     { "Linux & Kali" = "resources/linux.md" },
-    { "Web Security" = "resources/web-security.md" },
+    { "Web & API Security" = "resources/web-security.md" },
     { "Blue Team & SOC" = "resources/blue-team.md" },
     { "Digital Forensics" = "resources/digital-forensics.md" },
     { "Cloud & Containers" = "resources/cloud-and-containers.md" },
@@ -39,13 +38,11 @@ nav = [
     { "YouTube Channels" = "resources/video-channels.md" },
     { "Communities & Careers" = "resources/communities-and-careers.md" },
   ] },
-  { "Learning Paths" = [
-    "learning-paths/index.md",
-  ] },
   { "Club Hub" = [
     "club/index.md",
     "club/safety-and-ethics.md",
     "club/contributing.md",
+    "club/content-standards.md",
   ] },
 ]
 

@@ -1,42 +1,41 @@
 # Mobile Security & Reverse Engineering Resources
 
-Mobile security and reverse engineering are specialist areas. They require operating-system knowledge, application architecture, programming basics, and careful handling of test devices and application files.
+> **CINS stage fit:** After Stage 2 foundations — specialist areas. The exact numbered stage will be assigned when the later CINS curriculum is developed.
+
+Mobile security and reverse engineering require operating-system knowledge, programming fundamentals, application architecture, and careful handling of test devices and software samples.
 
 ## Mobile application security
 
 ### OWASP Mobile Application Security (MAS)
 
-- **Type:** Mobile security standard and testing guidance
-- **Level:** Intermediate to advanced
-- **Best for:** Learning how to assess mobile application security and privacy in a structured way.
-- **What it contains:** MASVS (security verification standard), MASWE (mobile application weakness enumeration), and MASTG (mobile application security testing guide).
-- **Link:** [OWASP Mobile Application Security project](https://owasp.org/projects/mobile-application-security)
-- **Review state:** Official OWASP project page checked on 31 October 2026.
+> **Level:** Intermediate to advanced · **Type:** Mobile security standards and testing guidance
 
-Use the standard to understand what should be assessed, and the testing guide to understand how to conduct authorized tests. Do not treat a checklist as proof that an application is secure.
+The project includes the Mobile Application Security Verification Standard (MASVS), Mobile Application Security Weakness Enumeration (MASWE), and Mobile Application Security Testing Guide (MASTG).
+
+- **CINS stage fit:** After Stage 2 — mobile application security specialisation.
+- **Best for:** Understanding how to assess mobile application security and privacy in a structured way.
+- **Official resource:** [OWASP Mobile Application Security](https://owasp.org/projects/mobile-application-security)
+- **Review state:** Official OWASP project page checked 31 October 2026.
+
+Use the standard to understand what should be assessed and the testing guide to understand authorized testing methods. A checklist is not proof that an application is secure.
 
 ## Reverse engineering
 
 ### Ghidra
 
-- **Type:** Software reverse-engineering framework
-- **Level:** Advanced
-- **Best for:** Understanding compiled programs through disassembly, decompilation, graphing, and scripting.
+> **Level:** Advanced · **Type:** Software reverse-engineering framework
+
+Supports disassembly, decompilation, graphing, and scripting to help analysts understand compiled programs.
+
+- **CINS stage fit:** After Stage 2 — advanced reverse-engineering specialisation.
 - **Official project:** [NSA Ghidra repository](https://github.com/NationalSecurityAgency/ghidra)
 - **Getting started:** [Ghidra Getting Started guide](https://github.com/NationalSecurityAgency/ghidra/blob/master/GhidraDocs/GettingStarted.md)
-- **Prerequisites:** The current Ghidra documentation lists a 64-bit JDK 25 requirement and other system requirements. These can change with releases; read the current Getting Started guide before installing.
-- **Safety note:** Use software you own, open-source sample programs, or files explicitly provided for analysis. Review security advisories before installing a release.
-- **Review state:** Official repository and current installation notes checked on 31 October 2026.
+- **Prerequisites:** Current Ghidra documentation lists a 64-bit JDK 25 requirement and other system requirements. Requirements can change with releases; read the current Getting Started guide before installing.
+- **Safety:** Analyse software you own, open-source sample programs, or files explicitly provided for analysis. Review security advisories before installing a release.
+- **Review state:** Official repository and installation notes checked 31 October 2026.
 
-## What to learn first
+## Foundational knowledge
 
-1. Basic programming concepts and reading source code.
-2. Operating-system concepts, processes, files, and permissions.
-3. How applications are packaged and executed.
-4. Basic assembly and processor architecture before deep binary analysis.
-5. Android application structure and mobile platform permissions before mobile testing.
-6. Security testing methodology and authorization boundaries.
+Useful foundations include programming, operating-system concepts, processes, files, permissions, application packaging, and basic processor architecture. These topics are explained in the [CINS Curriculum](../curriculum/index.md); this page does not create a separate learning sequence.
 
-## Safe practice boundaries
-
-Only analyse applications and binaries you own or are allowed to inspect. Use emulators, test devices, open-source sample apps, and training targets. Do not extract or publish proprietary source code, personal data, signing keys, or secrets from apps.
+Only inspect applications and binaries you own or are permitted to analyse. Do not extract or publish proprietary source code, personal data, signing keys, or secrets from apps.

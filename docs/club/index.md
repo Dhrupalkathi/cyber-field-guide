@@ -1,27 +1,27 @@
 # Club Hub
 
-This project is meant to become useful beyond its first author. The Club Hub explains how contributors can participate, how learners should practise safely, and how future maintainers can keep the resource healthy.
+The Club Hub contains the rules and maintenance information that help this resource remain useful across future CINS batches.
 
-## Current priorities
+## Project standards
 
-1. Make the guide understandable to someone with no cybersecurity experience.
-2. Balance offensive assessment with defense, detection, investigation, response, and recovery.
+- [Safety and Ethics](safety-and-ethics.md) — authorization, privacy, safe practice, and responsible reporting.
+- [How to Contribute](contributing.md) — how to suggest or submit a change.
+- [Content Standards](content-standards.md) — page responsibilities, resource deduplication, stage labels, and review expectations.
+
+## Project priorities
+
+1. Keep the guide understandable to someone with no cybersecurity experience.
+2. Represent offensive assessment and defensive security fairly.
 3. Prefer official documentation and reputable learning sources.
-4. Keep content in portable Markdown files.
-5. Review changes before they reach the published guide.
+4. Store content in portable Markdown.
+5. Review changes before they reach the published site.
 6. Make ownership, affiliation, and maintenance responsibilities transparent.
 
-## Useful pages
-
-- [Safety and Ethics Rules](safety-and-ethics.md)
-- [How to Contribute](contributing.md)
-- [Repository contribution guide](https://github.com/Dhrupalkathi/cyber-field-guide/blob/main/CONTRIBUTING.md)
-
-## Future handover
+## Handover
 
 Before each club leadership transition, maintainers should:
 - Confirm at least two people can access and administer the project.
 - Review outstanding issues and pages marked Needs review.
 - Confirm the website still builds and publishes.
-- Record the current documentation-builder version and any known limitations.
-- Give the incoming maintainers a short walkthrough.
+- Record the current documentation-builder version and known limitations.
+- Walk the incoming maintainers through editing, review, publishing, and restoring a previous version.

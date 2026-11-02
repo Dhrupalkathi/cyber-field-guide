@@ -34,47 +34,47 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
 </div>
 
-## Choose your next step
+## Choose where to go
 
 <div class="grid cards" markdown>
 
--   **Start from zero**
+-   **Start Here**
 
     ---
 
-    Learn computer basics, networking, Linux, and security fundamentals. No Kali installation required.
+    Find the right entry point and learn how the guide is organised.
 
-    [Begin here](start-here/index.md)
+    [Open Start Here](start-here/index.md)
 
--   **Understand the tools**
-
-    ---
-
-    Learn what a tool does, when to use it, its prerequisites, safe examples, limitations, and official sources.
-
-    [Open the tool library](tools/index.md)
-
--   **Find learning resources**
+-   **Curriculum**
 
     ---
 
-    Explore courses, websites, YouTube channels, documentation, CTFs, and guided learning platforms, virtual labs, and CTFs.
+    See the official CINS stage structure, published material, and planned stages.
 
-    [Browse learning resources](resources/index.md)
+    [View the curriculum](curriculum/index.md)
 
--   **Choose a learning path**
+-   **Tool Library**
 
     ---
 
-    Follow a sequence into networking, web security, SOC, forensics, cloud, and other specializations.
+    Understand what tools do, when they are useful, their prerequisites, safe use, and limitations.
 
-    [Explore learning paths](learning-paths/index.md)
+    [Explore tools](tools/index.md)
+
+-   **Learning Resources**
+
+    ---
+
+    Find courses, websites, videos, official documentation, labs, and communities by subject.
+
+    [Browse resources](resources/index.md)
 
 </div>
 
-## Cybersecurity is more than penetration testing
+## A complete view of cybersecurity
 
-This guide is deliberately designed to represent the complete security lifecycle—not just offensive tools.
+This guide gives space to both security assessment and defensive operations.
 
 <div class="grid cards" markdown>
 
@@ -82,52 +82,39 @@ This guide is deliberately designed to represent the complete security lifecycle
 
     ---
 
-    OSINT, asset discovery, vulnerability assessment, web and network testing, and controlled security labs.
+    OSINT, asset discovery, reconnaissance, vulnerability assessment, and authorized application and network testing.
 
 -   **Protect and harden**
 
     ---
 
-    Secure configuration, identity and access management, patching, secure coding, and cloud security.
+    Secure configuration, identity and access management, patching, secure coding, endpoint protection, and cloud security.
 
 -   **Detect and investigate**
 
     ---
 
-    Network monitoring, logs, SIEM, threat hunting, digital forensics, and malware analysis in isolated labs.
+    Network monitoring, logs, SIEM, threat hunting, digital forensics, malware analysis, and reverse engineering.
 
 -   **Respond and recover**
 
     ---
 
-    Incident handling, evidence preservation, containment, backups, recovery, and lessons learned.
+    Incident handling, evidence preservation, containment, backups, recovery planning, and lessons learned.
 
 </div>
 
-## What makes this guide different?
+## How the guide is organised
 
-- **Beginner-first:** concepts come before tools; unfamiliar terms are explained.
-- **Resource-rich:** every learning area connects to courses, videos, official documentation, and practical labs.
-- **Balanced:** offensive assessment and defensive security receive deliberate, visible coverage.
-- **Honest about verification:** pages distinguish link checks, content reviews, and lab-verified material.
-- **Built to be handed over:** content is stored in portable Markdown and changes are reviewed through GitHub.
+The **Curriculum** defines the learning progression. **Learning Resources** is a subject-based reference library, and the **Tool Library** explains individual tools. These libraries support the curriculum; they are not additional stage sequences.
 
-## Explore the first resource collections
-
-| Area | First places to explore |
-|---|---|
-| Networking | Cisco Networking Academy, Bitten Tech |
-| Linux | OverTheWire Bandit, official Kali documentation |
-| Web security | PortSwigger Web Security Academy, OWASP Juice Shop, DVWA |
-| Blue team and SOC | TryHackMe, LetsDefend, Wazuh documentation, Security Onion documentation |
-
-These are starting recommendations. See each resource page for prerequisites, access notes, and what the project has—and has not—verified.
+Each resource listing identifies its CINS stage fit. A resource that covers several subjects is listed once in its primary location, with related pages linking back to it.
 
 ## Trust and safety
 
 Only test systems you own or have explicit permission to assess. Use local labs, sample data, and platforms that explicitly authorize the activity. Never publish secrets, private data, or instructions for unauthorized access.
 
-[Read our safety and ethics rules](club/safety-and-ethics.md).
+[Read the safety and ethics rules](club/safety-and-ethics.md).
 
 ---
 

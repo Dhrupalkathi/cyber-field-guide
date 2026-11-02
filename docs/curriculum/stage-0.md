@@ -9,7 +9,7 @@
 
 ## AI-guided learning — explore the topic you choose
 
-There are no compulsory worksheets, predefined tasks, or graded tests in this stage. When you want practical understanding, choose any Stage 0 topic and use an AI assistant as a personal learning guide.
+When you want to explore a topic more deeply, choose any Stage 0 subject and use an AI assistant as a personal learning guide.
 
 Ask it to explain the topic in plain language, then give you realistic fictional scenarios, guided reasoning, examples, role-based situations, or a short interactive question-and-answer session. Tell it that you are a complete beginner and ask it to stay within Stage 0.
 
