@@ -289,7 +289,6 @@ The exact wire representation differs between HTTP versions. HTTP/2 and HTTP/3 d
 ```http
 HTTP/1.1 200 OK
 Content-Type: text/html; charset=utf-8
-Content-Length: 95
 
 <!doctype html>
 <html><body><h1>Welcome</h1></body></html>
