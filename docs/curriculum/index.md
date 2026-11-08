@@ -9,7 +9,7 @@ This page is the **single source of truth for the CINS learning structure**. It 
 | **Stage 0 — Orientation and Cybersecurity Awareness** | What cybersecurity covers, security domains, ethics, authorization, safe learning, personal security, and career awareness. | Published on this site |
 | **Stage 1 — Computer Fundamentals** | Computer components, data representation, software, files, processes, virtualisation concepts, and troubleshooting concepts. | Published on this site |
 | **Parallel track — Python** | Introductory computational thinking and Python, taught alongside Stage 1 and continued in later stages. | Published on this site |
-| **Stage 2 — Technology Foundations** | Networking first, followed by Linux, Windows, and Internet/Web fundamentals. | Networking published; remaining parts planned in sequence |
+| **Stage 2 — Technology Foundations** | Networking first, followed by Linux, Windows, and Internet/Web fundamentals. | Networking published; Linux added in this change; Windows and Internet/Web planned |
 | **Stage 3 — Cybersecurity Core** | Shared cybersecurity concepts that connect foundations to security work. | Planned |
 | **Stage 4 — Domain Exploration** | Guided exposure to offensive and defensive domains, investigation, engineering, and operations. | Planned |
 | **Stage 5 — Specialisation and Advanced Study** | Deeper study in selected fields based on prerequisites and learner interest. | Planned |
@@ -29,6 +29,8 @@ This page is the **single source of truth for the CINS learning structure**. It 
 ### Stage 2
 
 [Stage 2 — Networking](stage-2-networking.md)
+
+[Stage 2 — Linux](stage-2-linux.md)
 
 The remaining Stage 2 parts will be developed in the agreed order:
 
