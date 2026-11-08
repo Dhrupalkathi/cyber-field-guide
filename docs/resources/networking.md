@@ -17,7 +17,7 @@ This path spans several subjects. Use only the sections that match the current C
 - **Stage 1:** Computer Fundamentals material that supports the CINS computer-fundamentals topics.
 - **Stage 2:** networking-related rooms whose topics match the published [Stage 2 Networking modules](../curriculum/stage-2-networking.md). Check the current room outline before starting; do not treat the platform's overall path order as CINS progression.
 
-Defer operating-system administration and web material until those subjects are introduced in the CINS curriculum.
+Use the published [Stage 2 — Linux](../curriculum/stage-2-linux.md) and [Stage 2 — Windows](../curriculum/stage-2-windows.md) curricula for operating-system administration foundations. Defer detailed web-protocol learning until the Internet and Web Fundamentals part of Stage 2.
 
 - **Access:** Room-level free/paid access can vary; check the current platform page before relying on a room.
 - **Official resource:** [TryHackMe Pre Security](https://tryhackme.com/path/outline/presecurity)
