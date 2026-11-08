@@ -164,6 +164,7 @@ Covers Kali-specific installation, package management, virtual machines, system 
 
 ## Related resources listed elsewhere
 
+- [Windows resources](windows.md) contain the canonical Windows operating-system references for the other published Stage 2 operating-system curriculum.
 - [TryHackMe Pre Security](networking.md) is a cross-stage resource. Its Stage 0, Stage 1, and Stage 2 sections are mapped in its single canonical entry.
 - [TryHackMe Cyber Security 101](blue-team.md) is listed with broad cybersecurity and defensive-learning resources.
 - [Hack The Box Academy](ctf-and-practice.md) is listed with general guided learning platforms.
