@@ -1,5 +1,6 @@
-# Stage 0/1 — Mentor Guidance and Content Quality
+# Mentor Guidance and Content Quality
 
+This guidance applies across the CINS curriculum. The [Curriculum overview](index.md) is the source of truth for stage order and publication status; each published stage page defines its own learning outcomes, scope, and safety boundaries.
 
 ## Mentor approach
 
@@ -9,6 +10,8 @@
 - Respect different starting points: some students may already know programming or computer fundamentals.
 - Offer optional deeper reading to experienced learners without making it compulsory for everyone.
 - Keep Stage 0 and Stage 1 accessible on an ordinary laptop or desktop with a web browser.
+- Treat Stage 2 — Networking as browser-first conceptual learning; any command-line observation should remain optional and limited to a learner's own or explicitly authorised environment.
+- Teach Stage 2 — Linux using general Linux concepts. Learners may use an existing Linux environment or an approved sandbox; Kali Linux and a new operating-system installation are not prerequisites.
 
 ## Supporting AI-guided learning
 
@@ -39,7 +42,9 @@ AI-generated text must not be copied directly into the public guide without the 
 ## Accessibility and equipment
 
 - Stage 0 and Stage 1 should work on an ordinary laptop or desktop with a web browser.
-- Do not require Kali Linux, a paid licence, a high-end GPU, or a local virtualisation setup.
+- Stage 2 — Networking should be understandable without specialist software; optional commands must not require scanning or testing a real third-party network.
+- Stage 2 — Linux does not require Kali Linux, a particular distribution, root access, or a new operating-system installation. Learners can read the material first and use an existing Linux environment or an approved sandbox for optional command practice.
+- Do not require a paid licence, a high-end GPU, or a local virtualisation setup.
 - Offer a browser-based option for Python where possible.
 - If a student has limited hardware or internet access, mentors should provide downloadable notes and small sample files where practical.
 - A student should not be excluded from the foundations because they cannot install a specialised lab.

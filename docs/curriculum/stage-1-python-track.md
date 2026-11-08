@@ -137,7 +137,8 @@ By the end of Stage 1, a student should be able to:
 
 | Stage | Programming development |
 |---|---|
-| Stage 1 | Python basics: computational thinking, variables, conditions, loops, functions, collections and debugging. || Stage 2 | Python practice with files, exceptions and structured data; Bash alongside Linux after Networking; PowerShell alongside Windows; basic SQL and JavaScript when web fundamentals are taught. |
+| Stage 1 | Python basics: computational thinking, variables, conditions, loops, functions, collections and debugging. |
+| Stage 2 | Python practice with files, exceptions and structured data; Bash alongside Linux after Networking; PowerShell alongside Windows; basic SQL and JavaScript when web fundamentals are taught. |
 | Stage 3 | Python automation, text and log parsing, regular expressions, APIs, SQL fundamentals and secure coding concepts. |
 | Stage 4 | Apply the relevant language and scripting skills to small projects in the domains being explored. |
 | Stage 5 | Optional advanced programming, automation, tool development, software analysis and specialist engineering. |

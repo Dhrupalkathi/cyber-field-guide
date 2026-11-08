@@ -48,7 +48,7 @@ Introduces a shared vocabulary for cybersecurity work roles, tasks, knowledge, a
 
 Use **Unit 1: Digital Information** and **Unit 2: Computers** for bits and bytes, binary, hexadecimal, text representation, computer components, CPU, memory, input/output, and files.
 
-- **Defer:** Internet and networking material to Stage 2. Do not treat the full course as a Stage 1 assignment.
+- **Defer:** Internet and networking material to Stage 2. Use only the selected Stage 1 units as optional reference; the full external course is not required by the CINS curriculum.
 - **Access:** The course is publicly available; check the provider page for current account and course details.
 - **Official resource:** [Khan Academy — Computers and the Internet](https://www.khanacademy.org/computing/computers-and-internet)
 - **Review state:** Course outline checked 31 October 2026; CINS has not completed the full course.

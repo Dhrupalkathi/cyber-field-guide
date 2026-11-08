@@ -72,6 +72,9 @@ Before submitting a change:
 4. Link to the canonical entry from related pages instead of copying it.
 5. Check internal links and remove links to deleted pages.
 6. Do not add a new global roadmap. The Curriculum page owns the progression.
+7. Perform a **site-wide change-impact sweep** whenever a curriculum decision, stage status, resource recommendation, policy, or project structure changes. Search all pages for the old wording and every place that depends on the changed detail; update or remove superseded descriptions, navigation labels, tables, summaries, cross-links, and examples.
+8. After a change is merged, remove temporary phrases such as “added in this change,” “will be the next page,” or other review-time wording that no longer describes the live site. Use the current state and dates where a time reference is genuinely needed.
+9. Recheck related pages—not only the file being edited—including the homepage, Start Here, Curriculum overview, stage pages, resource index, subject resource pages, Tool Library, README, and mentor guidance when they refer to the changed subject.
 
 Visual and interaction improvements are welcome when they make learning clearer, improve accessibility, or make the site easier to use. Keep the CINS identity recognisable and check:
 - Both light and dark colour schemes.

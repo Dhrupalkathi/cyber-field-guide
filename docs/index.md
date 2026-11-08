@@ -72,6 +72,17 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
 </div>
 
+## Current curriculum progress
+
+**Stage 2 — Technology Foundations** is the technical foundation sequence after Stage 1. Linux is explicitly part of Stage 2, following Networking:
+
+**Networking → Linux → Windows → Internet and Web fundamentals**
+
+- **Published:** [Stage 2 — Networking](curriculum/stage-2-networking.md) and [Stage 2 — Linux](curriculum/stage-2-linux.md).
+- **Next:** Windows, followed by Internet and Web fundamentals.
+
+The [Curriculum overview](curriculum/index.md) is the authoritative page for the complete sequence and publication status.
+
 ## A complete view of cybersecurity
 
 This guide gives space to both security assessment and defensive operations.

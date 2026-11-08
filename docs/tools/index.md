@@ -6,7 +6,9 @@ A tool is useful only when you understand the problem it helps solve. This libra
 
 **Stage 0 and Stage 1 do not require cybersecurity tools.** Newcomers can learn with a browser, ordinary system applications, and a browser-based Python environment for the parallel programming track.
 
-Do not require Kali Linux, Nmap, Burp Suite, a SIEM, or an exploitation framework for the first two stages. A tool belongs in the learner's progression only when the relevant curriculum introduces the underlying concept and a safe, authorized environment.
+**Stage 2 — Networking and Linux also do not require specialist cybersecurity-tool installations.** They teach networking and operating-system foundations through concepts and standard system interfaces. Kali Linux, Nmap, Burp Suite, a SIEM, and exploitation frameworks are not prerequisites for the published Stage 2 material. Linux command-line utilities used to understand the operating system are not the same thing as requiring a specialist security toolkit.
+
+A tool belongs in the learner's progression only when the relevant curriculum introduces the underlying concept and a safe, authorised environment.
 
 See the [Curriculum](../curriculum/index.md) and [Foundations & Computing resources](../resources/foundations.md).
 
