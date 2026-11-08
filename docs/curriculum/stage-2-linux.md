@@ -47,6 +47,7 @@ By the end of this part of Stage 2, a student should be able to:
 16. Explain the purpose of SSH, public-key authentication, private-key protection, and host-key verification.
 17. Describe foundational Linux security practices, including least privilege, updates, trusted software sources, backups, and access controls.
 18. Recognise which Linux concepts and commands are useful later in system administration, defensive security, digital forensics, cloud, and penetration testing.
+19. Explain the structure of a small Bash script, including its shebang, variables, quoting, conditions, loops, and exit status.
 
 ---
 
@@ -343,7 +344,76 @@ This reads the distribution identification file and passes its output to `grep`,
 
 A student can select an appropriate command for reading or searching text, explain what a pipe does, and distinguish standard output from standard error.
 
-## Module 2.14 — Users, groups, ownership, and permissions
+
+## Module 2.14 — Bash scripting foundations
+
+### Why it matters
+
+A shell script is a text file containing commands that a shell can execute in sequence. Scripts help repeat a small, well-defined set of command-line actions consistently. They are useful for automation and system administration, but a script can also change or delete data. Read and understand a script before running it.
+
+Bash is one common shell. Its scripting syntax is useful for connecting commands together; it is not a replacement for learning a general-purpose programming language such as Python, which continues in the parallel CINS track.
+
+### Anatomy of a small Bash script
+
+A script commonly begins with a **shebang**, which identifies the interpreter used when the script is launched as an executable file:
+
+    #!/usr/bin/env bash
+
+Comments begin with #. Commands are written as they would be at a Bash prompt. For example, this small script only prints information already available in the current shell environment:
+
+    #!/usr/bin/env bash
+    # Display basic information about the current session.
+    printf 'User: %s\n' "$USER"
+    printf 'Working directory: %s\n' "$PWD"
+
+Save the example as a file such as **session-info.sh** in a directory you own. It can be run with **bash session-info.sh**. Making a script directly executable is optional; that involves changing its execute permission in the practice directory, then launching it by its path.
+
+### Variables and quoting
+
+A Bash variable stores a value in the shell:
+
+    greeting="Hello"
+    printf '%s\n' "$greeting"
+
+There are no spaces around the equals sign in a simple assignment. Use double quotes around variable expansions in most commands so that spaces and wildcard characters in a value are not accidentally split or expanded. Single quotes preserve their contents literally; double quotes allow selected expansions such as **$variable** and command substitution.
+
+A positional parameter such as **$1** represents the first argument passed to a script. In Bash, parameter-expansion forms can provide a fallback value when an argument is empty or unset. These are Bash-specific rules; other shells may use different features.
+
+### Conditions and loops
+
+A condition allows a script to choose between paths. A loop repeats commands. The following examples only print messages and inspect a directory:
+
+    if [[ -d "$HOME" ]]; then
+      printf 'The home directory exists.\n'
+    fi
+
+    for item in one two three; do
+      printf '%s\n' "$item"
+    done
+
+Learn the shape of **if**, **then**, **else**, **fi**, **for**, **do**, and **done** before building longer scripts. A loop can repeat a harmful command just as easily as a harmless one, so understand the body and the input before running it.
+
+### Exit status and command results
+
+A shell command normally returns an exit status. Zero conventionally indicates success; non-zero indicates an error or another result. A script can return a status using **exit NUMBER**. The status can be inspected by the calling shell through **$?** immediately after the script finishes.
+
+Do not assume that every command returning zero means the whole task was completed correctly. Scripts should check important assumptions and handle failures deliberately.
+
+### Safe scripting habits
+
+- Read every line before running a script from another person or website.
+- Prefer a practice directory and harmless output-only examples while learning.
+- Quote variable expansions such as **"$HOME"** and **"$item"** when passing them as arguments.
+- Do not use **eval** on untrusted input.
+- Do not add **sudo** to a script just to make an error disappear.
+- Treat file deletion, recursive changes, downloads, network connections, and package installation as high-impact operations that need separate review.
+- Never place passwords, API keys, private SSH keys, or tokens directly in a script or public repository.
+
+### Learning outcomes
+
+A student can explain a shebang, comments, variables, quoting, positional arguments, a simple condition, a loop, and an exit status; recognise how a script is launched; and explain why copied scripts must be reviewed before execution.
+
+## Module 2.15 — Users, groups, ownership, and permissions
 
 ### Why it matters
 
@@ -436,7 +506,7 @@ Use the principle of **least privilege**: operate as a normal user for everyday 
 
 A student can interpret a simple permission string and octal mode, distinguish file permissions from directory permissions, explain the purpose of users and groups, and justify why everyday work should not run as root.
 
-## Module 2.15 — Software packages and package managers
+## Module 2.16 — Software packages and package managers
 
 ### Why it matters
 
@@ -498,7 +568,7 @@ Pacman is used by Arch Linux. Its common search and package-operation forms incl
 
 A student can explain the relationship between packages, repositories, dependencies, and package managers, identify the package-management family of a distribution, and distinguish an APT index refresh from a package upgrade.
 
-## Module 2.16 — Processes, jobs, and services
+## Module 2.17 — Processes, jobs, and services
 
 ### Why it matters
 
@@ -551,7 +621,7 @@ Starting, stopping, restarting, enabling, or disabling services changes system b
 
 A student can distinguish a program, process, and service; identify common process-inspection commands; and explain the difference between requesting termination and forcing it.
 
-## Module 2.17 — Storage, filesystems, mounts, and boot
+## Module 2.18 — Storage, filesystems, mounts, and boot
 
 ### Why it matters
 
@@ -607,7 +677,7 @@ Do not experiment with partitioning, formatting, filesystem repair, encryption h
 
 A student can distinguish a device, partition, filesystem, and mount point; interpret basic disk-usage output; and describe the broad boot sequence without assuming that all distributions use identical components.
 
-## Module 2.18 — Logs and basic Linux troubleshooting
+## Module 2.19 — Logs and basic Linux troubleshooting
 
 ### Why it matters
 
@@ -659,7 +729,7 @@ Logs may contain usernames, email addresses, IP addresses, file paths, tokens, r
 
 A student can explain the difference between logs and live process state, retrieve relevant journal entries where permitted, and follow a structured troubleshooting process based on evidence.
 
-## Module 2.19 — SSH and secure remote access
+## Module 2.20 — SSH and secure remote access
 
 ### Why it matters
 
@@ -706,7 +776,7 @@ SSH does not make every action safe. A remote shell can change or delete data on
 
 A student can explain the client/server relationship in SSH, distinguish host keys from user authentication keys, and state how a private key must be protected.
 
-## Module 2.20 — Linux security foundations
+## Module 2.21 — Linux security foundations
 
 ### Why it matters
 
@@ -784,6 +854,7 @@ The following references are selected for explanation and technical accuracy. Di
 - [Ubuntu Server documentation](https://ubuntu.com/server/docs/) — system administration, software management, security, storage, and SSH.
 - [Linux manual pages — hier(7)](https://man7.org/linux/man-pages/man7/hier.7.html) — common filesystem directory purposes.
 - [Linux manual pages](https://man7.org/linux/man-pages/) — command and system-call reference.
+- [Linux kernel documentation](https://docs.kernel.org/) — kernel architecture, administration, and user-oriented technical documentation.
 - [GNU Coreutils manual](https://www.gnu.org/software/coreutils/manual/coreutils.html) — common file, text, and system utilities.
 - [GNU Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html) — shell syntax, variables, commands, scripts, pipelines, and redirection.
 
@@ -794,6 +865,8 @@ The following references are selected for explanation and technical accuracy. Di
 - [Linux manual pages — passwd(5)](https://man7.org/linux/man-pages/man5/passwd.5.html) — account-file structure.
 - [Ubuntu: User management](https://ubuntu.com/server/docs/how-to/security/user-management/) — accounts, groups, and administrative access.
 - [Ubuntu: Security](https://ubuntu.com/server/docs/how-to/security/) — security controls and system protection.
+- [Ubuntu: AppArmor](https://ubuntu.com/server/docs/how-to/security/apparmor/) — application profiles and mandatory access control.
+- [Red Hat: Using SELinux](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/index) — SELinux concepts and policy enforcement on RHEL.
 
 ### Packages, services, logs, and storage
 
