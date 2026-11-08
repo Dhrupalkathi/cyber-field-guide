@@ -8,6 +8,8 @@ The resources below are optional references. You do not need to complete every c
 
 ### MDN — Learn web development: How the Web works
 
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Documentation · **Level:** Beginner · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web · **Cost/access:** Free
+
 - **Provider:** MDN Web Docs
 - **Resource:** [How the Web works](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works)
 - **CINS stage fit:** Stage 2 — Internet and Web
@@ -16,6 +18,8 @@ The resources below are optional references. You do not need to complete every c
 - **Access:** Free documentation.
 
 ### MDN — Overview of HTTP
+
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Documentation · **Level:** Beginner · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web · **Cost/access:** Free
 
 - **Provider:** MDN Web Docs
 - **Resource:** [Overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview)
@@ -28,6 +32,8 @@ The resources below are optional references. You do not need to complete every c
 
 ### IETF — RFC 9110: HTTP Semantics
 
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Standards document · **Level:** Advanced reference · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web / Reference · **Cost/access:** Free
+
 - **Provider:** Internet Engineering Task Force (IETF)
 - **Resource:** [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html)
 - **CINS stage fit:** Stage 2 — Internet and Web; Reference — useful across stages
@@ -36,6 +42,8 @@ The resources below are optional references. You do not need to complete every c
 - **Access:** Free standard.
 
 ### WHATWG — URL Standard
+
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Standards document · **Level:** Advanced reference · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web / Reference · **Cost/access:** Free
 
 - **Provider:** WHATWG
 - **Resource:** [URL Standard](https://url.spec.whatwg.org/)
@@ -46,6 +54,8 @@ The resources below are optional references. You do not need to complete every c
 
 ### OpenAPI Specification
 
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Documentation · **Level:** Beginner to intermediate · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web / After Stage 2 — specialist · **Cost/access:** Free
+
 - **Provider:** OpenAPI Initiative
 - **Resource:** [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
 - **CINS stage fit:** Stage 2 — Internet and Web; After Stage 2 — specialist learning
@@ -54,6 +64,8 @@ The resources below are optional references. You do not need to complete every c
 - **Access:** Free specification.
 
 ### IETF — RFC 8446: TLS 1.3
+
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Standards document · **Level:** Advanced reference · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web / Reference · **Cost/access:** Free
 
 - **Provider:** Internet Engineering Task Force (IETF)
 - **Resource:** [RFC 8446](https://www.rfc-editor.org/rfc/rfc8446.html)
@@ -66,6 +78,8 @@ The resources below are optional references. You do not need to complete every c
 
 ### MDN — How browsers load websites
 
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Documentation · **Level:** Beginner · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web · **Cost/access:** Free
+
 - **Provider:** MDN Web Docs
 - **Resource:** [How browsers load websites](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_browsers_load_websites)
 - **CINS stage fit:** Stage 2 — Internet and Web
@@ -74,6 +88,8 @@ The resources below are optional references. You do not need to complete every c
 - **Access:** Free documentation.
 
 ### MDN — Sending form data
+
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Documentation · **Level:** Beginner · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web · **Cost/access:** Free
 
 - **Provider:** MDN Web Docs
 - **Resource:** [Sending and retrieving form data](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Sending_and_retrieving_form_data)
@@ -86,6 +102,8 @@ The resources below are optional references. You do not need to complete every c
 
 ### MDN — Using HTTP cookies
 
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Documentation · **Level:** Beginner · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web · **Cost/access:** Free
+
 - **Provider:** MDN Web Docs
 - **Resource:** [Using HTTP cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies)
 - **CINS stage fit:** Stage 2 — Internet and Web; Reference — useful across stages
@@ -94,6 +112,8 @@ The resources below are optional references. You do not need to complete every c
 - **Access:** Free documentation.
 
 ### MDN — Session management
+
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Documentation · **Level:** Beginner to intermediate · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web / After Stage 2 — specialist · **Cost/access:** Free
 
 - **Provider:** MDN Web Docs
 - **Resource:** [Session management](https://developer.mozilla.org/en-US/docs/Web/Security/Authentication/Session_management)
@@ -104,6 +124,8 @@ The resources below are optional references. You do not need to complete every c
 
 ### MDN — Same-origin policy
 
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Documentation · **Level:** Beginner to intermediate · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web / After Stage 2 — specialist · **Cost/access:** Free
+
 - **Provider:** MDN Web Docs
 - **Resource:** [Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy)
 - **CINS stage fit:** Stage 2 — Internet and Web; Reference — useful across stages
@@ -113,6 +135,8 @@ The resources below are optional references. You do not need to complete every c
 
 ### MDN — Cross-Origin Resource Sharing (CORS)
 
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Documentation · **Level:** Beginner to intermediate · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web / After Stage 2 — specialist · **Cost/access:** Free
+
 - **Provider:** MDN Web Docs
 - **Resource:** [CORS guide](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS)
 - **CINS stage fit:** Stage 2 — Internet and Web; After Stage 2 — specialist learning
@@ -121,6 +145,8 @@ The resources below are optional references. You do not need to complete every c
 - **Access:** Free documentation.
 
 ### Chrome DevTools — Network panel
+
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Documentation · **Level:** Beginner · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web · **Cost/access:** Free
 
 - **Provider:** Chrome for Developers
 - **Resource:** [Network panel overview](https://developer.chrome.com/docs/devtools/network/overview/)
@@ -132,6 +158,8 @@ The resources below are optional references. You do not need to complete every c
 ## APIs and structured data
 
 ### MDN — Introduction to web APIs
+
+> **Review status:** Draft · **Last checked:** 2026-11-09 · **Type:** Documentation · **Level:** Beginner · **Primary subject page:** This page · **CINS stage fit:** Stage 2 — Internet and Web · **Cost/access:** Free
 
 - **Provider:** MDN Web Docs
 - **Resource:** [Introduction to web APIs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Introduction)
