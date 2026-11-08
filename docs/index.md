@@ -72,7 +72,13 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
 </div>
 
-## A complete view of cybersecurity
+## Current curriculum progress
+
+**Stage 2 — Technology Foundations** is the technical foundation sequence after Stage 1. Its order is:
+
+**Networking → Linux → Windows → Internet and Web fundamentals**
+
+<text></text>
 
 This guide gives space to both security assessment and defensive operations.
 
