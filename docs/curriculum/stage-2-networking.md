@@ -494,7 +494,7 @@ The browser's HTTP behaviour, TLS details, cookies, sessions, and APIs are taugh
 
 To keep the agreed Stage 2 order clear:
 
-- **Linux administration:** command-line workflows, files, permissions, users, processes, services, and logs are taught in the Linux part of Stage 2.
+- **Linux administration:** command-line workflows, files, permissions, users, processes, services, and logs are covered in the published [Stage 2 — Linux curriculum](stage-2-linux.md).
 - **Windows administration:** PowerShell workflows, Windows services, accounts, event logs, and system configuration are taught in the Windows part of Stage 2.
 - **Internet and Web fundamentals:** HTTP methods, requests and responses, TLS in web use, cookies, sessions, browser behaviour, and APIs are taught after the networking foundation.
 - **Specialist security work:** port scanning, packet capture, traffic analysis, IDS/IPS deployment, firewall engineering, routing-protocol configuration, wireless security testing, and exploitation are reserved for later stages and authorised labs.
@@ -548,4 +548,4 @@ These are reference sources, not additional required courses. Use introductory e
 
 **Stage 2 sequence:** Networking → Linux → Windows → Internet and Web fundamentals.
 
-The next Stage 2 curriculum page after Networking is Linux.
+The [Stage 2 — Linux curriculum](stage-2-linux.md) is now published after this Networking part. The next part in the sequence is Windows.
