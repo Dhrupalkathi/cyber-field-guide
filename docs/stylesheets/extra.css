@@ -584,3 +584,121 @@
     scroll-behavior: auto;
   }
 }
+
+
+/* Windows teaching diagrams */
+.cins-win-figure {
+  margin: 1.8rem 0;
+  padding: 1.1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 1rem;
+  background: var(--md-code-bg-color);
+  overflow: hidden;
+}
+.cins-win-figure-heading {
+  margin: 0 0 1rem;
+  color: var(--md-accent-fg-color);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.cins-win-caption {
+  margin: 0.9rem 0 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+.cins-win-stack { display: grid; gap: 0.45rem; max-width: 720px; margin-inline: auto; }
+.cins-win-layer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 4px solid var(--md-accent-fg-color);
+  border-radius: 0.6rem;
+  background: var(--md-default-bg-color);
+}
+.cins-win-layer strong { font-size: 0.85rem; }
+.cins-win-layer span { color: var(--md-default-fg-color--light); font-size: 0.72rem; }
+.cins-win-user { border-left-color: #398b9d; }
+.cins-win-boundary { border-left-color: #c28b42; }
+.cins-win-kernel { border-left-color: #8b78bb; }
+.cins-win-hardware { border-left-color: #3f9b78; }
+.cins-win-path {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+}
+.cins-win-path-part {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.55rem;
+  background: var(--md-default-bg-color);
+  font-size: 0.8rem;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+.cins-win-path-file { border-color: var(--md-accent-fg-color); }
+.cins-win-path-sep { color: var(--md-accent-fg-color); font-weight: 900; }
+.cins-win-decision { display: grid; justify-items: center; gap: 0.55rem; max-width: 680px; margin-inline: auto; }
+.cins-win-decision-start,
+.cins-win-decision-check,
+.cins-win-decision-note {
+  width: min(100%, 560px);
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.65rem;
+  background: var(--md-default-bg-color);
+  text-align: center;
+  font-size: 0.82rem;
+}
+.cins-win-decision-check { border-color: var(--md-accent-fg-color); font-weight: 800; }
+.cins-win-decision-arrow { color: var(--md-accent-fg-color); font-weight: 900; }
+.cins-win-decision-branches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; width: 100%; }
+.cins-win-decision-branches > div {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.8rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.65rem;
+  background: var(--md-default-bg-color);
+}
+.cins-win-decision-branches b { color: var(--md-accent-fg-color); }
+.cins-win-decision-branches span { color: var(--md-default-fg-color--light); font-size: 0.74rem; line-height: 1.45; }
+.cins-win-decision-note { color: var(--md-default-fg-color--light); font-size: 0.74rem; }
+.cins-win-boot,
+.cins-win-troubleshoot { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; }
+.cins-win-boot > div,
+.cins-win-troubleshoot > div {
+  display: grid;
+  align-content: start;
+  gap: 0.4rem;
+  min-height: 105px;
+  padding: 0.8rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 3px solid var(--md-accent-fg-color);
+  border-radius: 0.65rem;
+  background: var(--md-default-bg-color);
+}
+.cins-win-boot b,
+.cins-win-troubleshoot b { font-size: 0.8rem; }
+.cins-win-boot span,
+.cins-win-troubleshoot span { color: var(--md-default-fg-color--light); font-size: 0.7rem; line-height: 1.45; }
+@media (max-width: 700px) {
+  .cins-win-figure { padding: 0.8rem; }
+  .cins-win-boot,
+  .cins-win-troubleshoot { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 480px) {
+  .cins-win-decision-branches,
+  .cins-win-boot,
+  .cins-win-troubleshoot { grid-template-columns: 1fr; }
+  .cins-win-boot > div,
+  .cins-win-troubleshoot > div { min-height: 0; }
+}
