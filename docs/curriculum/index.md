@@ -38,7 +38,7 @@ The remaining Stage 2 parts are **Windows**, followed by **Internet and Web fund
 
 **Complete sequence:** Networking → Linux → Windows → Internet and Web fundamentals.
 
-Until each part is published, the learning-resource pages are references, not a substitute for a detailed CINS curriculum page.
+For the remaining Stage 2 parts—Windows and Internet and Web fundamentals—the learning-resource pages are references, not a substitute for their detailed CINS curriculum pages.
 
 ### Mentor reference
 
