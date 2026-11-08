@@ -74,7 +74,7 @@ A broad collection covering the Ubuntu command line, software management, users 
 
 - **Access:** Free public documentation.
 - **Official resource:** [Ubuntu Server documentation](https://ubuntu.com/server/docs/)
-- **Useful sections:** [User management](https://ubuntu.com/server/docs/how-to/security/user-management/), [Package management](https://ubuntu.com/server/docs/how-to/software/package-management/), [Security](https://ubuntu.com/server/docs/how-to/security/), [OpenSSH](https://ubuntu.com/server/docs/how-to/security/openssh-server/).
+- **Useful sections:** [User management](https://ubuntu.com/server/docs/how-to/security/user-management/), [Package management](https://ubuntu.com/server/docs/how-to/software/package-management/), [Security](https://ubuntu.com/server/docs/how-to/security/), [AppArmor](https://ubuntu.com/server/docs/how-to/security/apparmor/), and [OpenSSH](https://ubuntu.com/server/docs/how-to/security/openssh-server/).
 - **Review state:** Relevant official pages checked 8 November 2026.
 
 ### Debian Reference — package management
@@ -109,6 +109,18 @@ Use the [systemctl manual](https://www.freedesktop.org/software/systemd/man/late
 - **Access:** Free public documentation.
 - **Official resource:** [systemd manuals](https://www.freedesktop.org/software/systemd/man/latest/)
 - **Review state:** Journal documentation checked 8 November 2026; consult the installed system's version-specific manuals when needed.
+
+### AppArmor and SELinux references
+
+> **CINS stage fit:** Stage 2 — Linux; reference across later defensive-security learning  
+> **Level:** Developing learner to advanced · **Type:** Official security-framework documentation
+
+AppArmor and SELinux are Linux Security Module-based mandatory access-control systems. They add policy-based restrictions beyond traditional user/group permission checks. Their configuration is distribution-specific and should not be changed casually.
+
+- **Ubuntu/AppArmor:** [Ubuntu AppArmor documentation](https://ubuntu.com/server/docs/how-to/security/apparmor/) explains application profiles and confinement.
+- **Red Hat/SELinux:** [Using SELinux — RHEL 10](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_selinux/index) explains policy, labels, and enforcement modes.
+- **Access:** Free public documentation.
+- **Review state:** Official documentation located 8 November 2026.
 
 ### OpenSSH documentation
 
