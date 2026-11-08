@@ -12,6 +12,7 @@ This guidance applies across the CINS curriculum. The [Curriculum overview](inde
 - Keep Stage 0 and Stage 1 accessible on an ordinary laptop or desktop with a web browser.
 - Treat Stage 2 — Networking as browser-first conceptual learning; any command-line observation should remain optional and limited to a learner's own or explicitly authorised environment.
 - Teach Stage 2 — Linux using general Linux concepts. Learners may use an existing Linux environment or an approved sandbox; Kali Linux and a new operating-system installation are not prerequisites.
+- Teach Stage 2 — Windows using general Windows client concepts. Reading the curriculum does not require a Windows installation, virtual machine, paid software, or specialist security tools. Optional inspection must be limited to a device the learner owns or is authorised to use.
 
 ## Supporting AI-guided learning
 
@@ -44,6 +45,7 @@ AI-generated text must not be copied directly into the public guide without the 
 - Stage 0 and Stage 1 should work on an ordinary laptop or desktop with a web browser.
 - Stage 2 — Networking should be understandable without specialist software; optional commands must not require scanning or testing a real third-party network.
 - Stage 2 — Linux does not require Kali Linux, a particular distribution, root access, or a new operating-system installation. Learners can read the material first and use an existing Linux environment or an approved sandbox for optional command practice.
+- Stage 2 — Windows does not require a particular Windows edition, a new installation, a virtual machine, or administrator access. Learners can read the material first; optional commands should be read-only and used only on an owned or explicitly authorised device.
 - Do not require a paid licence, a high-end GPU, or a local virtualisation setup.
 - Offer a browser-based option for Python where possible.
 - If a student has limited hardware or internet access, mentors should provide downloadable notes and small sample files where practical.
