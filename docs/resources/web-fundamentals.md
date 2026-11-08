@@ -53,6 +53,15 @@ The resources below are optional references. You do not need to complete every c
 - **Suggested scope:** At Stage 2, understand what an API description is for. Detailed schema authoring and API tooling can wait until later.
 - **Access:** Free specification.
 
+### IETF — RFC 8446: TLS 1.3
+
+- **Provider:** Internet Engineering Task Force (IETF)
+- **Resource:** [RFC 8446](https://www.rfc-editor.org/rfc/rfc8446.html)
+- **CINS stage fit:** Stage 2 — Internet and Web; Reference — useful across stages
+- **Why it is useful:** The formal standard for TLS 1.3, the protocol that protects HTTPS connections.
+- **Suggested scope:** Use as a reference for the role and security properties of TLS. The detailed cryptographic protocol is outside this beginner stage.
+- **Access:** Free standard.
+
 ## Browser behaviour and forms
 
 ### MDN — How browsers load websites
@@ -109,6 +118,15 @@ The resources below are optional references. You do not need to complete every c
 - **CINS stage fit:** Stage 2 — Internet and Web; After Stage 2 — specialist learning
 - **Why it is useful:** Explains how servers declare which origins may read cross-origin responses through browser APIs.
 - **Suggested scope:** Understand the purpose of CORS and its relationship to the same-origin policy. Detailed configuration and debugging can wait until later.
+- **Access:** Free documentation.
+
+### Chrome DevTools — Network panel
+
+- **Provider:** Chrome for Developers
+- **Resource:** [Network panel overview](https://developer.chrome.com/docs/devtools/network/overview/)
+- **CINS stage fit:** Stage 2 — Internet and Web
+- **Why it is useful:** Official documentation for viewing requests, responses, headers, payloads, resource types, and timing in Chrome DevTools.
+- **Suggested scope:** Learn to identify a request and read its headers and response. Use only pages you own or are authorised to inspect. Do not export or share signed-in network captures without careful sanitisation and permission.
 - **Access:** Free documentation.
 
 ## APIs and structured data
