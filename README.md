@@ -61,7 +61,7 @@ The content is stored in portable Markdown files. The site is built with [Zensic
 
 ## Current focus
 
-Stage 2 now covers [Networking](docs/curriculum/stage-2-networking.md), [Linux](docs/curriculum/stage-2-linux.md), and [Windows](docs/curriculum/stage-2-windows.md). The remaining curriculum part is Internet and Web fundamentals. Tool and resource entries will continue to grow alongside the curriculum, with sources and review status made explicit.
+Stage 2 — Technology Foundations is complete: [Networking](docs/curriculum/stage-2-networking.md), [Linux](docs/curriculum/stage-2-linux.md), [Windows](docs/curriculum/stage-2-windows.md), and [Internet and Web Fundamentals](docs/curriculum/stage-2-web-fundamentals.md). Tool and resource entries will continue to grow alongside the curriculum, with sources and review status made explicit.
 
 The Linux curriculum does not require Kali Linux, a particular distribution, paid software, or specialist installation. It focuses on portable operating-system concepts and safe command-line understanding. The Windows curriculum does not require a Windows installation, paid software, a virtual machine, or specialist security tools; it focuses on portable operating-system concepts and safe inspection.
 
