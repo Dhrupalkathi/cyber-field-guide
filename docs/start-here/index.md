@@ -12,7 +12,7 @@ When you are ready to see how the full CINS programme is organised, use the [Cur
 
 Open the [Curriculum](../curriculum/index.md) and use its stage map to find the material that matches your current knowledge. You do not need to reread topics you already understand.
 
-For the current technical foundations, **Stage 2 is Networking → Linux → Windows → Internet and Web fundamentals**. The [Networking](../curriculum/stage-2-networking.md) and [Linux](../curriculum/stage-2-linux.md) parts are published; check the curriculum overview for what comes next.
+For the current technical foundations, **Stage 2 is Networking → Linux → Windows → Internet and Web fundamentals**. The [Networking](../curriculum/stage-2-networking.md), [Linux](../curriculum/stage-2-linux.md), and [Windows](../curriculum/stage-2-windows.md) parts are published; check the curriculum overview for what comes next.
 
 ## Looking for a particular kind of information?
 
