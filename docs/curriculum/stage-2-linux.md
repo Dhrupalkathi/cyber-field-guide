@@ -826,8 +826,8 @@ A student can describe layered Linux security, explain least privilege, identify
 ## How this part connects to the rest of Stage 2
 
 - [Stage 2 — Networking](stage-2-networking.md) explains how devices communicate. Linux uses those network concepts when it runs clients, servers, and remote services.
-- **Windows** is the next part of Stage 2. It will cover the Windows operating-system model, filesystem, accounts, permissions, processes, services, administration, and basic security from a Windows perspective.
-- **Internet and Web fundamentals** follow Windows and connect operating systems and networking to browsers, websites, HTTP, APIs, and web architecture.
+- [Stage 2 — Windows](stage-2-windows.md) is the published Windows part of Stage 2. It covers the Windows operating-system model, filesystem, accounts, permissions, processes, services, administration, and basic security from a Windows perspective.
+- **Internet and Web fundamentals** are the remaining Stage 2 part. They connect operating systems and networking to browsers, websites, HTTP, APIs, and web architecture.
 
 The Linux command line is one environment for working with a computer; it is not a substitute for understanding operating-system concepts. The Python track also continues in parallel. Use Python when learning general programming and use shell commands or Bash when interacting with the operating system.
 
