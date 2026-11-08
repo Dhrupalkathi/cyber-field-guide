@@ -117,7 +117,7 @@ A student can:
 
 ### Important boundary
 
-This module teaches the concepts only. Detailed Linux and Windows administration, terminals, commands, services, logs and permissions are taught in Stage 2. Stage 2 will begin with Networking before Linux, as agreed.
+This module teaches the concepts only. Detailed Linux and Windows administration, terminals, commands, services, logs and permissions are taught in Stage 2. The Stage 2 sequence begins with Networking, followed by Linux, then Windows and Internet and Web fundamentals.
 
 ### Topics
 
@@ -222,7 +222,8 @@ A student can:
 
 | Stage | Programming development |
 |---|---|
-| Stage 1 | Python basics: computational thinking, variables, conditions, loops, functions, collections and debugging. || Stage 2 | Python practice with files, exceptions and structured data; Bash alongside Linux after Networking; PowerShell alongside Windows; basic SQL and JavaScript when web fundamentals are taught. |
+| Stage 1 | Python basics: computational thinking, variables, conditions, loops, functions, collections and debugging. |
+| Stage 2 | Python practice with files, exceptions and structured data; Bash alongside Linux after Networking; PowerShell alongside Windows; basic SQL and JavaScript when web fundamentals are taught. |
 | Stage 3 | Python automation, text and log parsing, regular expressions, APIs, SQL fundamentals and secure coding concepts. |
 | Stage 4 | Apply the relevant language and scripting skills to small projects in the domains being explored. |
 | Stage 5 | Optional advanced programming, automation, tool development, software analysis and specialist engineering. |
