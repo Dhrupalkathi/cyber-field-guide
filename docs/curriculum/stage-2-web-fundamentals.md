@@ -798,6 +798,7 @@ These are references for verification and further reading, not compulsory assign
 - [MDN: How the Web works](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works) — clients, servers, DNS context, HTTP, and URLs.
 - [MDN: Overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview) — HTTP's client/server model and message exchange.
 - [IETF RFC 9110: HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html) — formal definitions of methods, fields, and status codes.
+- [IETF RFC 8446: The Transport Layer Security (TLS) Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html) — the formal TLS 1.3 specification.
 - [WHATWG URL Standard](https://url.spec.whatwg.org/) — formal URL parsing and components.
 - [MDN: How browsers load websites](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_browsers_load_websites) — browser resource loading and rendering.
 - [MDN: Sending form data](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Sending_and_retrieving_form_data) — how browsers submit form data.
@@ -806,6 +807,7 @@ These are references for verification and further reading, not compulsory assign
 - [MDN: Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy) — browser origin boundaries.
 - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS) — cross-origin resource sharing.
 - [MDN: Introduction to web APIs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Introduction) — API concepts.
+- [Chrome DevTools: Network panel](https://developer.chrome.com/docs/devtools/network/overview/) — official guide to inspecting requests, responses, headers, payloads, and timing.
 - [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — a standard way to describe HTTP APIs.
 
 For additional resources, use the canonical [Web and Internet Fundamentals resources](../resources/web-fundamentals.md) page. For later security-specific study, see [Web and API Security resources](../resources/web-security.md).
