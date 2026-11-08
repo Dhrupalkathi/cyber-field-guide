@@ -61,8 +61,8 @@ The content is stored in portable Markdown files. The site is built with [Zensic
 
 ## Current focus
 
-Stage 2 now covers [Networking](docs/curriculum/stage-2-networking.md) and [Linux](docs/curriculum/stage-2-linux.md). The next curriculum parts will follow the agreed order: Windows, then Internet and Web fundamentals. Tool and resource entries will continue to grow alongside the curriculum, with sources and review status made explicit.
+Stage 2 now covers [Networking](docs/curriculum/stage-2-networking.md), [Linux](docs/curriculum/stage-2-linux.md), and [Windows](docs/curriculum/stage-2-windows.md). The remaining curriculum part is Internet and Web fundamentals. Tool and resource entries will continue to grow alongside the curriculum, with sources and review status made explicit.
 
-The Linux curriculum does not require Kali Linux, a particular distribution, paid software, or specialist installation. It focuses on portable operating-system concepts and safe command-line understanding.
+The Linux curriculum does not require Kali Linux, a particular distribution, paid software, or specialist installation. It focuses on portable operating-system concepts and safe command-line understanding. The Windows curriculum does not require a Windows installation, paid software, a virtual machine, or specialist security tools; it focuses on portable operating-system concepts and safe inspection.
 
 The visual system may evolve when changes improve learning clarity, accessibility, responsive behaviour, or useful visualisation. Preserve the CINS identity and test changes in both light and dark modes, on mobile layouts, and with reduced-motion preferences.

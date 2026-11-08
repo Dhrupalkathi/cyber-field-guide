@@ -9,7 +9,7 @@ This page is the **single source of truth for the CINS learning structure**. It 
 | **Stage 0 — Orientation and Cybersecurity Awareness** | What cybersecurity covers, security domains, ethics, authorization, safe learning, personal security, and career awareness. | Published on this site |
 | **Stage 1 — Computer Fundamentals** | Computer components, data representation, software, files, processes, virtualisation concepts, and troubleshooting concepts. | Published on this site |
 | **Parallel track — Python** | Introductory computational thinking and Python, taught alongside Stage 1 and continued in later stages. | Published on this site |
-| **Stage 2 — Technology Foundations** | Networking → Linux → Windows → Internet and Web fundamentals. | Networking and Linux published; Windows and Internet/Web planned |
+| **Stage 2 — Technology Foundations** | Networking → Linux → Windows → Internet and Web fundamentals. | Networking, Linux, and Windows published; Internet and Web planned |
 | **Stage 3 — Cybersecurity Core** | Shared cybersecurity concepts that connect foundations to security work. | Planned |
 | **Stage 4 — Domain Exploration** | Guided exposure to offensive and defensive domains, investigation, engineering, and operations. | Planned |
 | **Stage 5 — Specialisation and Advanced Study** | Deeper study in selected fields based on prerequisites and learner interest. | Planned |
@@ -32,13 +32,15 @@ This page is the **single source of truth for the CINS learning structure**. It 
 
 [Stage 2 — Linux](stage-2-linux.md)
 
-**Linux is formally part of Stage 2 — Technology Foundations**, not a separate stage or an optional side track. Networking and Linux are the two Stage 2 curriculum parts currently published on this site.
+[Stage 2 — Windows](stage-2-windows.md)
 
-The remaining Stage 2 parts are **Windows**, followed by **Internet and Web fundamentals**.
+**Linux is formally part of Stage 2 — Technology Foundations**, not a separate stage or an optional side track. Networking, Linux, and Windows are the three Stage 2 curriculum parts currently published on this site.
+
+The remaining Stage 2 part is **Internet and Web fundamentals**.
 
 **Complete sequence:** Networking → Linux → Windows → Internet and Web fundamentals.
 
-For the remaining Stage 2 parts—Windows and Internet and Web fundamentals—the learning-resource pages are references, not a substitute for their detailed CINS curriculum pages.
+For the remaining Stage 2 part—Internet and Web fundamentals—the learning-resource pages are references, not a substitute for its detailed CINS curriculum page.
 
 ### Mentor reference
 
