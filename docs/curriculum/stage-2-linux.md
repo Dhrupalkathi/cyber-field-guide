@@ -21,7 +21,7 @@ You can start with this prompt:
 
 > I am learning CINS Stage 2 — Linux. Teach me **[topic]** from first principles. Assume I am a beginner, explain each technical term before using it, and show a realistic example. For every command, explain what it reads, what it changes, whether administrator privileges are needed, and how I can check the result. Prefer read-only examples or a temporary directory in my own account. Do not assume I use Kali Linux. Do not ask me to change system services, partitions, firewall rules, accounts, permissions outside a practice directory, or any institution-managed computer. Link important claims to official documentation.
 
-AI-generated commands and explanations can be wrong, incomplete, or unsuitable for a particular distribution. Read the command's manual page, check the options for your system, and understand the effect before executing it. Never paste a command containing \`sudo\` into a terminal merely because an assistant or website suggested it.
+AI-generated commands and explanations can be wrong, incomplete, or unsuitable for a particular distribution. Read the command's manual page, check the options for your system, and understand the effect before executing it. Never paste a command containing `sudo` into a terminal merely because an assistant or website suggested it.
 
 **Publishing what you learn:** Once you understand and verify a topic, you may prepare your own explanation, annotated diagram, glossary, comparison, or reference note for the CINS repository. Human review must check technical accuracy, clarity, safe scope, privacy, accessibility, and source attribution before publication. Do not publish raw, unverified AI output.
 
@@ -35,8 +35,8 @@ By the end of this part of Stage 2, a student should be able to:
 4. Navigate directories, understand absolute and relative paths, and identify important locations in the Linux filesystem.
 5. Explain ordinary files, directories, symbolic links, device files, and virtual filesystems at a beginner level.
 6. Read text files and command output, and use pipes and redirection without confusing standard output and standard error.
-7. Explain users, groups, user IDs, group IDs, root privileges, and the purpose of \`sudo\`.
-8. Read common \`rwx\` permissions, explain owner/group/other, and interpret a simple octal mode such as \`754\`.
+7. Explain users, groups, user IDs, group IDs, root privileges, and the purpose of `sudo`.
+8. Read common `rwx` permissions, explain owner/group/other, and interpret a simple octal mode such as `754`.
 9. Explain what a process is, recognise process identifiers, and describe how signals and services relate to running programs.
 10. Distinguish a package, package manager, repository, dependency, and distribution-specific package format.
 11. Recognise the roles of common package managers such as APT, DNF, and Pacman without assuming their commands are interchangeable.
@@ -108,48 +108,48 @@ For example:
 
     ls -l /home
 
-- \`ls\` is the command.
-- \`-l\` is an option asking for a long listing.
-- \`/home\` is the argument identifying what to list.
+- `ls` is the command.
+- `-l` is an option asking for a long listing.
+- `/home` is the argument identifying what to list.
 
 Options and arguments vary by program. Some options have values, and some commands provide their own built-in help.
 
 ### The shell prompt
 
-A prompt may show your username, computer name, current directory, and whether you have elevated privileges. The exact appearance depends on the shell and configuration. A \`$\` often indicates a normal-user prompt and \`#\` often indicates a root prompt, but prompts are configurable; do not use the symbol alone as proof of your privilege level.
+A prompt may show your username, computer name, current directory, and whether you have elevated privileges. The exact appearance depends on the shell and configuration. A `$` often indicates a normal-user prompt and `#` often indicates a root prompt, but prompts are configurable; do not use the symbol alone as proof of your privilege level.
 
-Linux command names and paths are generally case-sensitive: \`Report.txt\` and \`report.txt\` may be different names.
+Linux command names and paths are generally case-sensitive: `Report.txt` and `report.txt` may be different names.
 
 ### Useful first commands
 
 | Command | What it tells you |
 |---|---|
-| \`pwd\` | Print the current working directory. |
-| \`whoami\` | Show the effective username. |
-| \`id\` | Show user and group identity information. |
-| \`hostname\` | Show the system's host name. |
-| \`uname -a\` | Show kernel and system information. |
-| \`cat /etc/os-release\` | Show distribution identification information on systems that provide this file. |
-| \`date\` | Show the system date and time. |
-| \`type COMMAND\` | Ask the current shell how it resolves a command name. |
-| \`COMMAND --help\` | Request command-specific help when supported. |
-| \`man COMMAND\` | Open the manual page for a command when installed. |
+| `pwd` | Print the current working directory. |
+| `whoami` | Show the effective username. |
+| `id` | Show user and group identity information. |
+| `hostname` | Show the system's host name. |
+| `uname -a` | Show kernel and system information. |
+| `cat /etc/os-release` | Show distribution identification information on systems that provide this file. |
+| `date` | Show the system date and time. |
+| `type COMMAND` | Ask the current shell how it resolves a command name. |
+| `COMMAND --help` | Request command-specific help when supported. |
+| `man COMMAND` | Open the manual page for a command when installed. |
 
-Replace \`COMMAND\` with the command you are investigating. Not every program supports the same help options. Manual pages are organised into sections; for example, section 1 usually describes user commands and section 5 describes file formats.
+Replace `COMMAND` with the command you are investigating. Not every program supports the same help options. Manual pages are organised into sections; for example, section 1 usually describes user commands and section 5 describes file formats.
 
 ### Exit status
 
-A command normally returns an exit status when it finishes. By convention, zero indicates success and a non-zero value indicates some form of error or exceptional result. In Bash, \`echo $?\` displays the exit status of the most recently completed foreground command. It is useful diagnostic information, but a zero exit status does not prove that a command achieved every intention you had.
+A command normally returns an exit status when it finishes. By convention, zero indicates success and a non-zero value indicates some form of error or exceptional result. In Bash, `echo $?` displays the exit status of the most recently completed foreground command. It is useful diagnostic information, but a zero exit status does not prove that a command achieved every intention you had.
 
 ### Environment variables and PATH
 
-An environment variable is a named value available to a process. Examples include \`HOME\`, \`USER\`, \`SHELL\`, and \`PATH\`.
+An environment variable is a named value available to a process. Examples include `HOME`, `USER`, `SHELL`, and `PATH`.
 
-- \`HOME\` commonly identifies a user's home directory.
-- \`SHELL\` commonly records the user's configured login shell.
-- \`PATH\` is a list of directories the shell searches when a command is entered without an explicit path.
+- `HOME` commonly identifies a user's home directory.
+- `SHELL` commonly records the user's configured login shell.
+- `PATH` is a list of directories the shell searches when a command is entered without an explicit path.
 
-You can inspect selected variables with commands such as \`printf '%s\n' "$HOME"\` or \`printf '%s\n' "$PATH"\`. Environment variables can contain sensitive values in some applications; do not publish complete environment dumps or copy them into public issue reports.
+You can inspect selected variables with commands such as `printf '%s\n' "$HOME"` or `printf '%s\n' "$PATH"`. Environment variables can contain sensitive values in some applications; do not publish complete environment dumps or copy them into public issue reports.
 
 ### Shells are not all the same
 
@@ -167,14 +167,14 @@ Linux organises files into a single directory tree. Storage devices and other fi
 
 ### The root of the filesystem
 
-The path \`/\` is the filesystem tree's root directory. It is not the same as the root user, who is the privileged system account.
+The path `/` is the filesystem tree's root directory. It is not the same as the root user, who is the privileged system account.
 
-- An **absolute path** begins at \`/\`, such as \`/home/learner/notes.txt\`.
-- A **relative path** is interpreted from the current working directory, such as \`notes.txt\` or \`../shared\`.
-- \`.\` means the current directory.
-- \`..\` means the parent directory.
-- \`~\` commonly expands to the current user's home directory.
-- A name beginning with a dot, such as \`.config\`, is conventionally hidden from ordinary \`ls\` output. It is not encrypted or automatically protected.
+- An **absolute path** begins at `/`, such as `/home/learner/notes.txt`.
+- A **relative path** is interpreted from the current working directory, such as `notes.txt` or `../shared`.
+- `.` means the current directory.
+- `..` means the parent directory.
+- `~` commonly expands to the current user's home directory.
+- A name beginning with a dot, such as `.config`, is conventionally hidden from ordinary `ls` output. It is not encrypted or automatically protected.
 
 ### Common directories
 
@@ -182,23 +182,23 @@ The exact contents vary by distribution and installed software. This is a concep
 
 | Path | Common purpose |
 |---|---|
-| \`/\` | Top of the directory tree. |
-| \`/home\` | Home directories for ordinary users. |
-| \`/root\` | Home directory commonly used by the root account. |
-| \`/etc\` | System-wide configuration files. |
-| \`/usr\` | Many user-space programs, libraries, documentation, and shared data. |
-| \`/var\` | Variable data such as logs, caches, queues, and changing application data. |
-| \`/tmp\` | Temporary files; cleanup behaviour and persistence vary. |
-| \`/boot\` | Files used during boot, often including kernel and bootloader-related files. |
-| \`/dev\` | Device nodes representing devices and device interfaces. |
-| \`/proc\` | A virtual filesystem exposing process and kernel information. |
-| \`/sys\` | A virtual filesystem exposing device and kernel-related information. |
-| \`/run\` | Volatile runtime state created since boot. |
-| \`/mnt\` and \`/media\` | Common locations for mounting filesystems and removable media. |
-| \`/opt\` | A location often used for optional or add-on software. |
-| \`/srv\` | Data provided by services on a system. |
+| `/` | Top of the directory tree. |
+| `/home` | Home directories for ordinary users. |
+| `/root` | Home directory commonly used by the root account. |
+| `/etc` | System-wide configuration files. |
+| `/usr` | Many user-space programs, libraries, documentation, and shared data. |
+| `/var` | Variable data such as logs, caches, queues, and changing application data. |
+| `/tmp` | Temporary files; cleanup behaviour and persistence vary. |
+| `/boot` | Files used during boot, often including kernel and bootloader-related files. |
+| `/dev` | Device nodes representing devices and device interfaces. |
+| `/proc` | A virtual filesystem exposing process and kernel information. |
+| `/sys` | A virtual filesystem exposing device and kernel-related information. |
+| `/run` | Volatile runtime state created since boot. |
+| `/mnt` and `/media` | Common locations for mounting filesystems and removable media. |
+| `/opt` | A location often used for optional or add-on software. |
+| `/srv` | Data provided by services on a system. |
 
-On many modern distributions, paths such as \`/bin\` and \`/sbin\` may be symbolic links into \`/usr\`. Do not assume every Linux system has an identical directory layout.
+On many modern distributions, paths such as `/bin` and `/sbin` may be symbolic links into `/usr`. Do not assume every Linux system has an identical directory layout.
 
 ### A simplified filesystem map
 
@@ -236,37 +236,37 @@ Linux filesystems can represent different kinds of objects:
 - **Device file:** a filesystem interface to a device or kernel driver.
 - **Socket and FIFO (named pipe):** filesystem objects used for communication between processes.
 
-A symbolic link is not the same as a copy of the target file. The command \`ls -l\` displays a symbolic link with an arrow to its target.
+A symbolic link is not the same as a copy of the target file. The command `ls -l` displays a symbolic link with an arrow to its target.
 
 ### Navigation and inspection commands
 
 | Command | Purpose |
 |---|---|
-| \`pwd\` | Show the current directory. |
-| \`ls\` / \`ls -la\` | List entries, including hidden entries in the second form. |
-| \`cd PATH\` | Change the current directory. |
-| \`mkdir NAME\` | Create a directory. |
-| \`touch NAME\` | Create an empty file if it does not exist, or update timestamps. |
-| \`file NAME\` | Report the type of a filesystem object based on its content and metadata. |
-| \`stat NAME\` | Display filesystem metadata. |
-| \`readlink PATH\` | Display a symbolic link's target. |
-| \`find PATH -name 'PATTERN'\` | Search a selected tree for matching names. |
+| `pwd` | Show the current directory. |
+| `ls` / `ls -la` | List entries, including hidden entries in the second form. |
+| `cd PATH` | Change the current directory. |
+| `mkdir NAME` | Create a directory. |
+| `touch NAME` | Create an empty file if it does not exist, or update timestamps. |
+| `file NAME` | Report the type of a filesystem object based on its content and metadata. |
+| `stat NAME` | Display filesystem metadata. |
+| `readlink PATH` | Display a symbolic link's target. |
+| `find PATH -name 'PATTERN'` | Search a selected tree for matching names. |
 
 ### Creating and changing files
 
 Common file-management commands include:
 
-- \`cp SOURCE DESTINATION\` — copy a file.
-- \`mv SOURCE DESTINATION\` — move or rename a file.
-- \`ln -s TARGET LINK_NAME\` — create a symbolic link.
-- \`rm FILE\` — remove a file.
-- \`rmdir DIRECTORY\` — remove an empty directory.
+- `cp SOURCE DESTINATION` — copy a file.
+- `mv SOURCE DESTINATION` — move or rename a file.
+- `ln -s TARGET LINK_NAME` — create a symbolic link.
+- `rm FILE` — remove a file.
+- `rmdir DIRECTORY` — remove an empty directory.
 
 These commands change filesystem contents. Practice only in a directory you own, check the paths carefully, and understand whether a command acts on a file, a directory, or a whole tree. Linux does not generally provide a recycle bin for command-line deletion. Recursive and forced deletion options can remove large amounts of data quickly; they are deliberately not presented as beginner shortcuts here.
 
 ### A safe personal practice location
 
-If you decide to explore file operations, use a folder in your own home directory rather than a system directory. For example, \`mkdir -p "$HOME/linux-learning"\` creates a personal practice folder if it does not already exist. Check the destination with \`pwd\` and \`ls -la\` before creating or removing anything. This example modifies only the path you specify under your home directory.
+If you decide to explore file operations, use a folder in your own home directory rather than a system directory. For example, `mkdir -p "$HOME/linux-learning"` creates a personal practice folder if it does not already exist. Check the destination with `pwd` and `ls -la` before creating or removing anything. This example modifies only the path you specify under your home directory.
 
 ### Learning outcomes
 
@@ -282,24 +282,24 @@ Configuration files, application output, command results, and many logs are text
 
 | Command | Purpose |
 |---|---|
-| \`cat FILE\` | Print a file's contents. Best for short files. |
-| \`less FILE\` | Read longer output page by page. Press \`q\` to quit. |
-| \`head FILE\` | Display the first lines. |
-| \`tail FILE\` | Display the last lines. |
-| \`wc -l FILE\` | Count lines. |
-| \`file FILE\` | Identify a file's likely type. |
+| `cat FILE` | Print a file's contents. Best for short files. |
+| `less FILE` | Read longer output page by page. Press `q` to quit. |
+| `head FILE` | Display the first lines. |
+| `tail FILE` | Display the last lines. |
+| `wc -l FILE` | Count lines. |
+| `file FILE` | Identify a file's likely type. |
 
 Do not assume every file is plain text. Avoid opening unknown binary files in ways that may flood a terminal or trigger unintended behaviour.
 
 ### Searching and transforming text
 
-- \`grep 'PATTERN' FILE\` searches text for a pattern.
-- \`grep -i 'PATTERN' FILE\` ignores case.
-- \`sort FILE\` sorts lines.
-- \`uniq\` removes adjacent duplicate lines; it is commonly used after sorting.
-- \`cut\` extracts selected fields or character positions.
-- \`sed\` performs stream-oriented text transformations.
-- \`awk\` can select and process fields and records.
+- `grep 'PATTERN' FILE` searches text for a pattern.
+- `grep -i 'PATTERN' FILE` ignores case.
+- `sort FILE` sorts lines.
+- `uniq` removes adjacent duplicate lines; it is commonly used after sorting.
+- `cut` extracts selected fields or character positions.
+- `sed` performs stream-oriented text transformations.
+- `awk` can select and process fields and records.
 
 These tools have their own pattern languages and options. A regular expression is not the same thing as a literal string. Learn basic quoting and inspect the command's help before using complex patterns.
 
@@ -309,23 +309,23 @@ A process commonly receives input through **standard input** and writes normal o
 
 | Shell notation | Meaning |
 |---|---|
-| \`COMMAND > output.txt\` | Send standard output to a file, replacing its previous contents. |
-| \`COMMAND >> output.txt\` | Append standard output to a file. |
-| \`COMMAND 2> errors.txt\` | Send standard error to a file. |
-| \`COMMAND < input.txt\` | Read standard input from a file. |
-| \`COMMAND 2>&1\` | Redirect standard error to the current standard-output destination. |
+| `COMMAND > output.txt` | Send standard output to a file, replacing its previous contents. |
+| `COMMAND >> output.txt` | Append standard output to a file. |
+| `COMMAND 2> errors.txt` | Send standard error to a file. |
+| `COMMAND < input.txt` | Read standard input from a file. |
+| `COMMAND 2>&1` | Redirect standard error to the current standard-output destination. |
 
-Redirection can overwrite files. Before using \`>\`, confirm the destination and whether you intend to replace its contents. The order of redirections matters.
+Redirection can overwrite files. Before using `>`, confirm the destination and whether you intend to replace its contents. The order of redirections matters.
 
 ### Pipes connect commands
 
-A pipe, written \`|\`, connects the standard output of one command to the standard input of the next command.
+A pipe, written `|`, connects the standard output of one command to the standard input of the next command.
 
 For example:
 
     cat /etc/os-release | grep '^NAME='
 
-This reads the distribution identification file and passes its output to \`grep\`, which selects the line beginning with \`NAME=\`. The same result could be obtained in other ways; the example is intended to show how data flows between commands.
+This reads the distribution identification file and passes its output to `grep`, which selects the line beginning with `NAME=`. The same result could be obtained in other ways; the example is intended to show how data flows between commands.
 
 <figure class="cins-linux-figure" aria-labelledby="cins-linux-pipe-title">
   <figcaption id="cins-linux-pipe-title" class="cins-linux-figure-heading">A shell pipeline</figcaption>
@@ -356,17 +356,17 @@ A multi-user operating system needs rules about who can read, change, or execute
 - A **group** is a collection of users used to manage access.
 - A **GID** is a numeric group identifier.
 - A file normally records an owner and a group, along with permission information.
-- The **root** account has extensive system-level privileges. It is not simply another name for the filesystem's \`/\` directory.
+- The **root** account has extensive system-level privileges. It is not simply another name for the filesystem's `/` directory.
 
-Files such as \`/etc/passwd\` and \`/etc/group\` contain account and group information. Password hashes are normally kept separately in a protected shadow file. Do not attempt to edit account databases by hand or expose protected account information.
+Files such as `/etc/passwd` and `/etc/group` contain account and group information. Password hashes are normally kept separately in a protected shadow file. Do not attempt to edit account databases by hand or expose protected account information.
 
 Useful inspection commands include:
 
-- \`whoami\` — current effective username.
-- \`id\` — UID, GID, and supplementary groups.
-- \`groups\` — groups associated with the current user.
-- \`getent passwd USERNAME\` — query account information through the configured name-service system.
-- \`getent group GROUPNAME\` — query group information.
+- `whoami` — current effective username.
+- `id` — UID, GID, and supplementary groups.
+- `groups` — groups associated with the current user.
+- `getent passwd USERNAME` — query account information through the configured name-service system.
+- `getent group GROUPNAME` — query group information.
 
 ### What read, write, and execute mean
 
@@ -412,25 +412,25 @@ The basic numeric weights are:
 | Write (w) | 2 |
 | Execute (x) | 1 |
 
-Add the values within each class. For example, \`rwx\` is 7, \`r-x\` is 5, and \`r--\` is 4. Therefore, \`754\` represents owner \`rwx\`, group \`r-x\`, and other \`r--\`.
+Add the values within each class. For example, `rwx` is 7, `r-x` is 5, and `r--` is 4. Therefore, `754` represents owner `rwx`, group `r-x`, and other `r--`.
 
 Some common commands are:
 
-- \`ls -l FILE\` — inspect the owner, group, and basic permissions.
-- \`chmod\` — change permission bits.
-- \`chown\` — change ownership.
-- \`chgrp\` — change group ownership.
-- \`umask\` — control which permission bits are removed from newly created objects.
+- `ls -l FILE` — inspect the owner, group, and basic permissions.
+- `chmod` — change permission bits.
+- `chown` — change ownership.
+- `chgrp` — change group ownership.
+- `umask` — control which permission bits are removed from newly created objects.
 
 A **umask** is a mask applied when a process creates a file or directory; it removes permission bits from the mode requested by the program. It is not simply a universal permission setting for every file. Filesystem ACLs and application behaviour can affect the final access rules.
 
 ### Why sudo matters
 
-\`sudo\` runs an approved command with elevated privileges according to the system's policy. It is an administration mechanism, not a command that should be added automatically when something fails.
+`sudo` runs an approved command with elevated privileges according to the system's policy. It is an administration mechanism, not a command that should be added automatically when something fails.
 
 Use the principle of **least privilege**: operate as a normal user for everyday work and elevate privileges only when a specific administrative task requires it. Read the command and target carefully before approving a privileged operation.
 
-<aside class="cins-linux-warning"><strong>Permission safety:</strong> Do not use \`chmod 777\` as a general fix, and do not run recursive permission or ownership changes on system directories because a tutorial says to. Broad permissions can expose data or break a working system. Commands using \`-R\`, \`sudo\`, or system paths deserve particular scrutiny.</aside>
+<aside class="cins-linux-warning"><strong>Permission safety:</strong> Do not use `chmod 777` as a general fix, and do not run recursive permission or ownership changes on system directories because a tutorial says to. Broad permissions can expose data or break a working system. Commands using `-R`, `sudo`, or system paths deserve particular scrutiny.</aside>
 
 ### Learning outcomes
 
@@ -457,8 +457,8 @@ The package format and package manager depend on the distribution. Do not mix pa
 
 | Distribution family / examples | High-level tools | Package format |
 |---|---|---|
-| Debian, Ubuntu, Linux Mint | APT for package management; dpkg for lower-level Debian package operations | \`.deb\` |
-| Fedora, RHEL and related systems | DNF for package management; RPM for lower-level package operations | \`.rpm\` |
+| Debian, Ubuntu, Linux Mint | APT for package management; dpkg for lower-level Debian package operations | `.deb` |
+| Fedora, RHEL and related systems | DNF for package management; RPM for lower-level package operations | `.rpm` |
 | Arch Linux | Pacman | Arch package archives |
 
 Other systems may use different tools or additional software managers. Some distributions also support sandboxed formats such as Flatpak or Snap; these are separate distribution and application packaging approaches.
@@ -469,21 +469,21 @@ These examples apply to Debian-family distributions that use APT. Installing, up
 
 | Command | Meaning |
 |---|---|
-| \`apt search TERM\` | Search package metadata. |
-| \`apt show PACKAGE\` | Display package information. |
-| \`apt list --installed\` | List installed packages. |
-| \`sudo apt update\` | Refresh the local package index; it does not itself upgrade installed packages. |
-| \`sudo apt upgrade\` | Upgrade installed packages where the package manager can resolve the operation. |
-| \`sudo apt install PACKAGE\` | Install a package and required dependencies. |
-| \`sudo apt remove PACKAGE\` | Remove a package; review the proposed changes before confirming. |
+| `apt search TERM` | Search package metadata. |
+| `apt show PACKAGE` | Display package information. |
+| `apt list --installed` | List installed packages. |
+| `sudo apt update` | Refresh the local package index; it does not itself upgrade installed packages. |
+| `sudo apt upgrade` | Upgrade installed packages where the package manager can resolve the operation. |
+| `sudo apt install PACKAGE` | Install a package and required dependencies. |
+| `sudo apt remove PACKAGE` | Remove a package; review the proposed changes before confirming. |
 
 APT's behaviour and prompts can depend on the distribution release and configuration. Read the proposed transaction before accepting it.
 
 ### DNF and Pacman
 
-DNF is used by Fedora and several related RPM-based distributions. Examples include \`dnf search PACKAGE\`, \`dnf info PACKAGE\`, and \`sudo dnf install PACKAGE\`. DNF's \`upgrade\` command updates installed packages to available versions that can be resolved.
+DNF is used by Fedora and several related RPM-based distributions. Examples include `dnf search PACKAGE`, `dnf info PACKAGE`, and `sudo dnf install PACKAGE`. DNF's `upgrade` command updates installed packages to available versions that can be resolved.
 
-Pacman is used by Arch Linux. Its common search and package-operation forms include \`pacman -Ss TERM\` and \`pacman -S PACKAGE\`. Arch's rolling-release model and update practices differ from fixed-release distributions; consult the Arch documentation before changing an installed system.
+Pacman is used by Arch Linux. Its common search and package-operation forms include `pacman -Ss TERM` and `pacman -S PACKAGE`. Arch's rolling-release model and update practices differ from fixed-release distributions; consult the Arch documentation before changing an installed system.
 
 ### Safe software habits
 
@@ -512,12 +512,12 @@ Useful inspection commands include:
 
 | Command | Purpose |
 |---|---|
-| \`ps\` | Display a snapshot of processes. |
-| \`ps -ef\` | Display a broad process listing on common procps systems. |
-| \`top\` | Monitor running processes and resource use interactively. |
-| \`pgrep -a NAME\` | Search for process IDs by name and show matching command lines. |
-| \`free -h\` | Display memory and swap usage. |
-| \`uptime\` | Show system uptime and load averages. |
+| `ps` | Display a snapshot of processes. |
+| `ps -ef` | Display a broad process listing on common procps systems. |
+| `top` | Monitor running processes and resource use interactively. |
+| `pgrep -a NAME` | Search for process IDs by name and show matching command lines. |
+| `free -h` | Display memory and swap usage. |
+| `uptime` | Show system uptime and load averages. |
 
 Options can vary between implementations. Consult the local manual pages.
 
@@ -529,21 +529,21 @@ A signal is a notification delivered to a process. Common examples include:
 - **SIGKILL (9):** forces termination; the process cannot catch or ignore it.
 - **SIGINT (2):** commonly generated by pressing Ctrl+C in a terminal.
 
-The \`kill\` command sends a signal to a process ID; despite its name, it does not always mean immediate termination. Never send a signal to a process unless you understand what it is and have authority to manage it. Avoid terminating system processes just to see what happens.
+The `kill` command sends a signal to a process ID; despite its name, it does not always mean immediate termination. Never send a signal to a process unless you understand what it is and have authority to manage it. Avoid terminating system processes just to see what happens.
 
 ### Jobs and foreground/background execution
 
-A shell can manage jobs associated with the current terminal session. Common Bash job-control commands include \`jobs\`, \`fg\`, and \`bg\`. An ampersand at the end of a command can start it asynchronously in the background, but background jobs are still processes and may continue to consume resources.
+A shell can manage jobs associated with the current terminal session. Common Bash job-control commands include `jobs`, `fg`, and `bg`. An ampersand at the end of a command can start it asynchronously in the background, but background jobs are still processes and may continue to consume resources.
 
 ### Services and systemd
 
-Many Linux distributions use **systemd** as their service manager and init system. On those systems, \`systemctl\` can inspect and manage units such as services, timers, mounts, and sockets. Not every Linux system uses systemd; other init and service-management systems exist.
+Many Linux distributions use **systemd** as their service manager and init system. On those systems, `systemctl` can inspect and manage units such as services, timers, mounts, and sockets. Not every Linux system uses systemd; other init and service-management systems exist.
 
 On a system that uses systemd, examples of read-oriented inspection commands include:
 
-- \`systemctl status SERVICE\` — inspect the state and recent messages for a service.
-- \`systemctl list-units --type=service\` — list service units known to systemd.
-- \`systemctl is-enabled SERVICE\` — inspect whether a service is configured to start automatically.
+- `systemctl status SERVICE` — inspect the state and recent messages for a service.
+- `systemctl list-units --type=service` — list service units known to systemd.
+- `systemctl is-enabled SERVICE` — inspect whether a service is configured to start automatically.
 
 Starting, stopping, restarting, enabling, or disabling services changes system behaviour. Learn what a service does and use an authorised practice environment before performing service-management actions.
 
@@ -572,13 +572,13 @@ A drive is not necessarily a filesystem, and a partition is not necessarily moun
 
 | Command | Purpose |
 |---|---|
-| \`lsblk\` | List block devices and their relationships. |
-| \`lsblk -f\` | Include filesystem-related information where available. |
-| \`df -h\` | Show filesystem space usage in human-readable units. |
-| \`du -sh PATH\` | Estimate the space used by a selected path. |
-| \`findmnt\` | Display mounted filesystems and mount relationships. |
-| \`mount\` | With no arguments, display mounted filesystems on common systems. |
-| \`cat /etc/fstab\` | Read the static filesystem-mount configuration. |
+| `lsblk` | List block devices and their relationships. |
+| `lsblk -f` | Include filesystem-related information where available. |
+| `df -h` | Show filesystem space usage in human-readable units. |
+| `du -sh PATH` | Estimate the space used by a selected path. |
+| `findmnt` | Display mounted filesystems and mount relationships. |
+| `mount` | With no arguments, display mounted filesystems on common systems. |
+| `cat /etc/fstab` | Read the static filesystem-mount configuration. |
 
 Some device details may require additional permissions or utilities. Output depends on the storage setup and distribution.
 
@@ -615,17 +615,17 @@ A useful troubleshooting approach starts with evidence. System logs can help exp
 
 ### Where logs are found
 
-Many traditional text logs are stored under \`/var/log\`. On systemd-based systems, \`systemd-journald\` collects journal entries, which can be queried using \`journalctl\`. Some systems combine journald with traditional syslog services; the exact setup varies.
+Many traditional text logs are stored under `/var/log`. On systemd-based systems, `systemd-journald` collects journal entries, which can be queried using `journalctl`. Some systems combine journald with traditional syslog services; the exact setup varies.
 
 Examples of read-oriented commands on systems with systemd include:
 
 | Command | Purpose |
 |---|---|
-| \`journalctl -b\` | Show journal entries from the current boot. |
-| \`journalctl -u SERVICE\` | Filter entries associated with a unit. |
-| \`journalctl -p warning\` | Filter by warning priority and more severe priorities. |
-| \`journalctl --since "1 hour ago"\` | Restrict entries to a time range. |
-| \`systemctl status SERVICE\` | Inspect the current unit state and recent messages. |
+| `journalctl -b` | Show journal entries from the current boot. |
+| `journalctl -u SERVICE` | Filter entries associated with a unit. |
+| `journalctl -p warning` | Filter by warning priority and more severe priorities. |
+| `journalctl --since "1 hour ago"` | Restrict entries to a time range. |
+| `systemctl status SERVICE` | Inspect the current unit state and recent messages. |
 
 The current user may not be allowed to read every system log. Use only the access granted to your account. Do not try to bypass log permissions.
 
@@ -642,14 +642,14 @@ The current user may not be allowed to read every system log. Use only the acces
 
 ### A few useful system checks
 
-- \`uptime\` — uptime and load averages.
-- \`free -h\` — memory and swap summary.
-- \`df -h\` — filesystem capacity and usage.
-- \`du -sh PATH\` — approximate space used by a selected path.
-- \`systemctl status SERVICE\` — service state on systemd systems.
-- \`journalctl\` — journal inspection on systemd systems.
+- `uptime` — uptime and load averages.
+- `free -h` — memory and swap summary.
+- `df -h` — filesystem capacity and usage.
+- `du -sh PATH` — approximate space used by a selected path.
+- `systemctl status SERVICE` — service state on systemd systems.
+- `journalctl` — journal inspection on systemd systems.
 
-Networking-specific inspection such as \`ip\`, \`ss\`, DNS queries, and route inspection was introduced in [Stage 2 — Networking](stage-2-networking.md). Use that page as the networking reference rather than duplicating its curriculum here.
+Networking-specific inspection such as `ip`, `ss`, DNS queries, and route inspection was introduced in [Stage 2 — Networking](stage-2-networking.md). Use that page as the networking reference rather than duplicating its curriculum here.
 
 ### Protect log data
 
@@ -694,11 +694,11 @@ The first time an SSH client connects to a host, it may ask whether to trust the
 
 ### Related tools
 
-- \`ssh\` — remote login and command execution.
-- \`ssh-keygen\` — generate and manage SSH keys.
-- \`ssh-agent\` — hold keys for use by an authenticated session.
-- \`scp\` — copy files over SSH.
-- \`sftp\` — interactive file transfer over SSH.
+- `ssh` — remote login and command execution.
+- `ssh-keygen` — generate and manage SSH keys.
+- `ssh-agent` — hold keys for use by an authenticated session.
+- `scp` — copy files over SSH.
+- `sftp` — interactive file transfer over SSH.
 
 SSH does not make every action safe. A remote shell can change or delete data on the remote system. File-transfer tools can overwrite files. Use authorised accounts and verify source and destination paths before transferring.
 
