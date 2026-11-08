@@ -78,8 +78,8 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
 **Networking → Linux → Windows → Internet and Web fundamentals**
 
-- **Published:** [Stage 2 — Networking](curriculum/stage-2-networking.md), [Stage 2 — Linux](curriculum/stage-2-linux.md), and [Stage 2 — Windows](curriculum/stage-2-windows.md).
-- **Next:** Internet and Web fundamentals.
+- **Published:** [Stage 2 — Networking](curriculum/stage-2-networking.md), [Stage 2 — Linux](curriculum/stage-2-linux.md), [Stage 2 — Windows](curriculum/stage-2-windows.md), and [Stage 2 — Internet and Web Fundamentals](curriculum/stage-2-web-fundamentals.md).
+- **Stage 2 complete:** all four parts are now published.
 
 The [Curriculum overview](curriculum/index.md) is the authoritative page for the complete sequence and publication status.
 
