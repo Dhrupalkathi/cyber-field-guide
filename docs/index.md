@@ -83,6 +83,8 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
 The [Curriculum overview](curriculum/index.md) is the authoritative page for the complete sequence and publication status.
 
+## A complete view of cybersecurity
+
 This guide gives space to both security assessment and defensive operations.
 
 <div class="grid cards" markdown>
