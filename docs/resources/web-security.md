@@ -2,7 +2,7 @@
 
 > **CINS stage fit:** After Stage 2 — Internet and Web fundamentals. Specialist web-security material belongs after learners understand HTTP, browser behavior, sessions, and basic databases. A numbered specialist stage has not yet been assigned in the published curriculum.
 
-This page is the canonical home for web and API security resources, including the relevant learning platforms and deliberately vulnerable applications.
+This page is the canonical home for web and API security resources, including the relevant learning platforms and deliberately vulnerable applications. For browser, URL, HTTP, cookie, session, and API foundations, start with the separate [Web and Internet Fundamentals resources](web-fundamentals.md) and the [Stage 2 curriculum](../curriculum/stage-2-web-fundamentals.md).
 
 ## Guided learning
 
