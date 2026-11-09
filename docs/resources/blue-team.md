@@ -34,7 +34,7 @@ Covers SOC workflows, alert triage, log analysis, SIEM, endpoint monitoring, phi
 
 Covers alert investigation, event analysis, phishing analysis, incident management, and SOC workflows.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 SOC specialisation; introductory log analysis is recommended.
+- **CINS stage fit:** After Stage 3 — Stage 5 SOC specialisation; introductory log analysis is recommended.
 - **Access:** Some paths or features may require paid membership. Check current access before recommending it as a club resource.
 - **Official resource:** [SOC Analyst Learning Path](https://app.letsdefend.io/path/soc-analyst-learning-path)
 - **Review state:** Provider path and help page checked 31 October 2026; CINS has not completed the path.
