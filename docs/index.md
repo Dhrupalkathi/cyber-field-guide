@@ -1,5 +1,102 @@
 # CINS Cyber Field Guide
 
+<div class="cins-homepage-atmosphere" aria-hidden="true">
+  <svg class="cins-atmosphere-svg" viewBox="0 0 1875 1003" xmlns="http://www.w3.org/2000/svg" focusable="false">
+    <defs>
+      <radialGradient id="cins-atmo-glow">
+        <stop offset="0" stop-color="#f28b45" stop-opacity=".28"/>
+        <stop offset=".58" stop-color="#f28b45" stop-opacity=".09"/>
+        <stop offset="1" stop-color="#f28b45" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="cins-atmo-wire" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f28b45" stop-opacity=".8"/>
+        <stop offset=".55" stop-color="#19a5a5" stop-opacity=".62"/>
+        <stop offset="1" stop-color="#087985" stop-opacity=".18"/>
+      </linearGradient>
+      <linearGradient id="cins-atmo-scan">
+        <stop offset="0" stop-color="#f28b45" stop-opacity="0"/>
+        <stop offset=".48" stop-color="#ffc078" stop-opacity=".95"/>
+        <stop offset="1" stop-color="#f28b45" stop-opacity="0"/>
+      </linearGradient>
+      <filter id="cins-atmo-blur">
+        <feGaussianBlur stdDeviation="22"/>
+      </filter>
+      <filter id="cins-atmo-glow-filter" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur stdDeviation="5" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+
+    <!-- Left: a large orbital network, deliberately outside the reading column. -->
+    <circle cx="230" cy="520" r="330" fill="url(#cins-atmo-glow)" filter="url(#cins-atmo-blur)"/>
+    <g class="cins-atmo-left-core" fill="none" stroke="url(#cins-atmo-wire)" stroke-width="1.5">
+      <circle cx="230" cy="520" r="218" stroke-opacity=".38"/>
+      <circle cx="230" cy="520" r="184" stroke-opacity=".42" stroke-dasharray="3 12"/>
+      <ellipse cx="230" cy="520" rx="220" ry="82" transform="rotate(-28 230 520)" stroke-opacity=".8"/>
+      <ellipse cx="230" cy="520" rx="220" ry="82" transform="rotate(38 230 520)" stroke-opacity=".62"/>
+      <ellipse cx="230" cy="520" rx="86" ry="218" transform="rotate(18 230 520)" stroke-opacity=".45"/>
+      <path d="M25 520H435M230 310V730M82 370L378 670M74 680L390 360" stroke-opacity=".22" stroke-dasharray="5 9"/>
+    </g>
+    <g class="cins-atmo-left-orbit" fill="none" stroke="#f28b45" stroke-width="2.5" filter="url(#cins-atmo-glow-filter)">
+      <ellipse cx="230" cy="520" rx="258" ry="102" transform="rotate(-34 230 520)" stroke-dasharray="78 18 10 20" stroke-opacity=".9"/>
+    </g>
+    <g fill="#ffc078" filter="url(#cins-atmo-glow-filter)">
+      <circle class="cins-atmo-node node-a" cx="50" cy="430" r="5"/>
+      <circle class="cins-atmo-node node-b" cx="398" cy="390" r="4"/>
+      <circle class="cins-atmo-node node-c" cx="420" cy="690" r="5"/>
+      <circle class="cins-atmo-node node-d" cx="72" cy="720" r="3.5"/>
+      <circle class="cins-atmo-node node-e" cx="230" cy="302" r="4"/>
+    </g>
+    <g fill="none" stroke="#159c9d" stroke-width="1.6" stroke-opacity=".68">
+      <path d="M0 250L82 250L130 298L130 350"/>
+      <path d="M0 805L110 805L154 761L154 716"/>
+      <path d="M318 0L318 88L374 144L448 144"/>
+      <path d="M0 595L72 595L112 555"/>
+    </g>
+    <g fill="#159c9d">
+      <circle class="cins-atmo-node node-c" cx="130" cy="350" r="3"/>
+      <circle class="cins-atmo-node node-a" cx="154" cy="716" r="3"/>
+      <circle class="cins-atmo-node node-b" cx="448" cy="144" r="3"/>
+    </g>
+
+    <!-- Right: a living circuit map behind the translucent contents navigation. -->
+    <circle cx="1665" cy="510" r="350" fill="url(#cins-atmo-glow)" opacity=".62" filter="url(#cins-atmo-blur)"/>
+    <g class="cins-atmo-circuit" fill="none" stroke="url(#cins-atmo-wire)" stroke-width="2">
+      <path d="M1440 120H1570L1620 170H1810"/>
+      <path d="M1510 220H1600L1650 270H1875"/>
+      <path d="M1450 360H1550L1605 305H1710L1760 355H1875"/>
+      <path d="M1510 510H1610L1670 570H1875"/>
+      <path d="M1430 680H1560L1615 625H1745L1810 690H1875"/>
+      <path d="M1500 850H1610L1660 800H1875"/>
+      <path d="M1690 0V90L1740 140V240"/>
+      <path d="M1810 420V510L1760 560V650"/>
+      <path d="M1590 760V850L1540 900V1003"/>
+      <path d="M1840 740V810L1790 860V1003"/>
+    </g>
+    <g fill="#ffad62" filter="url(#cins-atmo-glow-filter)">
+      <circle class="cins-atmo-node node-a" cx="1570" cy="120" r="4"/>
+      <circle class="cins-atmo-node node-b" cx="1810" cy="120" r="5"/>
+      <circle class="cins-atmo-node node-c" cx="1710" cy="305" r="4"/>
+      <circle class="cins-atmo-node node-d" cx="1670" cy="570" r="5"/>
+      <circle class="cins-atmo-node node-e" cx="1745" cy="625" r="4"/>
+      <circle class="cins-atmo-node node-b" cx="1660" cy="800" r="4"/>
+      <circle class="cins-atmo-node node-c" cx="1810" cy="690" r="4"/>
+    </g>
+    <g fill="none" stroke="#159c9d" stroke-width="1.5" stroke-opacity=".75">
+      <circle cx="1570" cy="120" r="11"/>
+      <circle cx="1810" cy="120" r="13"/>
+      <circle cx="1710" cy="305" r="10"/>
+      <circle cx="1670" cy="570" r="12"/>
+      <circle cx="1660" cy="800" r="10"/>
+    </g>
+
+    <!-- Scanning light sweeps through the side field. -->
+    <rect class="cins-atmo-scan" x="0" y="0" width="5" height="1003" fill="url(#cins-atmo-scan)"/>
+    <path class="cins-atmo-scan-line" d="M0 0H460" stroke="#ffc078" stroke-width="2" stroke-opacity=".6"/>
+    <path class="cins-atmo-scan-line right" d="M1440 0H1875" stroke="#ffc078" stroke-width="2" stroke-opacity=".42"/>
+  </svg>
+</div>
+
 <div class="cins-hero" markdown>
 
 <div class="cins-motion-control">
@@ -95,6 +192,9 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
       <ellipse cx="214" cy="174" rx="44" ry="22" fill="none" stroke="#fff0d4" stroke-opacity="0.28" stroke-width="2" transform="rotate(-30 214 174)"/>
       <circle cx="260" cy="260" r="158" fill="none" stroke="#ffe0b0" stroke-opacity="0.5" stroke-width="1.4"/>
 
+      <g class="cins-orb-visible-ring" fill="none" stroke="#fff0d4" stroke-width="3" stroke-linecap="round">
+        <ellipse cx="260" cy="260" rx="204" ry="76" transform="rotate(-31 260 260)" stroke-dasharray="54 20 8 18" opacity=".92"/>
+      </g>
       <g class="cins-orb-mesh" fill="none" stroke="#ffd7a5" stroke-opacity="0.55" stroke-width="1.15">
         <ellipse cx="260" cy="260" rx="189" ry="69" transform="rotate(-26 260 260)"/>
         <ellipse cx="260" cy="260" rx="185" ry="112" transform="rotate(32 260 260)"/>
