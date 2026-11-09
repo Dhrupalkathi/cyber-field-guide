@@ -1428,3 +1428,37 @@
   --md-typeset-a-color: #71e0d6;
   --cins-link-visited: #c5a7ff;
 }
+
+
+/* Enforce the visible link states on the body palette used by Zensical. */
+body[data-md-color-scheme="default"] .md-typeset a:not(.md-button):not(.headerlink) {
+  color: #087985 !important;
+}
+
+body[data-md-color-scheme="default"] .md-typeset a:not(.md-button):not(.headerlink):visited {
+  color: #7251a4 !important;
+}
+
+body[data-md-color-scheme="default"] .md-typeset a:not(.md-button):not(.headerlink):hover {
+  color: #b85e2d !important;
+}
+
+body[data-md-color-scheme="slate"] .md-typeset a:not(.md-button):not(.headerlink) {
+  color: #71e0d6 !important;
+}
+
+body[data-md-color-scheme="slate"] .md-typeset a:not(.md-button):not(.headerlink):visited {
+  color: #c5a7ff !important;
+}
+
+body[data-md-color-scheme="slate"] .md-typeset a:not(.md-button):not(.headerlink):hover {
+  color: #ffc078 !important;
+}
+
+body[data-md-color-scheme="slate"] .md-typeset .headerlink {
+  color: #71e0d6 !important;
+}
+
+body[data-md-color-scheme="slate"] .md-typeset .headerlink:hover {
+  color: #ffc078 !important;
+}
