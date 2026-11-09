@@ -1329,13 +1329,15 @@
   }
 
   .cins-hero-layout {
-    display: grid;
+    display: flex;
     min-height: 0;
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: stretch;
     gap: 0.15rem;
   }
 
   .cins-hero-copy {
+    order: 0;
     width: 100%;
     max-width: 100%;
     padding-top: 0.25rem;
@@ -1355,8 +1357,9 @@
     position: relative;
     top: auto;
     right: auto;
-    width: min(100%, 330px);
-    margin: -0.2rem auto -0.7rem;
+    order: -1;
+    width: min(72%, 230px);
+    margin: -0.1rem auto 0.35rem;
     transform: none;
   }
 
