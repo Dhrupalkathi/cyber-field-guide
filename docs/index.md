@@ -90,6 +90,34 @@
       <circle cx="1660" cy="800" r="10"/>
     </g>
 
+    <!-- Small data packets travel along the existing circuit routes. -->
+    <g class="cins-atmo-packet-streams" fill="none" pointer-events="none">
+      <circle class="cins-atmo-packet packet-ember" r="4" fill="#fff0cf">
+        <animateMotion dur="7.4s" repeatCount="indefinite" path="M0 250H82L130 298V350"/>
+      </circle>
+      <circle class="cins-atmo-packet packet-teal" r="3.2" fill="#9df6e9">
+        <animateMotion begin="-2.8s" dur="9s" repeatCount="indefinite" path="M0 805H110L154 761V716"/>
+      </circle>
+      <circle class="cins-atmo-packet packet-ember" r="3.5" fill="#fff0cf">
+        <animateMotion begin="-1.6s" dur="8.2s" repeatCount="indefinite" path="M318 0V88L374 144H448"/>
+      </circle>
+      <circle class="cins-atmo-packet packet-teal" r="3" fill="#9df6e9">
+        <animateMotion begin="-4.3s" dur="7.8s" repeatCount="indefinite" path="M0 595H72L112 555"/>
+      </circle>
+      <circle class="cins-atmo-packet packet-ember" r="4" fill="#fff0cf">
+        <animateMotion begin="-3.5s" dur="10s" repeatCount="indefinite" path="M1440 120H1570L1620 170H1810"/>
+      </circle>
+      <circle class="cins-atmo-packet packet-teal" r="3.4" fill="#9df6e9">
+        <animateMotion begin="-6s" dur="8.6s" repeatCount="indefinite" path="M1510 510H1610L1670 570H1875"/>
+      </circle>
+      <circle class="cins-atmo-packet packet-ember" r="3.2" fill="#fff0cf">
+        <animateMotion begin="-2.2s" dur="9.4s" repeatCount="indefinite" path="M1430 680H1560L1615 625H1745L1810 690H1875"/>
+      </circle>
+      <circle class="cins-atmo-packet packet-teal" r="3" fill="#9df6e9">
+        <animateMotion begin="-5.1s" dur="8.8s" repeatCount="indefinite" path="M1500 850H1610L1660 800H1875"/>
+      </circle>
+    </g>
+
     <!-- Scanning light sweeps through the side field. -->
     <rect class="cins-atmo-scan" x="0" y="0" width="5" height="1003" fill="url(#cins-atmo-scan)"/>
     <path class="cins-atmo-scan-line" d="M0 0H460" stroke="#ffc078" stroke-width="2" stroke-opacity=".6"/>
