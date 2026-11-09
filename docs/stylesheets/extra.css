@@ -1029,15 +1029,14 @@
 
 .cins-hero-layout {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(260px, 0.95fr);
-  align-items: center;
-  gap: clamp(1rem, 3vw, 2.8rem);
+  display: block;
+  min-height: 420px;
 }
 
 .cins-hero-copy {
   position: relative;
   z-index: 2;
+  width: min(60%, 38rem);
   min-width: 0;
 }
 
@@ -1073,13 +1072,16 @@
 }
 
 .cins-hero-copy h2 {
-  max-width: 14ch;
+  max-width: 16ch;
   margin: 0 0 1rem;
   color: #10283f;
-  font-size: clamp(2.15rem, 4.4vw, 3.55rem);
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
   font-weight: 850;
-  line-height: 1.04;
-  letter-spacing: -0.055em;
+  line-height: 1.06;
+  letter-spacing: -0.05em;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 [data-md-color-scheme="slate"] .cins-hero-copy h2 {
@@ -1167,16 +1169,22 @@
 
 /* The graphic is a lightweight SVG + CSS animation, not a WebGL scene. */
 .cins-hero-visual {
-  position: relative;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: -0.35rem;
   display: grid;
+  width: min(52%, 430px);
   min-width: 0;
   place-items: center;
   aspect-ratio: 1;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .cins-orb-svg {
   display: block;
-  width: min(100%, 470px);
+  width: min(100%, 430px);
   height: auto;
   overflow: visible;
   filter: drop-shadow(0 20px 34px rgba(194, 90, 37, 0.15));
@@ -1298,8 +1306,15 @@
 
 @media (max-width: 850px) {
   .cins-hero-layout {
-    grid-template-columns: minmax(0, 1fr) minmax(210px, 0.72fr);
-    gap: 0.8rem;
+    min-height: 390px;
+  }
+
+  .cins-hero-copy {
+    width: min(62%, 35rem);
+  }
+
+  .cins-hero-visual {
+    width: min(50%, 360px);
   }
 
   .cins-orb-svg {
@@ -1314,11 +1329,15 @@
   }
 
   .cins-hero-layout {
+    display: grid;
+    min-height: 0;
     grid-template-columns: 1fr;
     gap: 0.15rem;
   }
 
   .cins-hero-copy {
+    width: 100%;
+    max-width: 100%;
     padding-top: 0.25rem;
   }
 
@@ -1332,8 +1351,12 @@
   }
 
   .cins-hero-visual {
+    position: relative;
+    top: auto;
+    right: auto;
     width: min(100%, 330px);
     margin: -0.2rem auto -0.7rem;
+    transform: none;
   }
 
   .cins-orb-svg {
