@@ -56,7 +56,8 @@ AI-generated text must not be copied directly into the public guide without the 
 - Stage 2 — Networking should be understandable without specialist software; optional commands must not require scanning or testing a real third-party network.
 - Stage 2 — Linux does not require Kali Linux, a particular distribution, root access, or a new operating-system installation. Learners can read the material first and use an existing Linux environment or an approved sandbox for optional command practice.
 - Stage 2 — Windows does not require a particular Windows edition, a new installation, a virtual machine, or administrator access. Learners can read the material first; optional commands should be read-only and used only on an owned or explicitly authorised device.
-- Stage 3 and Stage 4 should remain understandable without specialist installations, paid accounts, or high-end hardware.\n- Stage 5 should offer conceptual, design-based, or synthetic-data alternatives when a pathway-specific tool, account, device, or supervised lab is unavailable. Do not make a paid platform or specialist installation a universal requirement.
+- Stage 3 and Stage 4 should remain understandable without specialist installations, paid accounts, or high-end hardware.
+- Stage 5 should offer conceptual, design-based, or synthetic-data alternatives when a pathway-specific tool, account, device, or supervised lab is unavailable. Do not make a paid platform or specialist installation a universal requirement.
 - Do not require a paid licence, a high-end GPU, or a local virtualisation setup.
 - Offer a browser-based option for Python where possible.
 - If a student has limited hardware or internet access, mentors should provide downloadable notes and small sample files where practical.
