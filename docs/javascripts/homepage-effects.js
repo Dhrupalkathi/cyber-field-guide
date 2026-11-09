@@ -23,7 +23,7 @@
 
     const resetNodeResponse = () => {
       nodes.forEach((node) => {
-        node.style.setProperty("--cins-node-glow", "0px");
+        node.style.setProperty("--cins-node-glow", (influence * 15).toFixed(1) + "px");
         node.style.setProperty("--cins-node-brightness", "1");
       });
     };
@@ -66,7 +66,7 @@
       const opacity = (dark ? 0.88 : 0.78) + progress * 0.12;
 
       atmosphere.style.setProperty("--cins-scroll-progress", progress.toFixed(4));
-      atmosphere.style.setProperty("--cins-scroll-shift-y", \`\${-shift}px\`);
+      atmosphere.style.setProperty("--cins-scroll-shift-y", (-shift) + "px");
       atmosphere.style.setProperty("--cins-scroll-scale", scale.toFixed(4));
       atmosphere.style.setProperty("--cins-scroll-glow", glow.toFixed(3));
       atmosphere.style.setProperty("--cins-scroll-teal", teal.toFixed(3));
@@ -109,8 +109,8 @@
       const xPercent = Math.min(100, Math.max(0, ((pointerX - bounds.left) / Math.max(1, bounds.width)) * 100));
       const yPercent = Math.min(100, Math.max(0, ((pointerY - bounds.top) / Math.max(1, bounds.height)) * 100));
 
-      atmosphere.style.setProperty("--cins-pointer-x", \`\${xPercent.toFixed(1)}%\`);
-      atmosphere.style.setProperty("--cins-pointer-y", \`\${yPercent.toFixed(1)}%\`);
+      atmosphere.style.setProperty("--cins-pointer-x", xPercent.toFixed(1) + "%");
+      atmosphere.style.setProperty("--cins-pointer-y", yPercent.toFixed(1) + "%");
 
       const radius = 245;
       nodeRects.forEach(({ node, x, y }) => {
