@@ -104,6 +104,7 @@
       pointerFramePending = false;
       if (motionIsPaused() || !finePointer.matches) return;
 
+      measureNodes();
       const bounds = atmosphere.getBoundingClientRect();
       const xPercent = Math.min(100, Math.max(0, ((pointerX - bounds.left) / Math.max(1, bounds.width)) * 100));
       const yPercent = Math.min(100, Math.max(0, ((pointerY - bounds.top) / Math.max(1, bounds.height)) * 100));
@@ -142,10 +143,20 @@
       refreshScrollState();
     }, { passive: true });
 
-    if (finePointer.matches) {
-      window.addEventListener("pointermove", onPointerMove, { passive: true });
-      window.addEventListener("pointerleave", clearPointerResponse, { passive: true });
-    }
+    let pointerListenersAttached = false;
+    const syncPointerCapability = () => {
+      if (finePointer.matches && !pointerListenersAttached) {
+        window.addEventListener("pointermove", onPointerMove, { passive: true });
+        window.addEventListener("pointerleave", clearPointerResponse, { passive: true });
+        pointerListenersAttached = true;
+      } else if (!finePointer.matches && pointerListenersAttached) {
+        window.removeEventListener("pointermove", onPointerMove);
+        window.removeEventListener("pointerleave", clearPointerResponse);
+        pointerListenersAttached = false;
+      }
+    };
+
+    syncPointerCapability();
 
     if (motionToggle) {
       motionToggle.addEventListener("change", syncMotionState);
@@ -153,6 +164,7 @@
 
     reducedMotion.addEventListener("change", syncMotionState);
     finePointer.addEventListener("change", () => {
+      syncPointerCapability();
       measureNodes();
       clearPointerResponse();
     });
