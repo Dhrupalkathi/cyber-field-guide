@@ -788,7 +788,7 @@ After Internet and Web fundamentals, Stage 2 — Technology Foundations is compl
 
 **Networking → Linux → Windows → Internet and Web fundamentals**
 
-The next curriculum stage is **Stage 3 — Cybersecurity Core**. It will build on these foundations rather than repeat them. Web application testing, vulnerability discovery, exploitation, secure development, and advanced API security belong in later cybersecurity learning, with explicit authorisation and appropriate lab boundaries.
+**Stage 3 — Cybersecurity Core** builds on these foundations rather than repeating them. Web application testing, vulnerability discovery, exploitation, secure development, and advanced API security belong in later cybersecurity learning, with explicit authorisation and appropriate lab boundaries.
 
 ## References
 
@@ -814,4 +814,4 @@ For additional resources, use the canonical [Web and Internet Fundamentals resou
 
 ## Connection to Stage 3
 
-The browser, HTTP, session, API, and trust-boundary concepts introduced here provide context for later application-security learning. [Stage 3 — Cybersecurity Core](stage-3-cybersecurity-core.md) introduces the shared security principles, risk, identity, cryptography, secure-development, and threat-modelling concepts that apply across domains. Detailed web vulnerability analysis and authorised application testing are deferred to the relevant Stage 4 domain material.
+The browser, HTTP, session, API, and trust-boundary concepts introduced here provide context for later application-security learning. [Stage 3 — Cybersecurity Core](stage-3-cybersecurity-core.md) introduces the shared security principles, risk, identity, cryptography, secure-development, and threat-modelling concepts that apply across domains. Detailed web vulnerability analysis and authorised application testing are developed in the relevant Stage 5 specialisation pathway, building on the domain overview in Stage 4.

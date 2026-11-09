@@ -66,7 +66,7 @@ Covers identity proofing, authentication, authenticator management, and federati
 
 ### MITRE ATT&CK
 
-> **CINS stage fit:** Stage 3 — Cybersecurity Core (introductory concepts); Stage 4 — domain-specific application  
+> **CINS stage fit:** Stage 3 — Cybersecurity Core (introductory concepts); Stage 5 — domain-specific application  
 > **Level:** Beginner overview to professional reference · **Type:** Adversary-behaviour knowledge base
 
 A knowledge base of adversary tactics and techniques based on real-world observations. It provides shared vocabulary for analysing behaviour and considering defensive coverage. It is not a complete list of all threats, a proof of compromise, or a step-by-step attack curriculum.
@@ -79,7 +79,7 @@ A knowledge base of adversary tactics and techniques based on real-world observa
 
 ### FIRST — CVSS v4.0
 
-> **CINS stage fit:** Stage 3 — Cybersecurity Core; deeper vulnerability assessment in Stage 4  
+> **CINS stage fit:** Stage 3 — Cybersecurity Core; deeper vulnerability assessment in Stage 5  
 > **Level:** Developing learner to professional reference · **Type:** Vulnerability severity standard
 
 Defines a structured set of metrics for describing vulnerability severity. CVSS v4.0 includes Base, Threat, Environmental, and Supplemental metric groups. A CVSS score is not an organisation-specific risk decision and should not be used alone to determine remediation priority.
@@ -103,18 +103,18 @@ Lists vulnerabilities that CISA has identified as exploited in the wild. It is u
 
 ### OWASP Top 10:2025
 
-> **CINS stage fit:** Stage 3 — Cybersecurity Core (awareness); Stage 4 — Application Security  
+> **CINS stage fit:** Stage 3 — Cybersecurity Core (awareness); Stage 5 — Application Security  
 > **Level:** Beginner awareness to developing practitioner · **Type:** Application-security awareness document
 
 Describes ten major categories of web-application security risk in the 2025 edition. It is a starting point for awareness, not a complete secure-development standard, a test plan, or a substitute for application-specific threat modelling.
 
-- **Use it for:** Module 3.9. Detailed vulnerability testing belongs in the relevant authorised Stage 4 learning.
+- **Use it for:** Module 3.9. Detailed vulnerability testing belongs in the relevant authorised Stage 5 specialisation pathway.
 - **Official resource:** [OWASP Top 10:2025](https://top10.owasp.org/2025/)
 - **Review state:** Current 2025 edition identified; content review pending.
 
 ### CISA — Secure by Design
 
-> **CINS stage fit:** Stage 3 — Cybersecurity Core; Stage 4 — secure engineering and AppSec  
+> **CINS stage fit:** Stage 3 — Cybersecurity Core; Stage 5 — secure engineering and AppSec  
 > **Level:** Beginner overview to professional reference · **Type:** Secure product-development guidance
 
 Explains how software manufacturers can take responsibility for product security and build safer defaults into products. Use it to discuss security as a design and lifecycle responsibility rather than a feature added only after release.
@@ -127,7 +127,7 @@ Explains how software manufacturers can take responsibility for product security
 
 ### NIST SP 800-61 Rev. 3 — Incident Response
 
-> **CINS stage fit:** Stage 3 — Cybersecurity Core; Stage 4 — DFIR and SOC operations  
+> **CINS stage fit:** Stage 3 — Cybersecurity Core; Stage 5 — DFIR and SOC operations  
 > **Level:** Professional reference · **Type:** Incident-response guidance
 
 Integrates incident-response recommendations into cybersecurity risk management and aligns them with NIST CSF 2.0. Revision 3 was finalised in April 2025 and supersedes Revision 2. Use the overview before reading the full publication.

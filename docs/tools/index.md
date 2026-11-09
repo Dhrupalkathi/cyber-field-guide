@@ -10,6 +10,8 @@ A tool is useful only when you understand the problem it helps solve. This libra
 
 Stage 3 — Cybersecurity Core also does not require specialist installations. Learners can study risk, controls, identity, cryptography, vulnerability management, threat modelling, monitoring, incident response, and resilience using explanations and fictional examples.
 
+Stage 4 — Domain Exploration introduces the missions and workflows of different security domains without requiring specialist tools. Stage 5 — Specialisation and Advanced Study develops selected domains in greater depth; tools and labs are pathway-dependent, optional, and subject to prerequisites and explicit authorisation.
+
 A tool belongs in the learner's progression only when the relevant curriculum introduces the underlying concept and a safe, authorised environment.
 
 See the [Curriculum](../curriculum/index.md) and [Foundations & Computing resources](../resources/foundations.md).

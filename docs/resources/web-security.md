@@ -1,6 +1,6 @@
 # Web & API Security Resources
 
-> **CINS stage fit:** Stage 2 — Internet and Web Fundamentals provides the technical prerequisites; Stage 3 — Cybersecurity Core provides shared security reasoning; Stage 4 — Domain Exploration introduces specialist web and API security. These resources are not required to complete Stage 3.
+> **CINS stage fit:** Stage 2 — Internet and Web Fundamentals provides the technical prerequisites; Stage 3 — Cybersecurity Core provides shared security reasoning; Stage 4 — Domain Exploration introduces web and API security workflows; Stage 5 — Specialisation supports deeper study. These resources are not required to complete Stage 3.
 
 This page is the canonical home for web and API security resources, including the relevant learning platforms and deliberately vulnerable applications. For browser, URL, HTTP, cookie, session, and API foundations, start with the separate [Web and Internet Fundamentals resources](web-fundamentals.md) and the [Stage 2 curriculum](../curriculum/stage-2-web-fundamentals.md).
 
@@ -12,7 +12,7 @@ This page is the canonical home for web and API security resources, including th
 
 Covers HTTP, authentication, access control, injection, cross-site scripting, server-side request forgery, API testing, and other web-security topics.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 web-security specialisation.
+- **CINS stage fit:** After Stage 3 — Stage 5 web-security specialisation.
 - **Access:** PortSwigger describes the Academy learning material and labs as free. Burp Suite product editions have separate capabilities and pricing.
 - **Suggested topics:** HTTP basics, authentication, access control, common vulnerabilities, API testing, then advanced topics. Follow the learner's prerequisites rather than trying to complete everything at once.
 - **Official resource:** [Web Security Academy](https://portswigger.net/web-security)
@@ -27,7 +27,7 @@ Covers HTTP, authentication, access control, injection, cross-site scripting, se
 
 A structured reference for web-application security testing and consistent reporting.
 
-- **CINS stage fit:** Stage 4 — use after Stage 2 Internet and Web Fundamentals and Stage 3 Cybersecurity Core.
+- **CINS stage fit:** Stage 5 — use after Stage 2 Internet and Web Fundamentals and Stage 3 Cybersecurity Core.
 - **Version note:** OWASP listed version 4.2 as the stable release while version 5.0 was under development when checked. Confirm the current release status before citing a specific test case.
 - **Stable guide:** [WSTG v4.2](https://owasp.org/www-project-web-security-testing-guide/)
 - **Project repository:** [OWASP WSTG on GitHub](https://github.com/OWASP/wstg)
@@ -49,7 +49,7 @@ Developer-oriented guidance for implementing and reviewing security controls.
 
 Explains API-specific risks and supports security design and testing.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 API-security specialisation.
+- **CINS stage fit:** After Stage 3 — Stage 5 API-security specialisation.
 - **Official resource:** [OWASP API Security Project](https://owasp.org/www-project-api-security/)
 - **Review state:** Official project page checked 31 October 2026.
 
@@ -61,7 +61,7 @@ Explains API-specific risks and supports security design and testing.
 
 A training application designed for learning about web-application security.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 authorised web-security lab.
+- **CINS stage fit:** After Stage 3 — Stage 5 authorised web-security lab.
 - **Safety:** Run it locally or use an explicitly authorized training instance. Do not expose a vulnerable deployment to the public internet.
 - **Official resource:** [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)
 - **Review state:** Official project page checked 31 October 2026.
@@ -72,7 +72,7 @@ A training application designed for learning about web-application security.
 
 A deliberately vulnerable PHP/MySQL application for controlled web-security learning.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 introductory web-security lab.
+- **CINS stage fit:** After Stage 3 — Stage 5 introductory web-security lab.
 - **Safety:** Keep the installation isolated and never deploy it as a public-facing website.
 - **Official source:** [DVWA repository](https://github.com/digininja/DVWA)
 - **Review state:** Official source repository checked 31 October 2026.

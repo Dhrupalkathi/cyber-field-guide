@@ -12,7 +12,7 @@ This page is the **single source of truth for the CINS learning structure**. It 
 | **Stage 2 — Technology Foundations** | Networking → Linux → Windows → Internet and Web fundamentals. | All four parts published |
 | **Stage 3 — Cybersecurity Core** | Shared security principles, risk, controls, identity, cryptography, vulnerability management, secure development, threat modelling, monitoring, incident response, resilience, and governance. | Published on this site |
 | **Stage 4 — Domain Exploration** | Guided exposure to offensive and defensive domains, investigation, intelligence, engineering, operations, and governance. | Published on this site |
-| **Stage 5 — Specialisation and Advanced Study** | Deeper study in selected fields based on prerequisites and learner interest. | Planned |
+| **Stage 5 — Specialisation and Advanced Study** | Deeper study in selected fields based on prerequisites and learner interest. | Published on this site |
 
 ## Published curriculum pages
 
@@ -54,11 +54,11 @@ Stage 3 is published. It builds the shared security foundation that follows Stag
 
 Stage 4 is published. It introduces the missions, workflows, evidence, skills, and boundaries of major cybersecurity domains. It helps learners choose an area for deeper study; it is not specialist training and does not require specialist tools.
 
-### Stage 5 — Specialisation and Advanced Study (draft for review)
+### Stage 5 — Specialisation and Advanced Study
 
 [Stage 5 — Specialisation and Advanced Study](stage-5-specialisation.md)
 
-This draft defines shared specialist-practice modules and nine pathways. It is intended for review and is not part of the published curriculum until its pull request is approved and merged.
+Stage 5 is published. It provides shared specialist-practice guidance and nine pathways for deeper study based on learner interest, prerequisites, and available mentorship.
 
 ### Mentor reference
 

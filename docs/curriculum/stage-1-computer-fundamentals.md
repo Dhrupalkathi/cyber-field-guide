@@ -216,7 +216,7 @@ A student can:
 | Stage 2 — Windows | Students can build on their operating-system, process, file and application knowledge. |
 | Stage 2 — Internet and Web | Students understand that applications execute on systems and manipulate data; web protocols are introduced later. |
 | Stage 3 — Cybersecurity Core | Students can connect security controls to accounts, software, data, processes and devices. |
-| Stage 4 — Exploration | Students have enough computer and Python fundamentals to begin guided domain projects. |
+| Stage 4 — Domain Exploration | Students can use their computing foundations to understand the workflows and prerequisites of different cybersecurity domains. |
 
 ## Continuous programming progression after Stage 1
 
@@ -226,7 +226,7 @@ A student can:
 | Stage 2 | Python practice with files, exceptions and structured data; Bash alongside Linux after Networking; PowerShell alongside Windows; basic SQL and JavaScript when web fundamentals are taught. |
 | Stage 3 | Python automation, text and log parsing, regular expressions, APIs, SQL fundamentals and secure coding concepts. |
 | Stage 4 | Apply the relevant language and scripting skills to small projects in the domains being explored. |
-| Stage 5 | Optional advanced programming, automation, tool development, software analysis and specialist engineering. |
+| Stage 5 — Specialisation | Students apply and deepen programming, automation, software analysis, or engineering skills where the selected pathway requires them. |
 
 Python remains the common starting language. Bash, PowerShell, JavaScript and SQL are introduced when students have the context to understand why they are useful. C/C++ and Assembly remain optional advanced subjects for relevant specialisations such as reverse engineering and low-level systems research.
 

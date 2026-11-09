@@ -1,6 +1,6 @@
 # Blue Team, SOC & Defensive Security Resources
 
-> **CINS stage fit:** Stage 3 — Cybersecurity Core for shared security concepts; Stage 4 — Domain Exploration for defensive-security, SOC, and DFIR specialisation. These resources support later domain study and are not required to complete Stage 3.
+> **CINS stage fit:** Stage 3 — Cybersecurity Core for shared security concepts; Stage 4 — Domain Exploration for an introduction to defensive-security, SOC, and DFIR workflows; Stage 5 — Specialisation for deeper study. These resources support later domain study and are not required to complete Stage 3.
 
 Blue team includes prevention, monitoring, detection, investigation, incident response, and recovery. Beginners do not need to install a SIEM first. Understand operating systems, networking, logs, and security concepts before deploying large platforms.
 
@@ -12,7 +12,7 @@ Blue team includes prevention, monitoring, detection, investigation, incident re
 
 Introduces both offensive and defensive security. Its defensive coverage includes SOC fundamentals, digital-forensics and incident-response basics, logs, SIEM, IDS, and defensive tools.
 
-- **CINS stage fit:** Stage 3 — Cybersecurity Core (selected introductory sections); use the SOC-specific material later in Stage 4.
+- **CINS stage fit:** Stage 3 — Cybersecurity Core (selected introductory sections); use the SOC-specific material in Stage 5.
 - **Official resource:** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
 - **Review state:** Current path contents checked 31 October 2026.
 
@@ -22,7 +22,7 @@ Introduces both offensive and defensive security. Its defensive coverage include
 
 Covers SOC workflows, alert triage, log analysis, SIEM, endpoint monitoring, phishing analysis, and incident handling.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 SOC specialisation; basic networking, Windows/Linux, and log knowledge are helpful.
+- **CINS stage fit:** After Stage 3 — Stage 5 SOC specialisation; basic networking, Windows/Linux, and log knowledge are helpful.
 - **Official resource:** [SOC Level 1](https://tryhackme.com/path/outline/blueteam)
 - **Review state:** Current path checked 31 October 2026.
 
@@ -34,7 +34,7 @@ Covers SOC workflows, alert triage, log analysis, SIEM, endpoint monitoring, phi
 
 Covers alert investigation, event analysis, phishing analysis, incident management, and SOC workflows.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 SOC specialisation; introductory log analysis is recommended.
+- **CINS stage fit:** After Stage 3 — Stage 5 SOC specialisation; introductory log analysis is recommended.
 - **Access:** Some paths or features may require paid membership. Check current access before recommending it as a club resource.
 - **Official resource:** [SOC Analyst Learning Path](https://app.letsdefend.io/path/soc-analyst-learning-path)
 - **Review state:** Provider path and help page checked 31 October 2026; CINS has not completed the path.
@@ -47,7 +47,7 @@ Covers alert investigation, event analysis, phishing analysis, incident manageme
 
 Covers DFIR, threat hunting, threat intelligence, endpoint forensics, cloud forensics, and malware-analysis scenarios.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 defensive investigation and DFIR learning; choose labs by their stated prerequisites.
+- **CINS stage fit:** After Stage 3 — Stage 5 defensive investigation and DFIR learning; choose labs by their stated prerequisites.
 - **Access:** The provider advertises free starting access; account and lab conditions may vary.
 - **Official resource:** [CyberDefenders Blue Team Labs](https://cyberdefenders.org/blue-team-labs/)
 - **Review state:** Official platform description checked 31 October 2026.
@@ -58,7 +58,7 @@ Covers DFIR, threat hunting, threat intelligence, endpoint forensics, cloud fore
 
 Uses sample evidence such as phishing emails, logs, packet captures, memory dumps, and incident-response artifacts.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 intermediate defensive investigation; basic security-tool and log familiarity is recommended.
+- **CINS stage fit:** After Stage 3 — Stage 5 intermediate defensive investigation; basic security-tool and log familiarity is recommended.
 - **Access:** The provider describes free challenges and paid PRO investigations; current pricing and inclusions may change.
 - **Readiness note:** The provider says the platform is designed for defenders who already have some experience with security tools and investigations.
 - **Official resource:** [Blue Team Labs Online](https://blueteamlabs.online/)
@@ -72,7 +72,7 @@ Uses sample evidence such as phishing emails, logs, packet captures, memory dump
 
 Supports endpoint telemetry, file-integrity monitoring, security event collection, vulnerability detection, and investigation workflows.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 endpoint monitoring and SOC learning.
+- **CINS stage fit:** After Stage 3 — Stage 5 endpoint monitoring and SOC learning.
 - **Start here:** [Wazuh Getting Started](https://documentation.wazuh.com/current/getting-started/index.html)
 - **Hardware note:** The all-in-one quickstart checked by this project recommended approximately 4 vCPU, 8 GiB RAM, and 50 GB storage for a small deployment. Review current requirements before installing; this is not lightweight software for every student laptop.
 - **Official quickstart:** [Wazuh Quickstart](https://documentation.wazuh.com/current/quickstart.html)
@@ -84,7 +84,7 @@ Supports endpoint telemetry, file-integrity monitoring, security event collectio
 
 Supports network visibility, alert investigation, hunting, and security operations.
 
-- **CINS stage fit:** After Stage 3 and Stage 2 Networking — Stage 4 network-monitoring specialisation.
+- **CINS stage fit:** After Stage 3 and Stage 2 Networking — Stage 5 network-monitoring specialisation.
 - **Prerequisites:** Networking knowledge and a suitably resourced, isolated lab. Review the official hardware and deployment requirements before installing.
 - **Official resource:** [Security Onion Documentation](https://docs.securityonion.net/)
 - **Review state:** Official documentation link checked; deployment has not been tested by CINS.
@@ -124,7 +124,7 @@ Connects security outcomes across Govern, Identify, Protect, Detect, Respond, an
 
 Explains how incident response connects with cybersecurity risk management and the CSF 2.0.
 
-- **CINS stage fit:** Stage 3 — Cybersecurity Core (incident-response concepts); Stage 4 — DFIR reference.
+- **CINS stage fit:** Stage 3 — Cybersecurity Core (incident-response concepts); Stage 5 — DFIR reference.
 - **Version note:** Revision 3 was finalized in April 2025 and supersedes Revision 2.
 - **Official resource:** [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final)
 
@@ -134,7 +134,7 @@ Explains how incident response connects with cybersecurity risk management and t
 
 Covers Microsoft Sentinel, Defender XDR, KQL, threat hunting, investigation, and response in Microsoft environments.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 Microsoft security-operations specialisation.
+- **CINS stage fit:** After Stage 3 — Stage 5 Microsoft security-operations specialisation.
 - **Prerequisites:** Windows, networking, cloud, and security fundamentals are helpful.
 - **Access:** Microsoft Learn training is online; the certification exam is paid and the price varies by country.
 - **Official resource:** [SC-200 certification and learning resources](https://learn.microsoft.com/en-us/credentials/exams/sc-200/)

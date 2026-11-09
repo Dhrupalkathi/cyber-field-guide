@@ -19,7 +19,7 @@ Provides introductory challenges across several cybersecurity and computing cate
 
 ### Hacker101 CTF
 
-> **CINS stage fit:** After Stage 3 — Stage 4 web-security learning; complete Stage 2 Internet and Web Fundamentals first  
+> **CINS stage fit:** After Stage 3 — Stage 5 web-security specialisation; complete Stage 2 Internet and Web Fundamentals first  
 > **Level:** Beginner to intermediate · **Type:** Web-security course and CTF
 
 HackerOne describes Hacker101 as a free class with video lessons and CTF challenges.

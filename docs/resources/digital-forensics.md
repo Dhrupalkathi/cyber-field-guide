@@ -1,6 +1,6 @@
 # Digital Forensics & Incident Response Resources
 
-> **CINS stage fit:** Stage 3 — Cybersecurity Core introduces shared evidence, logging, triage, and incident-response concepts; Stage 4 — Domain Exploration introduces digital-forensics specialisation.
+> **CINS stage fit:** Stage 3 — Cybersecurity Core introduces shared evidence, logging, triage, and incident-response concepts; Stage 4 — Domain Exploration introduces digital-forensics workflows; Stage 5 — Specialisation supports deeper forensic study.
 
 Digital forensics and incident response (DFIR) focuses on understanding what happened, preserving evidence, analysing digital artifacts, communicating findings, and helping systems recover. Learn evidence handling, operating-system concepts, filesystems, timestamps, and logs before relying on specialist tools.
 
@@ -12,7 +12,7 @@ Digital forensics and incident response (DFIR) focuses on understanding what hap
 
 Supports case-based examination of disk images and digital evidence.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 digital-forensics specialisation.
+- **CINS stage fit:** After Stage 3 — Stage 5 digital-forensics specialisation.
 - **Documentation and downloads:** [Autopsy](https://www.autopsy.com/)
 - **Training note:** The official provider offers paid training aimed at people who already understand basic digital-forensics concepts. It is not a substitute for learning evidence handling and filesystem fundamentals.
 - **Official training:** [Autopsy Training](https://www.autopsy.com/training/)
@@ -24,7 +24,7 @@ Supports case-based examination of disk images and digital evidence.
 
 Supports authorized endpoint investigation, artifact collection, and incident-response workflows across managed systems.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 advanced endpoint investigation and DFIR.
+- **CINS stage fit:** After Stage 3 — Stage 5 advanced endpoint investigation and DFIR.
 - **Official documentation:** [Velociraptor Documentation](https://docs.velociraptor.app/)
 - **Training caveat:** The project's training page warns that archived official course material is old and may be outdated. Prefer current product documentation and check course dates before following third-party material.
 - **Training resources:** [Velociraptor training notes](https://www.velociraptor-docs.org/training/)
