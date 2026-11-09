@@ -28,7 +28,9 @@ Every resource entry includes a **CINS stage fit** label:
 - **Stage 1 — Computer Fundamentals**
 - **Stage 1 — Parallel Python Track**
 - **Stage 2 — Networking / Linux / Windows / Internet & Web**\n- **Stage 3 — Cybersecurity Core**
-- **After Stage 2 — Specialist learning**
+- **Stage 3 — Cybersecurity Core**
+- **Stage 4 — Domain Exploration (planned)**
+- **Stage 5 — Specialisation and Advanced Study (planned)**
 - **Reference — Useful across stages**
 
 A label tells you when the resource is relevant to the CINS curriculum. It does not claim that CINS has completed or endorsed the provider's entire course. If a resource spans multiple stages, its entry identifies the relevant sections and what should be deferred.
