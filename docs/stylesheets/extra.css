@@ -1586,7 +1586,7 @@ body:has(.cins-homepage-atmosphere) .md-sidebar--secondary .md-sidebar__scrollwr
   backdrop-filter: blur(12px);
 }
 
-[data-md-color-scheme="slate"] body:has(.cins-homepage-atmosphere) .md-sidebar--secondary .md-sidebar__scrollwrap {
+body[data-md-color-scheme="slate"]:has(.cins-homepage-atmosphere) .md-sidebar--secondary .md-sidebar__scrollwrap {
   border-color: rgba(115, 190, 195, .18);
   background: rgba(9, 24, 37, .78);
   box-shadow: 0 12px 36px rgba(0, 0, 0, .18);
