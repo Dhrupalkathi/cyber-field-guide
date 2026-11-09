@@ -355,7 +355,7 @@ A vulnerability is not fixed simply because it has been discovered or assigned a
 - Patch management: testing, approval, deployment, rollback planning, and verification.
 - Mitigating controls when immediate patching is not possible; document the residual risk and time limit.
 - End-of-life software and unsupported components.
-- Coordinated vulnerability disclosure and responsible reporting at a process level; detailed domain-specific testing is deferred to Stage 4.
+- Coordinated vulnerability disclosure and responsible reporting at a process level; detailed domain-specific testing is covered in the relevant Stage 5 specialisation pathway.
 
 ### Learning outcomes
 
@@ -380,7 +380,7 @@ Software security is affected by design decisions, source code, dependencies, bu
 - Security requirements and abuse cases.
 - Secure design principles: minimise trust, validate at boundaries, use least privilege, handle errors safely, and make secure behaviour the default.
 - Code review, static analysis, dynamic testing, dependency checks, and security testing as complementary practices.
-- Input handling and output encoding as concepts; detailed application vulnerabilities are explored later in the relevant Stage 4 domain.
+- Input handling and output encoding as concepts; detailed application vulnerabilities are studied in the relevant Stage 5 specialisation pathway.
 - Secrets management and safe handling of credentials in source code and build systems.
 - Dependency and software supply-chain risks: direct and transitive dependencies, package maintainers, registries, build tools, signing, provenance, and update processes.
 - Software Bill of Materials (SBOM) as an inventory of software components; it is useful but does not prove that a component is safe or vulnerable.
