@@ -85,7 +85,7 @@ Explains the broad phases of Windows startup and common failure categories. The 
 Explains Windows Firewall and network profiles in the Windows Security app. Read this to understand the difference between public, private, and domain network profiles. Do not turn off the firewall as a troubleshooting shortcut.
 
 - **Access:** Free public support documentation.
-- **Official resource:** [Firewall and network protection](https://support.microsoft.com/en-us/windows/security/windows-security-app-firewall-and-network-protection-in-the-windows-security-app?pStoreID=1800members%27%5B0%5D%27)
+- **Official resource:** [Firewall and network protection](https://support.microsoft.com/en-us/windows/firewall-and-network-protection-in-the-windows-security-app-ec0844f7-aebd-0583-67fe-601ecf5d774f)
 - **Review state:** Official support destination checked 9 November 2026.
 
 ## Optional guided learning
