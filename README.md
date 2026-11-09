@@ -59,9 +59,11 @@ Start with [contribution guide](docs/club/contributing.md) and the [CINS content
 
 The content is stored in portable Markdown files. The site is built with [Zensical](https://zensical.org/docs/) and published through GitHub Pages. The Zensical version is pinned in requirements.txt; upgrades are deliberate and should be tested before merging.
 
-## Current focus
+## Current curriculum status
 
-Stage 2 — Technology Foundations is complete: [Networking](docs/curriculum/stage-2-networking.md), [Linux](docs/curriculum/stage-2-linux.md), [Windows](docs/curriculum/stage-2-windows.md), and [Internet and Web Fundamentals](docs/curriculum/stage-2-web-fundamentals.md). Stage 3 — Cybersecurity Core is being prepared for review; it will establish shared security reasoning before domain exploration. Tool and resource entries continue to grow alongside the curriculum, with sources and review status made explicit.
+Stages 0–5 are published. The learning sequence moves from orientation and computing foundations through Stage 2 technology foundations, Stage 3 shared cybersecurity principles, Stage 4 domain exploration, and Stage 5 selected specialisation pathways. The [Curriculum overview](docs/curriculum/index.md) is the authoritative source for the sequence and stage scope.
+
+Stage 2 — Technology Foundations is complete: [Networking](docs/curriculum/stage-2-networking.md), [Linux](docs/curriculum/stage-2-linux.md), [Windows](docs/curriculum/stage-2-windows.md), and [Internet and Web Fundamentals](docs/curriculum/stage-2-web-fundamentals.md). Stage 3 — Cybersecurity Core, Stage 4 — Domain Exploration, and Stage 5 — Specialisation and Advanced Study are also published.
 
 The Linux curriculum does not require Kali Linux, a particular distribution, paid software, or specialist installation. It focuses on portable operating-system concepts and safe command-line understanding. The Windows curriculum does not require a Windows installation, paid software, a virtual machine, or specialist security tools; it focuses on portable operating-system concepts and safe inspection.
 
