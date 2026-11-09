@@ -58,7 +58,8 @@
       if (Math.abs(progress - lastProgress) < 0.0015) return;
       lastProgress = progress;
 
-      const dark = document.body.dataset.mdColorScheme === "slate";
+      const themeElement = document.querySelector("[data-md-color-scheme]") || document.body;
+      const dark = themeElement.dataset.mdColorScheme === "slate";
       const shift = Math.round(progress * (window.innerWidth < 700 ? 18 : 42));
       const scale = 1 + progress * 0.055;
       const glow = (dark ? 0.22 : 0.075) + progress * (dark ? 0.16 : 0.11);
@@ -176,7 +177,8 @@
       lastProgress = -1;
       refreshScrollState();
     });
-    themeObserver.observe(document.body, {
+    const themeElement = document.querySelector("[data-md-color-scheme]") || document.body;
+    themeObserver.observe(themeElement, {
       attributes: true,
       attributeFilter: ["data-md-color-scheme"]
     });
