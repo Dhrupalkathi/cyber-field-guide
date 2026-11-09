@@ -10,6 +10,7 @@ This is a **subject-based reference library**, not a second learning roadmap. Th
 | [Networking](networking.md) | Networking courses and cross-stage resources that include networking topics. |
 | [Linux](linux.md) | General Linux learning and operating-system references; Kali-specific material is optional specialist reference. |
 | [Windows](windows.md) | Windows operating-system foundations, PowerShell, access control, troubleshooting, and built-in security references. |
+| [Web & Internet Fundamentals](web-fundamentals.md) | Browser/server communication, URLs, HTTP, cookies, sessions, web APIs, and browser behaviour. |
 | [Web & API Security](web-security.md) | Web-security learning, testing references, and deliberately vulnerable applications. |
 | [Blue Team & SOC](blue-team.md) | Defensive security, SOC learning, detection references, and defensive platforms. |
 | [Digital Forensics](digital-forensics.md) | Forensic tools, evidence handling, and incident-investigation references. |

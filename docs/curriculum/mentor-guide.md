@@ -13,6 +13,7 @@ This guidance applies across the CINS curriculum. The [Curriculum overview](inde
 - Treat Stage 2 — Networking as browser-first conceptual learning; any command-line observation should remain optional and limited to a learner's own or explicitly authorised environment.
 - Teach Stage 2 — Linux using general Linux concepts. Learners may use an existing Linux environment or an approved sandbox; Kali Linux and a new operating-system installation are not prerequisites.
 - Teach Stage 2 — Windows using general Windows client concepts. Reading the curriculum does not require a Windows installation, virtual machine, paid software, or specialist security tools. Optional inspection must be limited to a device the learner owns or is authorised to use.
+- Teach Stage 2 — Internet and Web fundamentals using fictional requests, responses, URLs, and API examples. Browser Developer Tools are an optional standard browser feature; inspection must be limited to pages the learner owns or is authorised to examine. Never ask learners to expose cookies, session identifiers, tokens, private payloads, or signed-in HAR captures.
 
 ## Supporting AI-guided learning
 

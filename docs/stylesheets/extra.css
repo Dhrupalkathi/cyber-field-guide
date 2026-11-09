@@ -702,3 +702,91 @@
   .cins-win-boot > div,
   .cins-win-troubleshoot > div { min-height: 0; }
 }
+
+/* Stage 2 — Internet and Web Fundamentals teaching diagrams */
+.cins-web-figure {
+  margin: 1.8rem 0; padding: 1.1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 1rem; background: var(--md-code-bg-color); overflow: hidden;
+}
+.cins-web-figure-heading {
+  margin: 0 0 1rem; color: var(--md-accent-fg-color);
+  font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.cins-web-caption {
+  margin: 0.9rem 0 0; color: var(--md-default-fg-color--light);
+  font-size: 0.76rem; line-height: 1.55;
+}
+.cins-web-journey, .cins-web-server-flow {
+  display: grid; max-width: 620px; gap: 0.35rem; margin: 0 auto;
+}
+.cins-web-step, .cins-web-server-flow > div {
+  display: grid; gap: 0.2rem; padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(90,150,170,.35); border-left: 3px solid var(--md-accent-fg-color);
+  border-radius: 0.65rem; background: var(--md-default-bg-color);
+}
+.cins-web-step b, .cins-web-server-flow b { font-size: 0.84rem; }
+.cins-web-step span, .cins-web-server-flow span {
+  color: var(--md-default-fg-color--light); font-size: 0.72rem; line-height: 1.45;
+}
+.cins-web-arrow { color: var(--md-accent-fg-color); font-size: 1.1rem; font-weight: 900; text-align: center; }
+.cins-web-url { display: grid; gap: 0.9rem; }
+.cins-web-url-main {
+  overflow-wrap: anywhere; padding: 0.85rem; border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.65rem; background: var(--md-default-bg-color);
+  font-family: var(--md-code-font-family); font-size: clamp(0.72rem,1.6vw,0.95rem); line-height: 1.8;
+}
+.cins-web-url-scheme { color: #3186bd; font-weight: 800; }
+.cins-web-url-host { color: #238b68; font-weight: 800; }
+.cins-web-url-port { color: #a178cf; font-weight: 800; }
+.cins-web-url-path { color: var(--md-default-fg-color); font-weight: 700; }
+.cins-web-url-query { color: #c17a2e; font-weight: 700; }
+.cins-web-url-fragment { color: #b65c7a; font-weight: 700; }
+.cins-web-url-legend { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0.55rem; }
+.cins-web-url-legend span {
+  display: grid; gap: 0.15rem; padding: 0.55rem 0.65rem;
+  border: 1px solid var(--md-default-fg-color--lightest); border-radius: 0.5rem;
+  background: var(--md-default-bg-color); color: var(--md-default-fg-color--light); font-size: 0.7rem;
+}
+.cins-web-url-legend b { color: var(--md-default-fg-color); }
+.cins-web-render-flow {
+  display: grid; grid-template-columns: minmax(0,1fr) 24px minmax(0,1fr) 24px minmax(0,1fr) 24px minmax(0,1fr);
+  align-items: center; gap: 0.35rem;
+}
+.cins-web-render-flow > div:not(.cins-web-flow-arrow) {
+  display: grid; min-height: 100px; align-content: center; gap: 0.35rem; padding: 0.65rem;
+  border: 1px solid rgba(90,150,170,.35); border-radius: 0.65rem;
+  background: var(--md-default-bg-color); text-align: center;
+}
+.cins-web-render-flow b { font-size: 0.8rem; }
+.cins-web-render-flow span { color: var(--md-default-fg-color--light); font-size: 0.68rem; line-height: 1.4; }
+.cins-web-flow-arrow { color: var(--md-accent-fg-color); font-size: 1.1rem; font-weight: 900; text-align: center; }
+.cins-web-http-flow {
+  display: grid; grid-template-columns: minmax(90px,.7fr) minmax(0,2.2fr) minmax(90px,.7fr);
+  align-items: center; gap: 0.7rem;
+}
+.cins-web-endpoint {
+  display: grid; gap: 0.2rem; padding: 0.8rem 0.55rem;
+  border: 1px solid var(--md-accent-fg-color); border-radius: 0.65rem;
+  background: var(--md-default-bg-color); text-align: center;
+}
+.cins-web-endpoint b { font-size: 0.82rem; }
+.cins-web-endpoint span { color: var(--md-default-fg-color--light); font-size: 0.68rem; }
+.cins-web-messages { display: grid; gap: 0.65rem; }
+.cins-web-message {
+  display: grid; gap: 0.25rem; padding: 0.65rem 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lightest); border-radius: 0.55rem;
+  background: var(--md-default-bg-color);
+}
+.cins-web-message b { font-size: 0.78rem; }
+.cins-web-message span { color: var(--md-default-fg-color--light); font-size: 0.68rem; line-height: 1.4; }
+.cins-web-request { border-left: 3px solid #3186bd; }
+.cins-web-response { border-left: 3px solid #238b68; }
+@media (max-width: 760px) {
+  .cins-web-render-flow { grid-template-columns: 1fr; gap: 0.25rem; }
+  .cins-web-render-flow > div:not(.cins-web-flow-arrow) { min-height: 0; }
+  .cins-web-flow-arrow { transform: rotate(90deg); }
+  .cins-web-http-flow { grid-template-columns: 1fr; }
+  .cins-web-endpoint { max-width: 240px; width: 100%; margin-inline: auto; }
+  .cins-web-url-legend { grid-template-columns: 1fr; }
+}

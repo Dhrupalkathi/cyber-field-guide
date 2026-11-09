@@ -647,7 +647,7 @@ Start with the official sources below. Microsoft documentation changes as Window
 
 - **Networking:** Windows uses IP addressing, DNS, DHCP, routing, TCP/UDP, and firewalls introduced in the published [Stage 2 — Networking curriculum](stage-2-networking.md).
 - **Linux:** Linux and Windows both have filesystems, users, permissions, processes, services, logs, networking, and security controls. Their implementation and command environments differ. The published [Stage 2 — Linux curriculum](stage-2-linux.md) teaches the Linux side; this page teaches the Windows side.
-- **Internet and Web fundamentals:** Browser behaviour, HTTP requests and responses, TLS, cookies, sessions, and APIs belong to the next Stage 2 part. Windows networking here is about the operating system's local network configuration, not a substitute for that web curriculum.
+- **Internet and Web fundamentals:** The published [final Stage 2 part](stage-2-web-fundamentals.md) explains browser behaviour, HTTP requests and responses, TLS, cookies, sessions, and APIs. Windows networking here is about the operating system's local network configuration, not a substitute for that web curriculum.
 
 ## Scope reminder
 

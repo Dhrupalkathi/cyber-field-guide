@@ -22,6 +22,7 @@ nav = [
     { "Stage 2 — Networking" = "curriculum/stage-2-networking.md" },
     { "Stage 2 — Linux" = "curriculum/stage-2-linux.md" },
     { "Stage 2 — Windows" = "curriculum/stage-2-windows.md" },
+    { "Stage 2 — Internet and Web" = "curriculum/stage-2-web-fundamentals.md" },
     { "Mentor Guide" = "curriculum/mentor-guide.md" },
   ] },
   { "Tool Library" = [
@@ -33,6 +34,7 @@ nav = [
     { "Networking" = "resources/networking.md" },
     { "Linux" = "resources/linux.md" },
     { "Windows" = "resources/windows.md" },
+    { "Web & Internet Fundamentals" = "resources/web-fundamentals.md" },
     { "Web & API Security" = "resources/web-security.md" },
     { "Blue Team & SOC" = "resources/blue-team.md" },
     { "Digital Forensics" = "resources/digital-forensics.md" },
