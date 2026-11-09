@@ -81,6 +81,9 @@
       if (atmosphere.dataset.scrollPhase !== phase) {
         atmosphere.dataset.scrollPhase = phase;
       }
+
+      // The SVG moves with scroll progress, so refresh node centres for the next pointer frame.
+      measureNodes();
     };
 
     function refreshScrollState() {
