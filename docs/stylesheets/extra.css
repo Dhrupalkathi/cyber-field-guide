@@ -1375,3 +1375,20 @@
     display: none;
   }
 }
+
+
+/* Keep the small permalink controls beside headings legible in both themes. */
+.md-typeset .headerlink {
+  color: var(--md-typeset-a-color);
+  opacity: 0.82;
+  text-decoration: none;
+}
+
+.md-typeset .headerlink:hover {
+  color: var(--cins-ember);
+  opacity: 1;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .headerlink {
+  color: #71e0d6;
+}
