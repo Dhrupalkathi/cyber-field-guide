@@ -20,7 +20,7 @@ For the current technical foundations, **Stage 2 is Networking → Linux → Win
 
 After Stage 3, use the published [Stage 4 — Domain Exploration](../curriculum/stage-4-domain-exploration.md) to compare specialist fields, understand their workflows and prerequisites, and decide which area you want to study more deeply.
 
-The next step is [Stage 5 — Specialisation and Advanced Study](../curriculum/stage-5-specialisation.md), currently prepared as a review draft. It will provide deeper pathways for learners who are ready to focus on a selected domain.
+The next step is the published [Stage 5 — Specialisation and Advanced Study](../curriculum/stage-5-specialisation.md). It provides deeper pathways for learners who are ready to focus on a selected domain.
 
 ## Looking for a particular kind of information?
 
