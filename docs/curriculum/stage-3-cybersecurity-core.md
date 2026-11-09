@@ -183,6 +183,22 @@ Organisations have limited time, people, and money. Risk assessment helps them c
 
 - Risk as the effect of uncertainty on objectives, systems, people, or information.
 - A practical scenario model: asset or objective → threat event → weakness or exposure → likelihood → impact → existing safeguards → residual risk.
+
+A simple risk discussion can be visualised as:
+
+```text
+Asset or objective
+        ↓
+Threat event + weakness or exposure
+        ↓
+Likelihood + potential impact
+        ↓
+Existing safeguards and evidence
+        ↓
+Residual risk → treatment decision → accountable owner
+```
+
+This is a reasoning aid, not a formula that produces an objective risk score. The order may be revisited as new evidence appears.
 - Likelihood and impact are assessments that depend on evidence, context, and assumptions; they are not always precise numerical probabilities.
 - Impact dimensions: confidentiality, integrity, availability, financial loss, safety, privacy, legal obligations, operations, and reputation.
 - Inherent risk versus residual risk after safeguards.
@@ -504,6 +520,26 @@ Security incidents require coordinated decisions under uncertainty. A response s
 - Recovery: restore trusted services, validate systems, monitor for recurrence, and coordinate with owners.
 - Post-incident improvement: lessons learned, root-cause analysis, control changes, assigned actions, and follow-up.
 - NIST SP 800-61 Revision 3 (2025) aligns incident response with the NIST CSF 2.0 and integrates it across cybersecurity risk management; older lifecycle diagrams should not be presented as the only current model.
+
+A simplified incident-handling view is:
+
+```text
+Prepare and establish authority
+             ↓
+     Detect and analyse
+             ↓
+     Coordinate response
+             ↓
+  Contain and limit impact
+             ↓
+  Eradicate and recover safely
+             ↓
+ Review, learn, and improve
+             ↺
+      Update preparation
+```
+
+Real incidents do not always follow a neat sequence. Teams may revisit earlier decisions as scope, evidence, safety, and business impact become clearer.
 - Legal, regulatory, contractual, and notification duties vary by jurisdiction and organisation. Learners should not infer legal deadlines from a generic curriculum.
 
 ### Learning outcomes
