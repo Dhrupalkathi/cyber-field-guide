@@ -24,6 +24,7 @@ nav = [
     { "Stage 2 — Windows" = "curriculum/stage-2-windows.md" },
     { "Stage 2 — Internet and Web" = "curriculum/stage-2-web-fundamentals.md" },
     { "Stage 3 — Cybersecurity Core" = "curriculum/stage-3-cybersecurity-core.md" },
+    { "Stage 4 — Domain Exploration" = "curriculum/stage-4-domain-exploration.md" },
     { "Mentor Guide" = "curriculum/mentor-guide.md" },
   ] },
   { "Tool Library" = [
