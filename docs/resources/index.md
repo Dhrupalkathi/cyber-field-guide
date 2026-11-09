@@ -11,7 +11,8 @@ This is a **subject-based reference library**, not a second learning roadmap. Th
 | [Linux](linux.md) | General Linux learning and operating-system references; Kali-specific material is optional specialist reference. |
 | [Windows](windows.md) | Windows operating-system foundations, PowerShell, access control, troubleshooting, and built-in security references. |
 | [Web & Internet Fundamentals](web-fundamentals.md) | Browser/server communication, URLs, HTTP, cookies, sessions, web APIs, and browser behaviour. |
-| [Cybersecurity Core](security-fundamentals.md) | Security principles, risk, controls, identity, cryptography, vulnerability management, threat modelling, and incident response. |\n| [Web & API Security](web-security.md) | Web-security learning, testing references, and deliberately vulnerable applications. |
+| [Cybersecurity Core](security-fundamentals.md) | Security principles, risk, controls, identity, cryptography, vulnerability management, threat modelling, and incident response. |
+| [Web & API Security](web-security.md) | Web-security learning, testing references, and deliberately vulnerable applications. |
 | [Blue Team & SOC](blue-team.md) | Defensive security, SOC learning, detection references, and defensive platforms. |
 | [Digital Forensics](digital-forensics.md) | Forensic tools, evidence handling, and incident-investigation references. |
 | [Cloud & Containers](cloud-and-containers.md) | Cloud fundamentals, containers, and platform-security documentation. |
@@ -27,7 +28,8 @@ Every resource entry includes a **CINS stage fit** label:
 - **Stage 0 — Orientation**
 - **Stage 1 — Computer Fundamentals**
 - **Stage 1 — Parallel Python Track**
-- **Stage 2 — Networking / Linux / Windows / Internet & Web**\n- **Stage 3 — Cybersecurity Core**
+- **Stage 2 — Networking / Linux / Windows / Internet & Web**
+- **Stage 3 — Cybersecurity Core**
 - **Stage 3 — Cybersecurity Core**
 - **Stage 4 — Domain Exploration (planned)**
 - **Stage 5 — Specialisation and Advanced Study (planned)**
