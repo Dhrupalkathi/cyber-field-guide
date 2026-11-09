@@ -32,7 +32,7 @@ Broad introductions to networking, Linux, virtual machines, cloud topics, and IT
 
 ### 13Cubed
 
-> **CINS stage fit:** After Stage 2 — DFIR and Windows-forensics specialisation  
+> **CINS stage fit:** Stage 4 — Domain Exploration (DFIR and Windows-forensics specialisation; planned)  
 > **Suggested level:** Beginner to advanced, depending on the video
 
 Covers Windows forensics, memory forensics, incident response, threat hunting, and digital-forensics concepts.
