@@ -18,7 +18,9 @@ For the current technical foundations, **Stage 2 is Networking → Linux → Win
 
 [Stage 3 — Cybersecurity Core](../curriculum/stage-3-cybersecurity-core.md) is published. It develops the shared security concepts that connect the technology foundations to the different cybersecurity domains.
 
-After Stage 3, use [Stage 4 — Domain Exploration](../curriculum/stage-4-domain-exploration.md) to compare specialist fields, understand their workflows and prerequisites, and decide which area you want to study more deeply. Stage 4 is being prepared for review; it is not yet part of the published curriculum.
+After Stage 3, use the published [Stage 4 — Domain Exploration](../curriculum/stage-4-domain-exploration.md) to compare specialist fields, understand their workflows and prerequisites, and decide which area you want to study more deeply.
+
+The next step is [Stage 5 — Specialisation and Advanced Study](../curriculum/stage-5-specialisation.md), currently prepared as a review draft. It will provide deeper pathways for learners who are ready to focus on a selected domain.
 
 ## Looking for a particular kind of information?
 
