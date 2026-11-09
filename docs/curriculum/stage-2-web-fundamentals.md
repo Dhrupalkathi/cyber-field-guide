@@ -788,7 +788,7 @@ After Internet and Web fundamentals, Stage 2 — Technology Foundations is compl
 
 **Networking → Linux → Windows → Internet and Web fundamentals**
 
-The next curriculum stage is **Stage 3 — Cybersecurity Core**. It will build on these foundations rather than repeat them. Web application testing, vulnerability discovery, exploitation, secure development, and advanced API security belong in later cybersecurity learning, with explicit authorisation and appropriate lab boundaries.
+**Stage 3 — Cybersecurity Core** builds on these foundations rather than repeating them. Web application testing, vulnerability discovery, exploitation, secure development, and advanced API security belong in later cybersecurity learning, with explicit authorisation and appropriate lab boundaries.
 
 ## References
 
