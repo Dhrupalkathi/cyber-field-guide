@@ -50,7 +50,7 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
     ---
 
-    See the official CINS stage structure, published material, and planned stages.
+    See the CINS stage structure, published curriculum, and progression.
 
     [View the curriculum](curriculum/index.md)
 
@@ -85,7 +85,7 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
 **Published:** [Stage 4 — Domain Exploration](curriculum/stage-4-domain-exploration.md) introduces the different kinds of cybersecurity work and helps learners choose an area for deeper study. It is not specialist training and does not require specialist tools.
 
-**Next in development:** [Stage 5 — Specialisation and Advanced Study](curriculum/stage-5-specialisation.md) is being prepared for review. It develops deeper learning pathways for learners who have explored the domains and checked their prerequisites.
+**Published:** [Stage 5 — Specialisation and Advanced Study](curriculum/stage-5-specialisation.md) provides deeper learning pathways for learners who have explored the domains and checked their prerequisites.
 
 The [Curriculum overview](curriculum/index.md) is the authoritative page for the complete sequence and publication status.
 
