@@ -83,7 +83,9 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 
 **Stage 3 — Cybersecurity Core is published.** It builds the shared security principles and practices that apply across cybersecurity domains.
 
-**Next in development:** [Stage 4 — Domain Exploration](curriculum/stage-4-domain-exploration.md) is being prepared for review. It introduces the different kinds of cybersecurity work and helps learners choose an area for deeper study. It is not specialist training and does not require specialist tools.
+**Published:** [Stage 4 — Domain Exploration](curriculum/stage-4-domain-exploration.md) introduces the different kinds of cybersecurity work and helps learners choose an area for deeper study. It is not specialist training and does not require specialist tools.
+
+**Next in development:** [Stage 5 — Specialisation and Advanced Study](curriculum/stage-5-specialisation.md) is being prepared for review. It develops deeper learning pathways for learners who have explored the domains and checked their prerequisites.
 
 The [Curriculum overview](curriculum/index.md) is the authoritative page for the complete sequence and publication status.
 
