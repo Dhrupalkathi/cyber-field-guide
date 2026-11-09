@@ -14,7 +14,7 @@ Open the [Curriculum](../curriculum/index.md) and use its stage map to find the 
 
 For the current technical foundations, **Stage 2 is Networking → Linux → Windows → Internet and Web fundamentals**. All four parts are published: [Networking](../curriculum/stage-2-networking.md), [Linux](../curriculum/stage-2-linux.md), [Windows](../curriculum/stage-2-windows.md), and [Internet and Web Fundamentals](../curriculum/stage-2-web-fundamentals.md).
 
-## Looking for a particular kind of information?
+## What comes after the foundations?\n\n[Stage 3 — Cybersecurity Core](../curriculum/stage-3-cybersecurity-core.md) is being prepared for review. It introduces the shared security concepts that connect the technology foundations to later domain exploration.\n\n## Looking for a particular kind of information?
 
 - **Understand a security tool:** use the [Tool Library](../tools/index.md).
 - **Find a course, website, video, lab, or community:** use [Learning Resources](../resources/index.md).
