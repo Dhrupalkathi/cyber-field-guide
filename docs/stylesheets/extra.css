@@ -1242,11 +1242,15 @@
   white-space: nowrap;
 }
 
-.cins-motion-label {
+.cins-motion-control {
   position: absolute;
   z-index: 5;
   top: 1rem;
   right: 1rem;
+}
+
+.cins-motion-label {
+  position: relative;
   display: inline-flex;
   min-height: 2rem;
   align-items: center;
@@ -1285,10 +1289,10 @@
   outline-offset: 3px;
 }
 
-.cins-motion-toggle:checked ~ .cins-hero-layout .cins-orb-float,
-.cins-motion-toggle:checked ~ .cins-hero-layout .cins-orb-mesh,
-.cins-motion-toggle:checked ~ .cins-hero-layout .cins-orb-halo,
-.cins-motion-toggle:checked ~ .cins-hero-layout .cins-orb-particle {
+.cins-hero:has(.cins-motion-toggle:checked) .cins-orb-float,
+.cins-hero:has(.cins-motion-toggle:checked) .cins-orb-mesh,
+.cins-hero:has(.cins-motion-toggle:checked) .cins-orb-halo,
+.cins-hero:has(.cins-motion-toggle:checked) .cins-orb-particle {
   animation-play-state: paused;
 }
 
@@ -1336,7 +1340,7 @@
     width: 100%;
   }
 
-  .cins-motion-label {
+  .cins-motion-control {
     top: 0.75rem;
     right: 0.75rem;
   }
