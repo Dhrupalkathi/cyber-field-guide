@@ -30,8 +30,7 @@ Every resource entry includes a **CINS stage fit** label:
 - **Stage 1 — Parallel Python Track**
 - **Stage 2 — Networking / Linux / Windows / Internet & Web**
 - **Stage 3 — Cybersecurity Core**
-- **Stage 3 — Cybersecurity Core**
-- **Stage 4 — Domain Exploration (planned)**
+- **Stage 4 — Domain Exploration (planned / review draft)**
 - **Stage 5 — Specialisation and Advanced Study (planned)**
 - **Reference — Useful across stages**
 
@@ -47,12 +46,8 @@ This prevents the same provider from appearing repeatedly in Foundations, Networ
 
 - **Link checked:** the official destination was opened and matched the named resource.
 - **Content reviewed:** a contributor checked the description against the provider's current material.
-- **Lab verified:** a contributor completed or independently checked the stated lab/setup in an authorized environment.
-- **Needs review:** a change, broken link, access issue, or possible inaccuracy has been reported.
-- **Archived:** retained for reference but no longer recommended.
+- **Lab verified:** a contributor completed or independently checked the stated lab/setup in an authorised environment.
+- **Review pending:** a reference has been identified but its content has not yet been fully reviewed.
+- **Needs review:** a previously checked resource may have changed or become outdated.
 
-A link check is not the same as completing a course or testing a command. Access, prices, course names, and provider policies can change; check the official provider page before relying on them.
-
-## Contributing a resource
-
-Use the [resource-entry template](../templates/resource-entry.md). Before adding anything, search for its official URL and title so the guide does not acquire a duplicate entry. Follow the [CINS content standards](../club/content-standards.md).
+A listed resource is optional unless a curriculum page explicitly says otherwise. Check current prerequisites, account requirements, pricing, privacy terms, and platform rules before using an external service.

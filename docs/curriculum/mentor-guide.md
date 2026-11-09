@@ -15,6 +15,11 @@ This guidance applies across the CINS curriculum. The [Curriculum overview](inde
 - Teach Stage 2 — Windows using general Windows client concepts. Reading the curriculum does not require a Windows installation, virtual machine, paid software, or specialist security tools. Optional inspection must be limited to a device the learner owns or is authorised to use.
 - Teach Stage 2 — Internet and Web fundamentals using fictional requests, responses, URLs, and API examples. Browser Developer Tools are an optional standard browser feature; inspection must be limited to pages the learner owns or is authorised to examine. Never ask learners to expose cookies, session identifiers, tokens, private payloads, or signed-in HAR captures.
 - Teach Stage 3 — Cybersecurity Core through fictional organisations, made-up data, and clearly labelled scenarios. Emphasise evidence, uncertainty, proportionality, and the limits of frameworks and scores. Do not turn conceptual modules into unsupervised scanning, exploitation, password attacks, phishing, malware execution, or disruption exercises.
+- Teach Stage 4 — Domain Exploration as a guided comparison of professional missions and workflows. Help learners understand the purpose, evidence, outputs, prerequisites, and boundaries of each domain. Do not imply that completing Stage 4 makes a learner a specialist or job-ready.
+- Stage 4 discussions should use fictional scenarios, public documentation, synthetic data, and deliberately designed training material. Practical work is optional and must remain within explicit authorisation and platform scope.
+- Treat OSINT as a research method with privacy and ethical limits; public availability does not justify doxxing, harassment, or invasive profiling.
+- Do not ask learners to download or execute unknown malware, test live production or safety-critical systems, create unbudgeted cloud resources, or collect private evidence.
+- Encourage learners to choose a Stage 5 direction based on interest, prerequisites, available mentorship, and the actual work they want to do—not tool popularity or salary promises.
 
 ## Supporting AI-guided learning
 
@@ -48,6 +53,7 @@ AI-generated text must not be copied directly into the public guide without the 
 - Stage 2 — Networking should be understandable without specialist software; optional commands must not require scanning or testing a real third-party network.
 - Stage 2 — Linux does not require Kali Linux, a particular distribution, root access, or a new operating-system installation. Learners can read the material first and use an existing Linux environment or an approved sandbox for optional command practice.
 - Stage 2 — Windows does not require a particular Windows edition, a new installation, a virtual machine, or administrator access. Learners can read the material first; optional commands should be read-only and used only on an owned or explicitly authorised device.
+- Stage 3 and Stage 4 should remain understandable without specialist installations, paid accounts, or high-end hardware.
 - Do not require a paid licence, a high-end GPU, or a local virtualisation setup.
 - Offer a browser-based option for Python where possible.
 - If a student has limited hardware or internet access, mentors should provide downloadable notes and small sample files where practical.
