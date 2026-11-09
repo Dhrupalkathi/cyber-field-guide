@@ -810,3 +810,8 @@ These are references for verification and further reading, not compulsory assign
 - [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — a standard way to describe HTTP APIs.
 
 For additional resources, use the canonical [Web and Internet Fundamentals resources](../resources/web-fundamentals.md) page. For later security-specific study, see [Web and API Security resources](../resources/web-security.md).
+
+
+## Connection to Stage 3
+
+The browser, HTTP, session, API, and trust-boundary concepts introduced here provide context for later application-security learning. [Stage 3 — Cybersecurity Core](stage-3-cybersecurity-core.md) introduces the shared security principles, risk, identity, cryptography, secure-development, and threat-modelling concepts that apply across domains. Detailed web vulnerability analysis and authorised application testing are deferred to the relevant Stage 4 domain material.

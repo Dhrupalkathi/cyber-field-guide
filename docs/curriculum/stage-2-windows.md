@@ -652,3 +652,8 @@ Start with the official sources below. Microsoft documentation changes as Window
 ## Scope reminder
 
 This is a foundation curriculum, not a Windows Server administration certification, an enterprise deployment manual, or a guide to offensive techniques. Advanced topics such as Active Directory administration, Group Policy engineering, endpoint detection engineering, Windows internals debugging, malware analysis, and credential-access investigations require additional prerequisites and carefully authorised environments. They should be introduced in later specialist learning rather than compressed into a beginner operating-system page.
+
+
+## Connection to Stage 3
+
+Windows concepts from this page provide context for later security work involving identities, permissions, processes, services, configuration, and event records. The shared security principles and practices are introduced in [Stage 3 — Cybersecurity Core](stage-3-cybersecurity-core.md); advanced Windows security administration and investigation belong in the relevant later domain modules.

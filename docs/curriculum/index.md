@@ -10,7 +10,7 @@ This page is the **single source of truth for the CINS learning structure**. It 
 | **Stage 1 — Computer Fundamentals** | Computer components, data representation, software, files, processes, virtualisation concepts, and troubleshooting concepts. | Published on this site |
 | **Parallel track — Python** | Introductory computational thinking and Python, taught alongside Stage 1 and continued in later stages. | Published on this site |
 | **Stage 2 — Technology Foundations** | Networking → Linux → Windows → Internet and Web fundamentals. | Networking, Linux, Windows, and Internet and Web fundamentals published |
-| **Stage 3 — Cybersecurity Core** | Shared cybersecurity concepts that connect foundations to security work. | Planned |
+| **Stage 3 — Cybersecurity Core** | Shared security principles, risk, controls, identity, cryptography, vulnerability management, secure development, threat modelling, monitoring, incident response, resilience, and governance. | Draft prepared on review branch |
 | **Stage 4 — Domain Exploration** | Guided exposure to offensive and defensive domains, investigation, engineering, and operations. | Planned |
 | **Stage 5 — Specialisation and Advanced Study** | Deeper study in selected fields based on prerequisites and learner interest. | Planned |
 
@@ -41,6 +41,12 @@ This page is the **single source of truth for the CINS learning structure**. It 
 **Complete sequence:** Networking → Linux → Windows → Internet and Web fundamentals.
 
 The [Internet and Web Fundamentals page](stage-2-web-fundamentals.md) completes Stage 2. The learning-resource pages remain optional references, not a substitute for the curriculum.
+
+### Stage 3 — Cybersecurity Core (draft for review)
+
+[Stage 3 — Cybersecurity Core](stage-3-cybersecurity-core.md)
+
+This draft builds the shared security foundation that follows Stage 2. It is not part of the published curriculum until its review pull request is approved and merged.
 
 ### Mentor reference
 

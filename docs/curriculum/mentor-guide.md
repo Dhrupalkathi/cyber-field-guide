@@ -14,6 +14,7 @@ This guidance applies across the CINS curriculum. The [Curriculum overview](inde
 - Teach Stage 2 — Linux using general Linux concepts. Learners may use an existing Linux environment or an approved sandbox; Kali Linux and a new operating-system installation are not prerequisites.
 - Teach Stage 2 — Windows using general Windows client concepts. Reading the curriculum does not require a Windows installation, virtual machine, paid software, or specialist security tools. Optional inspection must be limited to a device the learner owns or is authorised to use.
 - Teach Stage 2 — Internet and Web fundamentals using fictional requests, responses, URLs, and API examples. Browser Developer Tools are an optional standard browser feature; inspection must be limited to pages the learner owns or is authorised to examine. Never ask learners to expose cookies, session identifiers, tokens, private payloads, or signed-in HAR captures.
+- Teach Stage 3 — Cybersecurity Core through fictional organisations, made-up data, and clearly labelled scenarios. Emphasise evidence, uncertainty, proportionality, and the limits of frameworks and scores. Do not turn conceptual modules into unsupervised scanning, exploitation, password attacks, phishing, malware execution, or disruption exercises.
 
 ## Supporting AI-guided learning
 

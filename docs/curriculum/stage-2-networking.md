@@ -548,4 +548,4 @@ These are reference sources, not additional required courses. Use introductory e
 
 **Stage 2 sequence:** Networking → Linux → Windows → Internet and Web fundamentals.
 
-The [Stage 2 — Linux curriculum](stage-2-linux.md), [Stage 2 — Windows curriculum](stage-2-windows.md), and [Stage 2 — Internet and Web Fundamentals curriculum](stage-2-web-fundamentals.md) are now published after this Networking part. Together, these four pages complete Stage 2 — Technology Foundations.
+The [Stage 2 — Linux curriculum](stage-2-linux.md), [Stage 2 — Windows curriculum](stage-2-windows.md), and [Stage 2 — Internet and Web Fundamentals curriculum](stage-2-web-fundamentals.md) are now published after this Networking part. Together, these four pages complete Stage 2 — Technology Foundations. The next curriculum stage is [Stage 3 — Cybersecurity Core](stage-3-cybersecurity-core.md), which builds on these foundations without repeating the networking material.
