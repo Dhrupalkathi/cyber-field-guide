@@ -42,7 +42,13 @@ This page is the **single source of truth for the CINS learning structure**. It 
 
 The [Internet and Web Fundamentals page](stage-2-web-fundamentals.md) completes Stage 2. The learning-resource pages remain optional references, not a substitute for the curriculum.
 
-### Stage 3 — Cybersecurity Core (draft for review)\n\n[Stage 3 — Cybersecurity Core](stage-3-cybersecurity-core.md)\n\nThis draft builds the shared security foundation that follows Stage 2. It is not part of the published curriculum until its review pull request is approved and merged.\n\n### Mentor reference
+### Stage 3 — Cybersecurity Core (draft for review)
+
+[Stage 3 — Cybersecurity Core](stage-3-cybersecurity-core.md)
+
+This draft builds the shared security foundation that follows Stage 2. It is not part of the published curriculum until its review pull request is approved and merged.
+
+### Mentor reference
 
 [Mentor Guidance and Content Quality](mentor-guide.md)
 
