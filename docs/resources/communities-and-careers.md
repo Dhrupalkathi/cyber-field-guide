@@ -19,7 +19,7 @@ Chapters host talks, meetups, training, and opportunities to connect with applic
 
 ### FIRST Community Resources
 
-> **CINS stage fit:** Stage 3 — Cybersecurity Core (incident-response concepts); Stage 4 — professional incident-response reference (planned)  
+> **CINS stage fit:** Stage 3 — Cybersecurity Core (incident-response concepts); Stage 5 — professional incident-response reference  
 > **Type:** Professional incident-response and security-team resources
 
 Provides material related to CSIRT operations, incident communication, malware-analysis capability development, and response-team practices.
