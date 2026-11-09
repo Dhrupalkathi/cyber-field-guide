@@ -20,6 +20,9 @@ This guidance applies across the CINS curriculum. The [Curriculum overview](inde
 - Treat OSINT as a research method with privacy and ethical limits; public availability does not justify doxxing, harassment, or invasive profiling.
 - Do not ask learners to download or execute unknown malware, test live production or safety-critical systems, create unbudgeted cloud resources, or collect private evidence.
 - Encourage learners to choose a Stage 5 direction based on interest, prerequisites, available mentorship, and the actual work they want to do—not tool popularity or salary promises.
+- Teach Stage 5 — Specialisation and Advanced Study as a learner-selected pathway, not a single linear checklist. Help learners choose one primary direction, identify prerequisite gaps, and agree on a realistic project and review plan.
+- Stage 5 projects should demonstrate reasoning, evidence, documentation, and reflection rather than tool count or unverified findings. Practical work must use approved training environments or explicitly authorised systems; provide synthetic-data or design-based alternatives when specialist equipment, accounts, or supervision are unavailable.
+- Do not describe completion of a CINS stage or pathway as a professional certification, employment guarantee, or proof of job readiness. Encourage honest portfolios and specific evidence of capability.
 
 ## Supporting AI-guided learning
 
