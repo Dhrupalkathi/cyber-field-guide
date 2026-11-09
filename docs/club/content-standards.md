@@ -33,10 +33,12 @@ Use one of these forms:
 - **Stage 1 — Computer Fundamentals**
 - **Stage 1 — Parallel Python Track**
 - **Stage 2 — Networking / Linux / Windows / Internet & Web**
-- **After Stage 2 — Specialist learning**
+- **Stage 3 — Cybersecurity Core**
+- **Stage 4 — Domain Exploration**
+- **Stage 5 — Specialisation and Advanced Study**
 - **Reference — Useful across stages**
 
-For a resource that spans multiple stages, state which sections fit each stage and which sections should be deferred. Do not assign a stage that the published curriculum has not established. Use **After Stage 2 — specialist material; exact stage not yet assigned** when the later stage number is not settled.
+For a resource that spans multiple stages, state which sections fit each stage and which sections should be deferred. Use the stage number established by the Curriculum map. Until a specialist curriculum page is published, label domain-specific resources **Stage 4 — Domain Exploration (planned)** or **Stage 5 — Specialisation (planned)** as appropriate; do not imply that a planned stage page is already available.
 
 The stage-fit label describes where the resource is useful in CINS. It does not mean CINS has completed, tested, or endorsed the provider's entire course.
 
