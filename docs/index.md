@@ -81,7 +81,9 @@ You do not need Kali Linux, expensive hardware, or previous cybersecurity experi
 - **Published:** [Stage 2 — Networking](curriculum/stage-2-networking.md), [Stage 2 — Linux](curriculum/stage-2-linux.md), [Stage 2 — Windows](curriculum/stage-2-windows.md), and [Stage 2 — Internet and Web Fundamentals](curriculum/stage-2-web-fundamentals.md).
 - **Stage 2 complete:** all four parts are now published.
 
-**Next in development:** [Stage 3 — Cybersecurity Core](curriculum/stage-3-cybersecurity-core.md) is being prepared for review. It will build shared security principles and practices on top of the completed technology foundations.\n\nThe [Curriculum overview](curriculum/index.md) is the authoritative page for the complete sequence and publication status.
+**Next in development:** [Stage 3 — Cybersecurity Core](curriculum/stage-3-cybersecurity-core.md) is being prepared for review. It will build shared security principles and practices on top of the completed technology foundations.
+
+The [Curriculum overview](curriculum/index.md) is the authoritative page for the complete sequence and publication status.
 
 ## A complete view of cybersecurity
 
