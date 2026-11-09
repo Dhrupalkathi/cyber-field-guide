@@ -1,6 +1,6 @@
 # Mobile Security & Reverse Engineering Resources
 
-> **CINS stage fit:** Stage 3 — Cybersecurity Core provides shared security reasoning; Stage 4 — Domain Exploration introduces mobile security and reverse-engineering specialisation.
+> **CINS stage fit:** Stage 3 — Cybersecurity Core provides shared security reasoning; Stage 4 — Domain Exploration introduces mobile-security and reverse-engineering workflows; Stage 5 — Specialisation supports deeper study.
 
 Mobile security and reverse engineering require operating-system knowledge, programming fundamentals, application architecture, and careful handling of test devices and software samples.
 
@@ -12,7 +12,7 @@ Mobile security and reverse engineering require operating-system knowledge, prog
 
 The project includes the Mobile Application Security Verification Standard (MASVS), Mobile Application Security Weakness Enumeration (MASWE), and Mobile Application Security Testing Guide (MASTG).
 
-- **CINS stage fit:** After Stage 3 — Stage 4 mobile application security specialisation.
+- **CINS stage fit:** After Stage 3 — Stage 5 mobile application security specialisation.
 - **Best for:** Understanding how to assess mobile application security and privacy in a structured way.
 - **Official resource:** [OWASP Mobile Application Security](https://owasp.org/projects/mobile-application-security)
 - **Review state:** Official OWASP project page checked 31 October 2026.
@@ -27,7 +27,7 @@ Use the standard to understand what should be assessed and the testing guide to 
 
 Supports disassembly, decompilation, graphing, and scripting to help analysts understand compiled programs.
 
-- **CINS stage fit:** After Stage 3 — Stage 4 advanced reverse-engineering specialisation.
+- **CINS stage fit:** After Stage 3 — Stage 5 advanced reverse-engineering specialisation.
 - **Official project:** [NSA Ghidra repository](https://github.com/NationalSecurityAgency/ghidra)
 - **Getting started:** [Ghidra Getting Started guide](https://github.com/NationalSecurityAgency/ghidra/blob/master/GhidraDocs/GettingStarted.md)
 - **Prerequisites:** Current Ghidra documentation lists a 64-bit JDK 25 requirement and other system requirements. Requirements can change with releases; read the current Getting Started guide before installing.
