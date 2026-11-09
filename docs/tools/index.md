@@ -8,7 +8,9 @@ A tool is useful only when you understand the problem it helps solve. This libra
 
 **Stage 2 — Networking, Linux, Windows, and Internet and Web fundamentals do not require specialist cybersecurity-tool installations.** They teach network, operating-system, and browser/server foundations through concepts and standard system interfaces. Kali Linux, Nmap, Burp Suite, a SIEM, and exploitation frameworks are not prerequisites for Stage 2. Standard Linux utilities, Windows CMD, PowerShell, and the browser's built-in Developer Tools are not specialist security-tool requirements.
 
-Stage 3 — Cybersecurity Core also does not require specialist installations. Learners can study risk, controls, identity, cryptography, vulnerability management, threat modelling, monitoring, incident response, and resilience using explanations and fictional examples.\n\nA tool belongs in the learner's progression only when the relevant curriculum introduces the underlying concept and a safe, authorised environment.
+Stage 3 — Cybersecurity Core also does not require specialist installations. Learners can study risk, controls, identity, cryptography, vulnerability management, threat modelling, monitoring, incident response, and resilience using explanations and fictional examples.
+
+A tool belongs in the learner's progression only when the relevant curriculum introduces the underlying concept and a safe, authorised environment.
 
 See the [Curriculum](../curriculum/index.md) and [Foundations & Computing resources](../resources/foundations.md).
 
