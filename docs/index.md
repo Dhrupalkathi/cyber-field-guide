@@ -2,11 +2,13 @@
 
 <div class="cins-hero" markdown>
 
-<input class="cins-motion-toggle" id="cins-motion-toggle" type="checkbox" />
-<label class="cins-motion-label" for="cins-motion-toggle">
-  <span class="cins-motion-label-pause">Pause motion</span>
-  <span class="cins-motion-label-play">Resume motion</span>
-</label>
+<div class="cins-motion-control">
+  <input class="cins-motion-toggle" id="cins-motion-toggle" type="checkbox" />
+  <label class="cins-motion-label" for="cins-motion-toggle">
+    <span class="cins-motion-label-pause">Pause motion</span>
+    <span class="cins-motion-label-play">Resume motion</span>
+  </label>
+</div>
 
 <div class="cins-hero-layout" markdown>
 
