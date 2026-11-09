@@ -116,7 +116,7 @@
       nodeRects.forEach(({ node, x, y }) => {
         const distance = Math.hypot(pointerX - x, pointerY - y);
         const influence = Math.max(0, 1 - distance / radius);
-        node.style.setProperty("--cins-node-glow", "0px");
+        node.style.setProperty("--cins-node-glow", (influence * 15).toFixed(1) + "px");
         node.style.setProperty("--cins-node-brightness", (1 + influence * 0.72).toFixed(2));
       });
     };
