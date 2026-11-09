@@ -1416,3 +1416,15 @@
 [data-md-color-scheme="slate"] .md-typeset .headerlink {
   color: #71e0d6;
 }
+
+
+/* Zensical scopes typography tokens on .md-typeset, so override them there. */
+[data-md-color-scheme="default"] .md-typeset {
+  --md-typeset-a-color: #087985;
+  --cins-link-visited: #7251a4;
+}
+
+[data-md-color-scheme="slate"] .md-typeset {
+  --md-typeset-a-color: #71e0d6;
+  --cins-link-visited: #c5a7ff;
+}
