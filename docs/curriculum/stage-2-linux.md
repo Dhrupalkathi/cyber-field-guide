@@ -891,4 +891,8 @@ The following references are selected for explanation and technical accuracy. Di
 - [Kali Linux documentation](https://www.kali.org/docs/) — reference for Kali-specific behaviour only. Kali is not required for this part of Stage 2.
 
 External resources can change. Check the provider's own documentation and the release-specific instructions for the distribution you use.
-\n\n## Connection to Stage 3\n\nLinux concepts from this page provide context for later security work involving accounts, permissions, processes, services, configuration, and logs. The shared security principles and practices are introduced in [Stage 3 — Cybersecurity Core](stage-3-cybersecurity-core.md); Linux-specific security administration and investigation belong in the relevant later domain modules.\n
+
+
+## Connection to Stage 3
+
+Linux concepts from this page provide context for later security work involving accounts, permissions, processes, services, configuration, and logs. The shared security principles and practices are introduced in [Stage 3 — Cybersecurity Core](stage-3-cybersecurity-core.md); Linux-specific security administration and investigation belong in the relevant later domain modules.
