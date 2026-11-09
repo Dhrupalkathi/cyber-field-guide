@@ -24,9 +24,9 @@ A beginner-friendly introduction to using a terminal, navigating directories, ma
 
 Introduces Linux concepts, command-line navigation, text processing, users, permissions, processes, and package management.
 
-- **Access:** The current Linux Journey destination is hosted by LabEx and describes its core learning material as free.
-- **Official resource:** [Linux Journey](https://labex.io/Linuxjourney)
-- **Review state:** Destination checked 31 October 2026. The old linuxjourney.com address redirects to this successor page.
+- **Access:** The original Linux Journey project is now hosted by LabEx. Its core lessons remain free to read without an account; signing in is optional for saving progress. The page also links to additional interactive labs, so check the access conditions of any extra activity before relying on it.
+- **Official resource:** [Linux Journey](https://labex.io/linuxjourney)
+- **Review state:** Official successor page and access information checked 9 November 2026. The old linuxjourney.com address redirects to this page.
 
 ## Command-line and operating-system references
 
