@@ -30,8 +30,8 @@ Every resource entry includes a **CINS stage fit** label:
 - **Stage 1 — Parallel Python Track**
 - **Stage 2 — Networking / Linux / Windows / Internet & Web**
 - **Stage 3 — Cybersecurity Core**
-- **Stage 4 — Domain Exploration (planned / review draft)**
-- **Stage 5 — Specialisation and Advanced Study (planned)**
+- **Stage 4 — Domain Exploration (published)**
+- **Stage 5 — Specialisation and Advanced Study (review draft)**
 - **Reference — Useful across stages**
 
 A label tells you when the resource is relevant to the CINS curriculum. It does not claim that CINS has completed or endorsed the provider's entire course. If a resource spans multiple stages, its entry identifies the relevant sections and what should be deferred.

@@ -11,7 +11,7 @@ This page is the **single source of truth for the CINS learning structure**. It 
 | **Parallel track — Python** | Introductory computational thinking and Python, taught alongside Stage 1 and continued in later stages. | Published on this site |
 | **Stage 2 — Technology Foundations** | Networking → Linux → Windows → Internet and Web fundamentals. | All four parts published |
 | **Stage 3 — Cybersecurity Core** | Shared security principles, risk, controls, identity, cryptography, vulnerability management, secure development, threat modelling, monitoring, incident response, resilience, and governance. | Published on this site |
-| **Stage 4 — Domain Exploration** | Guided exposure to offensive and defensive domains, investigation, intelligence, engineering, operations, and governance. | Draft prepared on review branch |
+| **Stage 4 — Domain Exploration** | Guided exposure to offensive and defensive domains, investigation, intelligence, engineering, operations, and governance. | Published on this site |
 | **Stage 5 — Specialisation and Advanced Study** | Deeper study in selected fields based on prerequisites and learner interest. | Planned |
 
 ## Published curriculum pages
@@ -48,15 +48,17 @@ The [Internet and Web Fundamentals page](stage-2-web-fundamentals.md) completes 
 
 Stage 3 is published. It builds the shared security foundation that follows Stage 2 and applies across later domains.
 
-### Stage 4 — Domain Exploration (draft for review)
+### Stage 4 — Domain Exploration
 
 [Stage 4 — Domain Exploration](stage-4-domain-exploration.md)
 
-This draft introduces the missions, workflows, evidence, skills, and boundaries of major cybersecurity domains. It helps learners choose an area for deeper study; it is not specialist training and does not require specialist tools. It is not part of the published curriculum until its review pull request is approved and merged.
+Stage 4 is published. It introduces the missions, workflows, evidence, skills, and boundaries of major cybersecurity domains. It helps learners choose an area for deeper study; it is not specialist training and does not require specialist tools.
 
-### Stage 5
+### Stage 5 — Specialisation and Advanced Study (draft for review)
 
-Stage 5 — Specialisation and Advanced Study is planned. It will support deeper study in selected domains after the learner has explored the field and checked the relevant prerequisites.
+[Stage 5 — Specialisation and Advanced Study](stage-5-specialisation.md)
+
+This draft defines shared specialist-practice modules and nine pathways. It is intended for review and is not part of the published curriculum until its pull request is approved and merged.
 
 ### Mentor reference
 
