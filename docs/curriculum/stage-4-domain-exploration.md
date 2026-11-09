@@ -540,6 +540,6 @@ By the end of Stage 4, a learner should be able to:
 
 ## What comes next?
 
-Stage 5 — Specialisation and Advanced Study will support deeper learning in selected domains. A learner should choose a focus based on interest, foundations, available mentorship, and the prerequisites of the chosen subject—not on the assumption that every domain must be completed.
+Published Stage 5 — Specialisation and Advanced Study supports deeper learning in selected domains. A learner should choose a focus based on interest, foundations, available mentorship, and the prerequisites of the chosen subject—not on the assumption that every domain must be completed.
 
 The [Curriculum overview](index.md) remains the source of truth for stage order and publication status. The [Learning Resources library](../resources/index.md) remains a subject-based reference, not a second roadmap.
