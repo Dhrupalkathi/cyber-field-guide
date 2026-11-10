@@ -1712,9 +1712,26 @@ body[data-md-color-scheme="slate"]:has(.cins-homepage-atmosphere) .md-sidebar--s
 }
 
 .cins-atmosphere-svg {
-  transform: translate3d(0, var(--cins-scroll-y, 0px), 0);
+  /* Individual translate keeps the mobile horizontal offset independent. */
+  translate: 0 var(--cins-scroll-y, 0px);
   transform-origin: center top;
   filter: saturate(1.04);
+}
+
+@keyframes cins-atmo-scroll-parallax {
+  from { translate: 0 0; }
+  to { translate: 0 -320px; }
+}
+
+/* Use the browser scroll timeline instead of a per-frame JavaScript transform. */
+@supports (animation-timeline: scroll(root block)) and (translate: 0 1px) {
+  .cins-atmosphere-svg {
+    --cins-scroll-y: 0px;
+    animation: cins-atmo-scroll-parallax 1s linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0% 100%;
+    will-change: translate;
+  }
 }
 
 .cins-atmo-node {
@@ -1799,7 +1816,7 @@ body:has(.cins-motion-toggle:checked) .cins-homepage-atmosphere *,
   }
 
   .cins-atmosphere-svg {
-    transform: translate3d(-22%, var(--cins-scroll-y, 0px), 0);
+    transform: translateX(-22%);
   }
 }
 
@@ -1817,5 +1834,10 @@ body:has(.cins-motion-toggle:checked) .cins-homepage-atmosphere *,
   .cins-atmo-node {
     filter: none;
     transition: none;
+  }
+
+  .cins-atmosphere-svg {
+    animation: none !important;
+    translate: 0 0 !important;
   }
 }
