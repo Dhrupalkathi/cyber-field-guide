@@ -53,7 +53,7 @@
     const updateScrollPosition = () => {
       // A small, continuous parallax shift. Scrolling up reverses it naturally.
       // No zoom, scroll phases, or changes to the content's scroll position.
-      const nextOffset = -window.scrollY * 0.035;
+      const nextOffset = -Math.min(window.scrollY * 0.075, 320);
 
       if (Math.abs(nextOffset - scrollOffset) >= 0.2) {
         scrollOffset = nextOffset;
