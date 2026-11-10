@@ -1712,8 +1712,6 @@ body[data-md-color-scheme="slate"]:has(.cins-homepage-atmosphere) .md-sidebar--s
 }
 
 .cins-atmosphere-svg {
-  /* Legacy fallback: JavaScript updates this transform only when scroll timelines are unavailable. */
-  transform: translate3d(0, var(--cins-scroll-y, 0px), 0);
   transform-origin: center top;
   filter: saturate(1.04);
 }
@@ -1799,10 +1797,6 @@ body:has(.cins-motion-toggle:checked) .cins-homepage-atmosphere *,
   .cins-homepage-atmosphere::after {
     display: none;
   }
-
-  .cins-atmosphere-svg {
-    transform: translate3d(-22%, var(--cins-scroll-y, 0px), 0);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1830,42 +1824,6 @@ body:has(.cins-motion-toggle:checked) .cins-homepage-atmosphere *,
 
 
 /* ==========================================================================
-   High-frame-rate homepage parallax
-   Native scroll timelines animate a compositor-friendly individual translate.
-   Browsers without this support retain the transform-based JavaScript fallback.
-   ========================================================================== */
-@keyframes cins-atmo-scroll-parallax {
-  from { translate: 0 0; }
-  to { translate: 0 -320px; }
-}
-
-@supports (animation-timeline: scroll(root block)) and (translate: 0 1px) {
-  .cins-atmosphere-svg {
-    --cins-scroll-y: 0px;
-    transform: none;
-    translate: 0 0;
-    animation: cins-atmo-scroll-parallax 1s linear both;
-    animation-timeline: scroll(root block);
-    animation-range: 0% 100%;
-    will-change: translate;
-  }
-
-  @media (max-width: 700px) {
-    .cins-atmosphere-svg {
-      /* Keep the mobile crop while the animated translate supplies vertical drift. */
-      transform: translateX(-22%);
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .cins-atmosphere-svg {
-      will-change: auto;
-    }
-  }
-}
-
-
-/* ==========================================================================
    Phase 2 — Global navigation and learning component system
    Shared visual language for every page; homepage atmosphere stays untouched.
    ========================================================================== */
@@ -1874,210 +1832,18 @@ body:has(.cins-motion-toggle:checked) .cins-homepage-atmosphere *,
   --cins-radius-sm: .45rem;
   --cins-radius-md: .7rem;
   --cins-radius-lg: .95rem;
-  --cins-ease-ui: cubic-bezier(.2, .7, .25, 1);
-  --cins-nav-shadow: 0 8px 24px rgba(8, 26, 40, .12);
 }
 
 [data-md-color-scheme="default"] {
-  --cins-nav-hover: rgba(8, 127, 140, .075);
-  --cins-nav-active: rgba(8, 127, 140, .105);
   --cins-component-tint: rgba(8, 127, 140, .035);
   --cins-table-stripe: rgba(16, 40, 63, .025);
   --cins-code-border: #d7e2e9;
 }
 
 [data-md-color-scheme="slate"] {
-  --cins-nav-hover: rgba(100, 216, 207, .075);
-  --cins-nav-active: rgba(100, 216, 207, .12);
   --cins-component-tint: rgba(100, 216, 207, .045);
   --cins-table-stripe: rgba(225, 240, 248, .025);
   --cins-code-border: #294255;
-}
-
-/* Header and top-level navigation */
-.md-header {
-  background: linear-gradient(108deg, #0b1d2d 0%, #123649 58%, #0d3038 100%);
-  border-bottom: 1px solid rgba(132, 190, 198, .16);
-  box-shadow: 0 5px 22px rgba(4, 17, 29, .18);
-}
-
-[data-md-color-scheme="slate"] .md-header {
-  background: linear-gradient(108deg, #071523 0%, #0b2939 60%, #0b242e 100%);
-  border-bottom-color: rgba(100, 216, 207, .13);
-}
-
-.md-header__button.md-logo img {
-  border-radius: .35rem;
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, .18));
-}
-
-.md-header__title {
-  font-weight: 780;
-  letter-spacing: -.018em;
-}
-
-.md-header__topic {
-  font-weight: 720;
-}
-
-.md-tabs {
-  border-bottom-width: 1px;
-  box-shadow: 0 3px 12px rgba(12, 34, 52, .035);
-}
-
-.md-tabs__list {
-  align-items: stretch;
-  gap: .2rem;
-}
-
-.md-tabs__item {
-  position: relative;
-}
-
-.md-tabs__link {
-  position: relative;
-  display: block;
-  padding: .7rem .82rem .76rem;
-  border-radius: .55rem .55rem 0 0;
-  font-size: .72rem;
-  font-weight: 720;
-  letter-spacing: .005em;
-  transition: color 160ms var(--cins-ease-ui), background-color 160ms var(--cins-ease-ui);
-}
-
-[data-md-color-scheme="default"] .md-tabs__link:hover,
-[data-md-color-scheme="default"] .md-tabs__link--active {
-  background: rgba(8, 127, 140, .055);
-}
-
-[data-md-color-scheme="slate"] .md-tabs__link:hover,
-[data-md-color-scheme="slate"] .md-tabs__link--active {
-  background: rgba(100, 216, 207, .065);
-}
-
-.md-tabs__link::after {
-  position: absolute;
-  right: .72rem;
-  bottom: 0;
-  left: .72rem;
-  height: 2px;
-  border-radius: 2px 2px 0 0;
-  background: currentColor;
-  content: "";
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 180ms var(--cins-ease-ui);
-}
-
-.md-tabs__link:hover::after,
-.md-tabs__link--active::after {
-  transform: scaleX(1);
-}
-
-/* Search: integrated with the dark header, with a clearer focus state. */
-.md-search__form {
-  border: 1px solid rgba(190, 220, 225, .2);
-  border-radius: .65rem;
-  background: rgba(255, 255, 255, .085);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .045);
-  transition: border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
-}
-
-.md-search__form:hover {
-  border-color: rgba(120, 225, 215, .48);
-  background: rgba(255, 255, 255, .12);
-}
-
-.md-search__form:focus-within {
-  border-color: #72ddd3;
-  background: rgba(255, 255, 255, .13);
-  box-shadow: 0 0 0 3px rgba(100, 216, 207, .16);
-}
-
-.md-search__input,
-.md-search__input::placeholder,
-.md-search__icon {
-  color: #e5f0f4;
-}
-
-.md-search__output {
-  border: 1px solid var(--cins-border);
-  border-radius: .85rem;
-  box-shadow: var(--cins-nav-shadow);
-  overflow: hidden;
-}
-
-/* Primary navigation and table of contents. */
-.md-sidebar__scrollwrap {
-  scrollbar-width: thin;
-  scrollbar-color: var(--cins-border) transparent;
-}
-
-.md-nav__title {
-  font-weight: 800;
-  letter-spacing: .015em;
-}
-
-.md-nav__link {
-  position: relative;
-  margin: .09rem .12rem;
-  padding: .39rem .62rem;
-  border-radius: .5rem;
-  line-height: 1.48;
-  transition: color 140ms ease, background-color 140ms ease, box-shadow 140ms ease;
-}
-
-.md-nav__link:hover {
-  background: var(--cins-nav-hover);
-}
-
-.md-nav__item--section > .md-nav__link {
-  font-weight: 780;
-}
-
-.md-nav__link--active {
-  border-radius: .5rem;
-  background: var(--cins-nav-active);
-  box-shadow: inset 2px 0 0 var(--md-accent-fg-color);
-  font-weight: 820;
-}
-
-[data-md-color-scheme="default"] .md-nav__link--active {
-  color: #086f7a;
-}
-
-[data-md-color-scheme="slate"] .md-nav__link--active {
-  color: #83e7dd;
-}
-
-.md-sidebar--secondary .md-nav__link {
-  padding: .3rem .55rem;
-  font-size: .72rem;
-}
-
-.md-sidebar--secondary .md-nav__link--active {
-  background: transparent;
-  box-shadow: inset 2px 0 0 var(--md-accent-fg-color);
-}
-
-.md-path {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: .25rem;
-  margin: .15rem 0 1rem;
-  color: var(--cins-text-muted);
-  font-size: .7rem;
-}
-
-.md-path__link {
-  border-radius: .35rem;
-  padding: .12rem .3rem;
-  transition: color 140ms ease, background-color 140ms ease;
-}
-
-.md-path__link:hover {
-  background: var(--cins-nav-hover);
 }
 
 /* Shared callouts and expandable notes. */
@@ -2211,24 +1977,14 @@ body:has(.cins-motion-toggle:checked) .cins-homepage-atmosphere *,
   background: rgba(3, 13, 23, .32);
 }
 
-/* Respect motion preferences for the global interface layer. */
+/* Preserve reduced-motion handling for reusable learning tabs. */
 @media (prefers-reduced-motion: reduce) {
-  .md-tabs__link,
-  .md-tabs__link::after,
-  .md-nav__link,
-  .md-search__form,
-  .md-path__link,
   .md-typeset .tabbed-labels > label {
     transition: none !important;
   }
 }
 
 @media (max-width: 760px) {
-  .md-tabs__link {
-    padding-inline: .68rem;
-    font-size: .68rem;
-  }
-
   .md-typeset table:not([class]) th,
   .md-typeset table:not([class]) td {
     padding: .58rem .65rem;
