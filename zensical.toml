@@ -59,6 +59,9 @@ nav = [
   ] },
 ]
 
+[project.extra]
+generator = false
+
 [project.theme]
 logo = "assets/dau-cins-club.webp"
 favicon = "assets/dau-cins-club.webp"

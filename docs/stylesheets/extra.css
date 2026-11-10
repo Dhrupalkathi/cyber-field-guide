@@ -1488,11 +1488,7 @@ body:has(.cins-homepage-atmosphere) .md-content {
   z-index: 1;
 }
 
-/* Do not override the theme's sidebar positioning: its fixed/off-canvas
-   behaviour is essential on narrow screens. */
-body:has(.cins-homepage-atmosphere) .md-sidebar {
-  z-index: 1;
-}
+/* Sidebar position and stacking are owned by the documentation theme. */
 
 .cins-homepage-atmosphere {
   position: fixed;
@@ -2393,8 +2389,16 @@ body:has(.cins-motion-toggle:checked) .cins-homepage-atmosphere *,
    The theme owns its mobile drawer layout; only the article column is styled.
    ========================================================================== */
 @media (max-width: 650px) {
-  /* Keep the theme's off-canvas primary/secondary drawers out of document flow. */
+  /* Keep the theme's drawer outside the article's stacking context on phones. */
+  body:has(.cins-homepage-atmosphere) .md-main {
+    position: static;
+    isolation: auto;
+    background: transparent;
+  }
+
   body:has(.cins-homepage-atmosphere) .md-main__inner {
+    position: static;
+    z-index: auto;
     display: block;
     width: 100%;
     max-width: 100%;
