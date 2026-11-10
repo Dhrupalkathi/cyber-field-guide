@@ -1483,9 +1483,14 @@ body:has(.cins-homepage-atmosphere) .md-main__inner {
   z-index: 1;
 }
 
-body:has(.cins-homepage-atmosphere) .md-content,
-body:has(.cins-homepage-atmosphere) .md-sidebar {
+body:has(.cins-homepage-atmosphere) .md-content {
   position: relative;
+  z-index: 1;
+}
+
+/* Do not override the theme's sidebar positioning: its fixed/off-canvas
+   behaviour is essential on narrow screens. */
+body:has(.cins-homepage-atmosphere) .md-sidebar {
   z-index: 1;
 }
 
@@ -2379,5 +2384,143 @@ body:has(.cins-motion-toggle:checked) .cins-homepage-atmosphere *,
   .md-typeset .grid.cards > ul > li:hover,
   .md-typeset .grid > .card:hover {
     transform: none !important;
+  }
+}
+
+
+/* ==========================================================================
+   Mobile homepage — content first, decoration off
+   The theme owns its mobile drawer layout; only the article column is styled.
+   ========================================================================== */
+@media (max-width: 650px) {
+  /* Keep the theme's off-canvas primary/secondary drawers out of document flow. */
+  body:has(.cins-homepage-atmosphere) .md-main__inner {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body:has(.cins-homepage-atmosphere) .md-content,
+  body:has(.cins-homepage-atmosphere) .md-content__inner,
+  body:has(.cins-homepage-atmosphere) .md-typeset {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* A static, clean canvas is easier to read and lighter on phone GPUs. */
+  .cins-homepage-atmosphere {
+    display: none !important;
+  }
+
+  .cins-hero-visual,
+  .cins-motion-control {
+    display: none !important;
+  }
+
+  .md-typeset > h1 {
+    max-width: 100%;
+    writing-mode: horizontal-tb;
+    overflow-wrap: break-word;
+    word-break: normal;
+    font-size: clamp(1.55rem, 7.5vw, 2rem);
+    line-height: 1.18;
+    letter-spacing: -.035em;
+  }
+
+  .cins-hero {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1.5rem;
+    padding: 1.05rem .95rem 1.15rem;
+    box-sizing: border-box;
+    border-radius: .85rem;
+    box-shadow: none;
+  }
+
+  .cins-hero-layout {
+    display: block;
+    width: 100%;
+    min-height: 0;
+  }
+
+  .cins-hero-copy {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .cins-hero-brandline {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .6rem;
+    margin: 0 0 .9rem;
+    padding: 0;
+  }
+
+  .cins-hero-copy h2 {
+    max-width: 100%;
+    margin: 0 0 .85rem;
+    font-size: clamp(1.8rem, 8.5vw, 2.35rem);
+    line-height: 1.12;
+    letter-spacing: -.04em;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+  }
+
+  .cins-hero-copy > p {
+    max-width: 100%;
+    font-size: .96rem;
+    line-height: 1.65;
+  }
+
+  .cins-hero-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: .6rem;
+    margin-top: 1.05rem;
+  }
+
+  .cins-hero-actions .md-button {
+    display: flex;
+    width: 100%;
+    min-height: 2.8rem;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+  }
+
+  .cins-hero-note {
+    margin-top: 1rem;
+    padding-top: .8rem;
+    font-size: .82rem;
+    line-height: 1.6;
+  }
+
+  .md-typeset > h1 + .cins-homepage-atmosphere {
+    display: none !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .cins-hero {
+    padding-inline: .8rem;
+  }
+
+  .cins-hero-copy h2 {
+    font-size: clamp(1.7rem, 8vw, 2rem);
+  }
+
+  .cins-eyebrow {
+    font-size: .62rem;
+    letter-spacing: .09em;
   }
 }
