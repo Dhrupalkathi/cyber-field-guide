@@ -1994,3 +1994,178 @@ body:has(.cins-motion-toggle:checked) .cins-homepage-atmosphere *,
     padding: .75rem;
   }
 }
+
+
+/* ==========================================================================
+   Phase 3 — Supporting-page reading rhythm and diagram consistency
+   Applies to curriculum, resource, tool-library, Start Here and Club Hub pages.
+   Keeps the restored header/navigation and fixed homepage atmosphere unchanged.
+   ========================================================================== */
+
+/* Curriculum stage facts: a quiet metadata panel directly below the page title. */
+.md-typeset > h1 + p:has(> strong:first-child) {
+  margin: .85rem 0 1.35rem;
+  padding: .78rem 1rem;
+  border: 1px solid var(--cins-border);
+  border-left: 3px solid var(--md-accent-fg-color);
+  border-radius: var(--cins-radius-md);
+  background: var(--cins-component-tint);
+  font-size: .84rem;
+  line-height: 1.72;
+}
+
+.md-typeset > h1 + p:has(> strong:first-child) > strong {
+  color: var(--md-accent-fg-color);
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+/* Resource stage-fit and introductory notes use the same restrained treatment. */
+.md-typeset > h1 + blockquote {
+  margin: .85rem 0 1.35rem;
+  padding: .72rem .95rem;
+  border: 1px solid var(--cins-border);
+  border-left: 3px solid var(--md-accent-fg-color);
+  border-radius: var(--cins-radius-md);
+  background: var(--cins-component-tint);
+  font-size: .86rem;
+  line-height: 1.68;
+}
+
+.md-typeset > h1 + blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/* Resource catalogue entries: separate the resource name from its quick facts. */
+.md-typeset h3:has(+ blockquote) {
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  padding-bottom: .42rem;
+  border-bottom: 1px solid var(--cins-border);
+}
+
+.md-typeset h3:has(+ blockquote) + blockquote {
+  margin: .55rem 0 1rem;
+  padding: .55rem .8rem;
+  border-left: 2px solid var(--md-accent-fg-color);
+  border-radius: .35rem;
+  background: var(--cins-component-tint);
+  font-size: .81rem;
+  line-height: 1.58;
+}
+
+.md-typeset h3:has(+ blockquote) + blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/* Curriculum modules get a repeatable section marker and a clear visual reset. */
+.md-typeset h2[id^="module-"] {
+  margin-top: 3rem;
+  padding-top: 1.05rem;
+  border-top: 1px solid var(--cins-border);
+}
+
+.md-typeset h2[id^="module-"]::before {
+  display: block;
+  width: fit-content;
+  margin: 0 0 .42rem;
+  padding: .2rem .48rem;
+  border: 1px solid var(--cins-border);
+  border-radius: 999px;
+  background: var(--cins-component-tint);
+  color: var(--md-accent-fg-color);
+  content: "LEARNING MODULE";
+  font-size: .6rem;
+  font-weight: 850;
+  letter-spacing: .105em;
+  line-height: 1.5;
+}
+
+/* Networking, Linux, Windows and Web diagrams share one frame and caption system. */
+.md-typeset :is(
+  .cins-net-figure,
+  .cins-linux-figure,
+  .cins-win-figure,
+  .cins-web-figure
+) {
+  margin: 1.65rem 0;
+  padding: clamp(.8rem, 1.8vw, 1.1rem);
+  border-color: var(--cins-border);
+  border-radius: var(--cins-radius-lg);
+  background: var(--cins-surface);
+  box-shadow: 0 7px 22px rgba(12, 34, 52, .045);
+}
+
+.md-typeset :is(
+  .cins-net-figure-heading,
+  .cins-linux-figure-heading,
+  .cins-win-figure-heading,
+  .cins-web-figure-heading
+) {
+  margin-bottom: .85rem;
+  color: var(--md-accent-fg-color);
+  font-size: .7rem;
+  letter-spacing: .105em;
+}
+
+.md-typeset :is(
+  .cins-net-figure-caption,
+  .cins-linux-figure-caption,
+  .cins-win-caption,
+  .cins-web-caption
+) {
+  margin-top: .85rem;
+  color: var(--cins-text-muted);
+  font-size: .75rem;
+  line-height: 1.62;
+}
+
+/* Keep diagram grids and long labels inside narrow reading columns. */
+.md-typeset :is(
+  .cins-net-figure,
+  .cins-linux-figure,
+  .cins-win-figure,
+  .cins-web-figure
+) :is(div, span, strong, b) {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .md-typeset > h1 + p:has(> strong:first-child),
+  .md-typeset > h1 + blockquote {
+    padding: .65rem .78rem;
+    font-size: .82rem;
+  }
+
+  .md-typeset h2[id^="module-"] {
+    margin-top: 2.35rem;
+    padding-top: .85rem;
+  }
+
+  .md-typeset :is(
+    .cins-net-figure,
+    .cins-linux-figure,
+    .cins-win-figure,
+    .cins-web-figure
+  ) {
+    margin: 1.35rem 0;
+    border-radius: .8rem;
+    box-shadow: none;
+  }
+
+  .md-typeset h3:has(+ blockquote) {
+    margin-top: 1.65rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset :is(
+    .cins-net-figure,
+    .cins-linux-figure,
+    .cins-win-figure,
+    .cins-web-figure
+  ) {
+    scroll-behavior: auto;
+  }
+}
