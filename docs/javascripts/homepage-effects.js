@@ -10,16 +10,22 @@
     const motionToggle = document.querySelector(".cins-motion-toggle");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const nativeScrollTimeline =
+      typeof CSS !== "undefined" &&
+      CSS.supports("animation-timeline: scroll(root block)") &&
+      CSS.supports("translate: 0 1px");
 
-    // One animation-frame queue handles scroll, resize and pointer work together.
+    // Native scroll timelines move the atmosphere without a JavaScript scroll loop.
+    // The shared frame queue remains for the legacy fallback, resize and pointer response.
     let frameId = 0;
-    let needsScroll = true;
+    let needsScroll = !nativeScrollTimeline;
     let needsMeasure = true;
     let pointerDirty = false;
     let pointerActive = false;
     let pointerX = 0;
     let pointerY = 0;
     let scrollOffset = 0;
+    let maxScroll = 1;
     let atmosphereRect = null;
     let nodeCenters = [];
 
@@ -36,8 +42,20 @@
       });
     };
 
+    const getParallaxOffset = () => {
+      if (nativeScrollTimeline) {
+        return -Math.min((window.scrollY / maxScroll) * 320, 320);
+      }
+      return -Math.min(window.scrollY * 0.075, 320);
+    };
+
     const measureScene = () => {
       atmosphereRect = atmosphere.getBoundingClientRect();
+      maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      scrollOffset = getParallaxOffset();
+      if (!nativeScrollTimeline) {
+        atmosphere.style.setProperty("--cins-scroll-y", scrollOffset.toFixed(1) + "px");
+      }
       resetNodeResponse();
 
       // Store unshifted centres once. Scroll changes are applied mathematically,
@@ -70,6 +88,8 @@
 
     const updatePointerResponse = () => {
       if (!atmosphereRect) return;
+      // Keep pointer-to-node geometry aligned with the browser-driven parallax offset.
+      scrollOffset = getParallaxOffset();
 
       const xPercent = Math.min(
         100,
@@ -104,7 +124,7 @@
       frameId = 0;
       if (motionIsPaused()) return;
 
-      if (needsScroll) updateScrollPosition();
+      if (needsScroll && !nativeScrollTimeline) updateScrollPosition();
       if (needsMeasure) measureScene();
 
       if (pointerDirty && finePointer.matches && pointerActive) {
@@ -120,13 +140,14 @@
     };
 
     const onScroll = () => {
-      needsScroll = true;
+      if (!nativeScrollTimeline) needsScroll = true;
       if (pointerActive) pointerDirty = true;
-      scheduleFrame();
+      // On modern browsers, scrolling itself is handled by the CSS scroll timeline.
+      if (!nativeScrollTimeline || pointerActive) scheduleFrame();
     };
 
     const onResize = () => {
-      needsScroll = true;
+      needsScroll = !nativeScrollTimeline;
       needsMeasure = true;
       if (pointerActive) pointerDirty = true;
       scheduleFrame();
@@ -176,7 +197,7 @@
       if (paused) {
         clearPointerResponse();
       } else {
-        needsScroll = true;
+        needsScroll = !nativeScrollTimeline;
         needsMeasure = true;
         scheduleFrame();
       }
