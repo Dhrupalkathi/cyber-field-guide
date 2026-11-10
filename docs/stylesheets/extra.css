@@ -2169,3 +2169,215 @@ body:has(.cins-motion-toggle:checked) .cins-homepage-atmosphere *,
     scroll-behavior: auto;
   }
 }
+
+
+/* ==========================================================================
+   Phase 4 — Final visual refinement and responsive hardening
+   Site-wide finishing pass for long-form learning pages and embedded media.
+   Restored navigation and the fixed homepage atmosphere remain untouched.
+   ========================================================================== */
+
+/* Stable sizing prevents long content and grid children from widening the page. */
+.md-content,
+.md-content__inner,
+.md-typeset {
+  min-width: 0;
+}
+
+.md-typeset :is(h1, h2, h3, h4) {
+  text-wrap: balance;
+}
+
+.md-typeset :is(p, li, dd, dt, th, td) {
+  text-wrap: pretty;
+}
+
+.md-typeset hr {
+  margin: 2rem 0;
+  border-bottom-color: var(--cins-border);
+}
+
+/* A single calm treatment for quoted explanations and learning prompts. */
+.md-typeset blockquote {
+  margin: 1.15rem 0;
+  padding: .8rem 1rem;
+  border-left: 3px solid var(--md-accent-fg-color);
+  border-radius: 0 var(--cins-radius-md) var(--cins-radius-md) 0;
+  background: var(--cins-component-tint);
+}
+
+.md-typeset blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/* Tables and code remain inside the reading column and scroll within themselves. */
+.md-typeset__scrollwrap,
+.md-typeset__table {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--cins-border) transparent;
+}
+
+.md-typeset__scrollwrap {
+  margin: 1rem 0 1.4rem;
+}
+
+.md-typeset__scrollwrap > table {
+  width: 100%;
+}
+
+.md-typeset table:not([class]) {
+  max-width: 100%;
+}
+
+.md-typeset table:not([class]) :is(th, td) {
+  overflow-wrap: anywhere;
+}
+
+.md-typeset pre {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--cins-border) transparent;
+}
+
+.md-typeset pre > code {
+  white-space: pre;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.md-typeset :not(pre) > code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.md-typeset a {
+  overflow-wrap: anywhere;
+}
+
+/* Media and captions scale with the content column without distortion. */
+.md-typeset img,
+.md-typeset video {
+  max-width: 100%;
+  height: auto;
+}
+
+.md-typeset figure {
+  max-width: 100%;
+  margin: 1.35rem auto;
+}
+
+.md-typeset figure > img {
+  display: block;
+  margin-inline: auto;
+}
+
+.md-typeset figcaption {
+  margin-top: .65rem;
+  color: var(--cins-text-muted);
+  font-size: .76rem;
+  line-height: 1.58;
+  text-align: center;
+}
+
+/* Every custom teaching figure has a predictable outer sizing context. */
+.md-typeset :is(
+  .cins-net-figure,
+  .cins-linux-figure,
+  .cins-win-figure,
+  .cins-web-figure
+) {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Keep tables and code visually balanced in the darker palette. */
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background: linear-gradient(145deg, #101f2d, #0d1a27);
+}
+
+[data-md-color-scheme="slate"] .md-typeset__scrollwrap,
+[data-md-color-scheme="slate"] .md-typeset__table,
+[data-md-color-scheme="slate"] .md-typeset pre {
+  scrollbar-color: #435b6b transparent;
+}
+
+/* Touch devices should not retain a lifted hover card after a tap. */
+@media (hover: none) {
+  .md-typeset .grid.cards > ul > li:hover,
+  .md-typeset .grid > .card:hover {
+    transform: none;
+    box-shadow: 0 3px 12px rgba(12, 34, 52, .055);
+  }
+
+  [data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover,
+  [data-md-color-scheme="slate"] .md-typeset .grid > .card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .16);
+  }
+}
+
+/* Tablet: preserve readable code and compact the learning panels. */
+@media (max-width: 760px) {
+  .md-typeset h2 {
+    margin-top: 2.05em;
+  }
+
+  .md-typeset pre > code {
+    font-size: .78rem;
+  }
+
+  .md-typeset .admonition-title,
+  .md-typeset details > summary {
+    padding: .65rem .8rem;
+  }
+
+  .md-typeset .admonition > :not(.admonition-title),
+  .md-typeset details > :not(summary) {
+    margin-right: .8rem;
+    margin-left: .8rem;
+  }
+}
+
+/* Small phones: reduce density without shrinking body copy excessively. */
+@media (max-width: 480px) {
+  .md-typeset h1 {
+    letter-spacing: -.03em;
+  }
+
+  .md-typeset pre > code {
+    font-size: .74rem;
+    line-height: 1.58;
+  }
+
+  .md-typeset table:not([class]) th,
+  .md-typeset table:not([class]) td {
+    padding: .48rem .52rem;
+    font-size: .78rem;
+  }
+
+  .md-typeset blockquote {
+    padding: .68rem .78rem;
+  }
+
+  .md-typeset figure {
+    margin: 1rem 0;
+  }
+}
+
+/* Honour motion settings for any remaining interactive card transitions. */
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .grid.cards > ul > li,
+  .md-typeset .grid > .card {
+    transition: none !important;
+  }
+
+  .md-typeset .grid.cards > ul > li:hover,
+  .md-typeset .grid > .card:hover {
+    transform: none !important;
+  }
+}
