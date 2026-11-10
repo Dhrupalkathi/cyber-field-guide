@@ -1712,10 +1712,12 @@ body[data-md-color-scheme="slate"]:has(.cins-homepage-atmosphere) .md-sidebar--s
 }
 
 .cins-atmosphere-svg {
+  /* Legacy fallback: JavaScript updates this transform only when scroll timelines are unavailable. */
   transform: translate3d(0, var(--cins-scroll-y, 0px), 0);
   transform-origin: center top;
   filter: saturate(1.04);
 }
+
 
 .cins-atmo-node {
   filter:
@@ -1817,5 +1819,47 @@ body:has(.cins-motion-toggle:checked) .cins-homepage-atmosphere *,
   .cins-atmo-node {
     filter: none;
     transition: none;
+  }
+
+  .cins-atmosphere-svg {
+    animation: none !important;
+    translate: 0 0 !important;
+    will-change: auto !important;
+  }
+}
+
+
+/* ==========================================================================
+   High-frame-rate homepage parallax
+   Native scroll timelines animate a compositor-friendly individual translate.
+   Browsers without this support retain the transform-based JavaScript fallback.
+   ========================================================================== */
+@keyframes cins-atmo-scroll-parallax {
+  from { translate: 0 0; }
+  to { translate: 0 -320px; }
+}
+
+@supports (animation-timeline: scroll(root block)) and (translate: 0 1px) {
+  .cins-atmosphere-svg {
+    --cins-scroll-y: 0px;
+    transform: none;
+    translate: 0 0;
+    animation: cins-atmo-scroll-parallax 1s linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0% 100%;
+    will-change: translate;
+  }
+
+  @media (max-width: 700px) {
+    .cins-atmosphere-svg {
+      /* Keep the mobile crop while the animated translate supplies vertical drift. */
+      transform: translateX(-22%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cins-atmosphere-svg {
+      will-change: auto;
+    }
   }
 }
