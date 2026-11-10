@@ -1675,14 +1675,12 @@ body[data-md-color-scheme="slate"]:has(.cins-homepage-atmosphere) .md-sidebar--s
 
 
 /* ==========================================================================
-   Homepage interaction layer — pointer-reactive network + scroll narrative
-   This block is intentionally scoped to the homepage atmosphere only.
+   Homepage interaction layer — continuous parallax and pointer response
+   No zoom, progress phases, or scroll-stage transitions.
    ========================================================================== */
 
 .cins-homepage-atmosphere {
-  opacity: var(--cins-scroll-opacity, .96);
   filter: saturate(1.04);
-  transition: opacity 180ms linear, filter 240ms ease;
 }
 
 .cins-homepage-atmosphere::before,
@@ -1696,11 +1694,10 @@ body[data-md-color-scheme="slate"]:has(.cins-homepage-atmosphere) .md-sidebar--s
 
 .cins-homepage-atmosphere::before {
   background:
-    radial-gradient(ellipse at 15% 42%, rgba(242, 139, 69, var(--cins-scroll-glow, .08)), transparent 36%),
-    radial-gradient(ellipse at 85% 58%, rgba(8, 127, 140, var(--cins-scroll-teal, .055)), transparent 40%),
+    radial-gradient(ellipse at 15% 42%, rgba(242, 139, 69, .08), transparent 36%),
+    radial-gradient(ellipse at 85% 58%, rgba(8, 127, 140, .055), transparent 40%),
     radial-gradient(ellipse at 53% 8%, rgba(8, 127, 140, .035), transparent 32%);
   opacity: .88;
-  transition: opacity 220ms ease, background-position 300ms ease;
 }
 
 .cins-homepage-atmosphere::after {
@@ -1711,13 +1708,11 @@ body[data-md-color-scheme="slate"]:has(.cins-homepage-atmosphere) .md-sidebar--s
     transparent 76%
   );
   opacity: .85;
-  transition: opacity 240ms ease;
 }
 
 .cins-atmosphere-svg {
-  transform: translate3d(0, var(--cins-scroll-shift-y, 0px), 0)
-    scale(var(--cins-scroll-scale, 1));
-  transform-origin: center center;
+  transform: translate3d(0, var(--cins-scroll-y, 0px), 0);
+  transform-origin: center top;
   filter: saturate(1.04);
 }
 
@@ -1746,40 +1741,14 @@ body[data-md-color-scheme="slate"]:has(.cins-homepage-atmosphere) .md-sidebar--s
   color: #73e6d9;
 }
 
-.cins-atmo-circuit {
-  transition: opacity 260ms ease, stroke-width 260ms ease;
-}
-
-.cins-homepage-atmosphere[data-scroll-phase="arrival"] .cins-atmo-circuit {
-  opacity: .7;
-}
-
-.cins-homepage-atmosphere[data-scroll-phase="exploration"] .cins-atmo-circuit {
-  opacity: .92;
-  stroke-width: 2.25;
-}
-
-.cins-homepage-atmosphere[data-scroll-phase="deep-dive"] .cins-atmo-circuit {
-  opacity: 1;
-  stroke-width: 2.5;
-}
-
-.cins-homepage-atmosphere[data-scroll-phase="exploration"] .cins-atmo-node {
-  animation-duration: 3.1s;
-}
-
-.cins-homepage-atmosphere[data-scroll-phase="deep-dive"] .cins-atmo-node {
-  animation-duration: 2.55s;
-}
-
 [data-md-color-scheme="slate"] .cins-homepage-atmosphere {
   filter: saturate(1.22) contrast(1.04);
 }
 
 [data-md-color-scheme="slate"] .cins-homepage-atmosphere::before {
   background:
-    radial-gradient(ellipse at 16% 42%, rgba(242, 139, 69, var(--cins-scroll-glow, .22)), transparent 38%),
-    radial-gradient(ellipse at 84% 56%, rgba(25, 165, 165, var(--cins-scroll-teal, .17)), transparent 43%),
+    radial-gradient(ellipse at 16% 42%, rgba(242, 139, 69, .22), transparent 38%),
+    radial-gradient(ellipse at 84% 56%, rgba(25, 165, 165, .17), transparent 43%),
     radial-gradient(ellipse at 50% 100%, rgba(8, 127, 140, .11), transparent 35%);
   opacity: .96;
 }
@@ -1823,17 +1792,12 @@ body:has(.cins-motion-toggle:checked) .cins-homepage-atmosphere *,
 }
 
 @media (max-width: 700px) {
-  .cins-homepage-atmosphere {
-    opacity: .22;
+  .cins-homepage-atmosphere::after {
+    display: none;
   }
 
   .cins-atmosphere-svg {
-    transform: translate3d(-22%, var(--cins-scroll-shift-y, 0px), 0)
-      scale(var(--cins-scroll-scale, 1));
-  }
-
-  .cins-homepage-atmosphere::after {
-    display: none;
+    transform: translate3d(-22%, var(--cins-scroll-y, 0px), 0);
   }
 }
 
