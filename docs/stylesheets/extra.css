@@ -1680,6 +1680,7 @@ body[data-md-color-scheme="slate"]:has(.cins-homepage-atmosphere) .md-sidebar--s
    ========================================================================== */
 
 .cins-homepage-atmosphere {
+  opacity: .78;
   filter: saturate(1.04);
 }
 
@@ -1742,6 +1743,7 @@ body[data-md-color-scheme="slate"]:has(.cins-homepage-atmosphere) .md-sidebar--s
 }
 
 [data-md-color-scheme="slate"] .cins-homepage-atmosphere {
+  opacity: .88;
   filter: saturate(1.22) contrast(1.04);
 }
 
