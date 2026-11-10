@@ -31,6 +31,9 @@
         node.style.setProperty("--cins-node-glow", "0px");
         node.style.setProperty("--cins-node-brightness", "1");
       });
+      nodeCenters.forEach((entry) => {
+        entry.lastInfluence = 0;
+      });
     };
 
     const measureScene = () => {
@@ -43,7 +46,8 @@
         return {
           node,
           x: rect.left + rect.width / 2,
-          y: rect.top + rect.height / 2 - scrollOffset
+          y: rect.top + rect.height / 2 - scrollOffset,
+          lastInfluence: 0
         };
       });
 
@@ -79,11 +83,19 @@
       atmosphere.style.setProperty("--cins-pointer-y", yPercent.toFixed(1) + "%");
 
       const radius = 245;
-      nodeCenters.forEach(({ node, x, y }) => {
-        const distance = Math.hypot(pointerX - x, pointerY - (y + scrollOffset));
+      nodeCenters.forEach((entry) => {
+        const distance = Math.hypot(
+          pointerX - entry.x,
+          pointerY - (entry.y + scrollOffset)
+        );
         const influence = Math.max(0, 1 - distance / radius);
-        node.style.setProperty("--cins-node-glow", (influence * 15).toFixed(1) + "px");
-        node.style.setProperty("--cins-node-brightness", (1 + influence * 0.72).toFixed(2));
+
+        // Avoid style writes when a node's proximity has barely changed.
+        if (Math.abs(influence - entry.lastInfluence) < 0.015) return;
+        entry.lastInfluence = influence;
+
+        entry.node.style.setProperty("--cins-node-glow", (influence * 15).toFixed(1) + "px");
+        entry.node.style.setProperty("--cins-node-brightness", (1 + influence * 0.72).toFixed(2));
       });
     };
 
