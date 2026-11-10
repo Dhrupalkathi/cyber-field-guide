@@ -38,6 +38,7 @@
 
     const measureScene = () => {
       atmosphereRect = atmosphere.getBoundingClientRect();
+      resetNodeResponse();
 
       // Store unshifted centres once. Scroll changes are applied mathematically,
       // avoiding repeated getBoundingClientRect() calls while the pointer moves.
