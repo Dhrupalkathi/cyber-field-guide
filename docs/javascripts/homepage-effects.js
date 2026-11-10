@@ -11,8 +11,7 @@
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
 
-    // Native scroll timelines move the atmosphere without a JavaScript scroll loop.
-    // The shared frame queue remains for the legacy fallback, resize and pointer response.
+    // Batch resize measurements and pointer-response work in one animation frame.
     let frameId = 0;
     let needsMeasure = true;
     let pointerDirty = false;
@@ -153,7 +152,7 @@
       if (paused) {
         clearPointerResponse();
       } else {
-          needsMeasure = true;
+        needsMeasure = true;
         scheduleFrame();
       }
     };
