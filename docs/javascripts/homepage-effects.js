@@ -26,11 +26,12 @@
     let pointerY = 0;
     let scrollOffset = 0;
     let maxScroll = 1;
+    let scrollListenerAttached = false;
     let atmosphereRect = null;
     let nodeCenters = [];
 
     const motionIsPaused = () =>
-      reducedMotion.matches || Boolean(motionToggle && motionToggle.checked);
+      document.hidden || reducedMotion.matches || Boolean(motionToggle && motionToggle.checked);
 
     const resetNodeResponse = () => {
       nodes.forEach((node) => {
@@ -146,6 +147,21 @@
       if (!nativeScrollTimeline || pointerActive) scheduleFrame();
     };
 
+    // On native-scroll-timeline browsers, do not dispatch a JavaScript scroll
+    // callback unless the pointer hotspot is active and needs node alignment.
+    // Legacy browsers keep the listener because their parallax uses the JS fallback.
+    const syncScrollListener = () => {
+      const shouldListen = !nativeScrollTimeline || (finePointer.matches && pointerActive);
+      if (shouldListen === scrollListenerAttached) return;
+
+      if (shouldListen) {
+        window.addEventListener("scroll", onScroll, { passive: true });
+      } else {
+        window.removeEventListener("scroll", onScroll);
+      }
+      scrollListenerAttached = shouldListen;
+    };
+
     const onResize = () => {
       needsScroll = !nativeScrollTimeline;
       needsMeasure = true;
@@ -158,12 +174,14 @@
       pointerX = event.clientX;
       pointerY = event.clientY;
       pointerActive = true;
+      syncScrollListener();
       pointerDirty = true;
       scheduleFrame();
     };
 
     const clearPointerResponse = () => {
       pointerActive = false;
+      syncScrollListener();
       pointerDirty = false;
       atmosphere.style.setProperty("--cins-pointer-x", "50%");
       atmosphere.style.setProperty("--cins-pointer-y", "50%");
@@ -203,7 +221,7 @@
       }
     };
 
-    window.addEventListener("scroll", onScroll, { passive: true });
+    syncScrollListener();
     window.addEventListener("resize", onResize, { passive: true });
     window.addEventListener("blur", clearPointerResponse, { passive: true });
 
@@ -212,6 +230,7 @@
     }
 
     reducedMotion.addEventListener("change", syncMotionState);
+    document.addEventListener("visibilitychange", syncMotionState);
     finePointer.addEventListener("change", () => {
       syncPointerCapability();
       needsMeasure = true;
