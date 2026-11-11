@@ -68,3 +68,13 @@ Stage 2 — Technology Foundations is complete: [Networking](docs/curriculum/sta
 The Linux curriculum does not require Kali Linux, a particular distribution, paid software, or specialist installation. It focuses on portable operating-system concepts and safe command-line understanding. The Windows curriculum does not require a Windows installation, paid software, a virtual machine, or specialist security tools; it focuses on portable operating-system concepts and safe inspection.
 
 The visual system may evolve when changes improve learning clarity, accessibility, responsive behaviour, or useful visualisation. Preserve the CINS identity and test changes in both light and dark modes, on mobile layouts, and with reduced-motion preferences.
+
+
+## Project governance and release
+
+- [Content and Curriculum Audit](docs/club/content-audit.md) records the published curriculum structure and content-maintenance boundaries.
+- [Release notes](docs/club/release-notes.md) describe the current project milestone and its verification limits.
+- [Contribution guide](docs/club/contributing.md) explains how to propose changes.
+- [Code of Conduct](CODE_OF_CONDUCT.md) sets expectations for respectful project participation.
+
+The visual design is considered frozen except for genuine defects, accessibility improvements, or necessary responsive fixes. The separate Phase 7 security and reliability audit is reserved for the project owner and is not certified by this release.
