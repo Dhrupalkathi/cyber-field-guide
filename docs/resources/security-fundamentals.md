@@ -140,4 +140,4 @@ Integrates incident-response recommendations into cybersecurity risk management 
 
 These entries are marked as identified references, not as completed courses or lab-verified activities. Before changing a review state, a contributor should open the official destination, confirm that it still matches the description, and record the date and what was actually checked.
 
-Use the [resource-entry template](../templates/resource-entry.md) when proposing additional material. Search the existing library first so a resource has one full entry in its primary subject location.
+Use the [resource-entry template](../club/resource-entry-template.md) when proposing additional material. Search the existing library first so a resource has one full entry in its primary subject location.
