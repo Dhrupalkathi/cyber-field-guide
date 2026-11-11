@@ -6,7 +6,7 @@
 
 ## Executive result
 
-The site contains **36 Markdown documentation pages**. The curriculum is published from Stage 0 through Stage 5, with Python maintained as a parallel programming track alongside Stage 1. Stage 2 is complete and consists of four ordered parts: Networking, Linux, Windows, and Internet and Web Fundamentals.
+The audit covered the repository's existing **36 Markdown documentation pages** before the audit and release records were added as part of this project. The curriculum is published from Stage 0 through Stage 5, with Python maintained as a parallel programming track alongside Stage 1. Stage 2 is complete and consists of four ordered parts: Networking, Linux, Windows, and Internet and Web Fundamentals.
 
 The audit preserves the established information architecture:
 
