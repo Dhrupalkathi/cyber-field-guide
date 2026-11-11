@@ -17,6 +17,12 @@ The Club Hub contains the rules and maintenance information that help this resou
 5. Review changes before they reach the published site.
 6. Make ownership, affiliation, and maintenance responsibilities transparent.
 
+## Project readiness
+
+- [Content and Curriculum Audit](content-audit.md) — current audit scope, confirmed curriculum structure, and content-maintenance boundaries.
+- [Release notes](release-notes.md) — published project milestone and what it does (and does not) certify.
+- [Contributing](contributing.md) — contribution process and review expectations.
+
 ## Handover
 
 Before each club leadership transition, maintainers should:
