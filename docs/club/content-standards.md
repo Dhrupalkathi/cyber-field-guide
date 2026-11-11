@@ -63,7 +63,7 @@ Do not infer price, course content, prerequisites, or supported systems from thi
 - **Needs review:** an update or concern requires attention.
 - **Archived:** the resource is retained for context but is no longer recommended.
 
-Never claim a course, lab, tool installation, or command has been tested when it has only been read about.
+Never claim a course, lab, tool installation, or command has been tested when it has only been read about. If an entry has no explicit review record, its verification state is unknown; do not infer that it has been checked merely because it is published.
 
 ## 6. Internal consistency and presentation
 
@@ -86,3 +86,14 @@ Visual and interaction improvements are welcome when they make learning clearer,
 - Reduced-motion preferences for animated elements.
 
 Avoid decoration that competes with the lesson. A visualisation should explain a real concept, be technically accurate, and have a text explanation for readers who cannot or do not use the visual.
+
+
+## 10. Current catalogue publication status
+
+The Learning Resources pages are a curated directory. Their presence is not a blanket endorsement or a claim that every provider page, course, price, lab, or feature has been independently checked. Preserve the distinction between an official destination being reachable, its current content being reviewed, and a course or lab being completed.
+
+The Tool Library may contain a research queue before individual tool entries are ready. Clearly label that queue as unpublished research, and do not present example tool names as approved recommendations or prerequisites. The Curriculum remains the only authority for when a tool or lab becomes relevant.
+
+## 11. Audit and change-impact record
+
+The [Content and Curriculum Audit](content-audit.md) records the scope and findings of the current site-wide content review. Update that record when a future audit materially changes curriculum status, content ownership, or publication readiness. For every curriculum or policy change, search all affected pages and superseded wording before merging.
