@@ -1,0 +1,64 @@
+name: Resource suggestion
+description: Suggest a course, documentation page, lab, video, or community resource.
+title: "[Resource]: "
+labels: ["resource", "triage"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official URL
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Resource type
+      options:
+        - Course
+        - Official documentation
+        - Video or channel
+        - Lab or practice platform
+        - Tool documentation
+        - Community
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Suggested CINS stage fit
+      options:
+        - Stage 0 — Orientation
+        - Stage 1 — Computer Fundamentals
+        - Stage 1 — Parallel Python Track
+        - Stage 2 — Technology Foundations
+        - Stage 3 — Cybersecurity Core
+        - Stage 4 — Domain Exploration
+        - Stage 5 — Specialisation and Advanced Study
+        - Reference — useful across stages
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why should it be included?
+      description: Describe its learning value, level, prerequisites, and any access/cost limitations you know.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: This is the official provider/project destination where possible.
+          required: true
+        - label: I have not claimed a course or lab was completed unless I completed it.
+          required: true
