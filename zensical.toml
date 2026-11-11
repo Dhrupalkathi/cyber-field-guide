@@ -58,6 +58,7 @@ nav = [
     "club/content-standards.md",
     "club/content-audit.md",
     "club/release-notes.md",
+    "club/code-of-conduct.md",
   ] },
 ]
 
