@@ -1,7 +1,6 @@
 name: Resource suggestion
 description: Suggest a course, documentation page, lab, video, or community resource.
 title: "[Resource]: "
-labels: ["resource", "triage"]
 body:
   - type: input
     id: name
