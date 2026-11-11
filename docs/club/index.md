@@ -7,6 +7,7 @@ The Club Hub contains the rules and maintenance information that help this resou
 - [Safety and Ethics](safety-and-ethics.md) — authorization, privacy, safe practice, and responsible reporting.
 - [How to Contribute](contributing.md) — how to suggest or submit a change.
 - [Content Standards](content-standards.md) — page responsibilities, resource deduplication, stage labels, and review expectations.
+- [Code of Conduct](code-of-conduct.md) — respectful participation and community expectations.
 
 ## Project priorities
 
