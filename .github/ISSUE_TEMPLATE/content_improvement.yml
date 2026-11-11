@@ -1,0 +1,42 @@
+name: Content improvement
+description: Suggest a correction or clearer explanation in the curriculum.
+title: "[Content]: "
+labels: ["content", "triage"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page and section
+      placeholder: Stage 2 — Linux, Module 2.12
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What should be improved?
+      description: Identify the inaccurate, unclear, duplicated, or missing information.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested correction
+      description: Explain the proposed change. A complete rewrite is not required.
+    validations:
+      required: false
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Prefer official documentation, standards, or primary sources.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Contribution checks
+      options:
+        - label: I have not included secrets or private information.
+          required: true
+        - label: I have considered the current CINS stage structure.
+          required: true
