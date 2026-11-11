@@ -16,9 +16,9 @@ A tool belongs in the learner's progression only when the relevant curriculum in
 
 See the [Curriculum](../curriculum/index.md) and [Foundations & Computing resources](../resources/foundations.md).
 
-## Planned tool domains
+## Tool domains under research — not yet published entries
 
-The catalogue is designed to cover offensive and defensive security. Individual entries will be added in small batches after official-source research and review.
+**Publication status:** this page currently contains no complete, individually reviewed tool entries. The table below is a research queue only; it is not a recommendation list, installation guide, or claim that these tools have been tested. Use the subject-based Learning Resources library for current learning material. Tool entries will be published only after official-source research, prerequisites, safe-use boundaries, limitations, and review status have been documented.
 
 | Domain | Example tools to research | Main purpose |
 |---|---|---|
