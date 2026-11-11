@@ -40,7 +40,7 @@ Please read the [Safety and Ethics Rules](safety-and-ethics.md) and [CINS Conten
 
 - Use the repository's **Bug report**, **Content improvement**, or **Resource suggestion** issue form for focused proposals.
 - Use the pull-request template to describe the scope, sources, safety boundary, and checks performed.
-- Read the [Code of Conduct](../../CODE_OF_CONDUCT.md). Be respectful, assume good intent, critique ideas rather than people, and help keep review welcoming to beginners.
+- Read the [Code of Conduct](https://github.com/Dhrupalkathi/cyber-field-guide/blob/main/CODE_OF_CONDUCT.md). Be respectful, assume good intent, critique ideas rather than people, and help keep review welcoming to beginners.
 - Do not put credentials, personal data, private reports, or sensitive security details in public issues or pull requests.
 
 A contribution is not published automatically. Maintainers review technical accuracy, source quality, stage fit, accessibility, and safety before merging.
