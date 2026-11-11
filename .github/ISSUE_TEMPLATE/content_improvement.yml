@@ -1,7 +1,6 @@
 name: Content improvement
 description: Suggest a correction or clearer explanation in the curriculum.
 title: "[Content]: "
-labels: ["content", "triage"]
 body:
   - type: input
     id: page
