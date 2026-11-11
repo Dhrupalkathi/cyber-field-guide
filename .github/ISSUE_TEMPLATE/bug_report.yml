@@ -1,0 +1,44 @@
+name: Bug report
+description: Report a broken page, link, navigation item, or site interaction.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Please do not include passwords, tokens, personal data, or sensitive security details."
+  - type: input
+    id: page
+    attributes:
+      label: Affected page
+      description: Paste the page URL.
+      placeholder: https://dhrupalkathi.github.io/cyber-field-guide/
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: Android phone, Chrome
+    validations:
+      required: false
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open ...\n2. Select ...\n3. Observe ..."
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot or additional context
+      description: Remove personal information before attaching screenshots.
+    validations:
+      required: false
