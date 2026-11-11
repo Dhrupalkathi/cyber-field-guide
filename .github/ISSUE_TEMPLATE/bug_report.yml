@@ -1,7 +1,6 @@
 name: Bug report
 description: Report a broken page, link, navigation item, or site interaction.
 title: "[Bug]: "
-labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
