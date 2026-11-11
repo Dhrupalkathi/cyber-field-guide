@@ -43,7 +43,7 @@ This is a research queue, not a statement that every tool is suitable for beginn
 
 A complete entry explains the tool's purpose, legitimate use, prerequisites, supported systems, official installation sources, a safe bounded demonstration, output interpretation, limitations, alternatives, and verification history.
 
-Use the [tool-entry template](../templates/tool-entry.md) for the complete fields and review record. Do not publish a tool merely because it appears in a popular video or list.
+Use the [tool-entry template](../club/tool-entry-template.md) for the complete fields and review record. Do not publish a tool merely because it appears in a popular video or list.
 
 ## Quality and safety rules
 
