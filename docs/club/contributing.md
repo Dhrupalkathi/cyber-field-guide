@@ -6,7 +6,7 @@ You do not need to be an expert to help. Useful contributions include fixing a b
 
 1. Search the guide for the resource title and official URL so you do not create a duplicate.
 2. Choose the page that owns the subject. Every external resource should have one full entry in one primary location.
-3. Use the [resource-entry template](../templates/resource-entry.md) for a new course, website, video channel, lab, or community.
+3. Use the [resource-entry template](resource-entry-template.md) for a new course, website, video channel, lab, or community.
 4. Include its CINS stage fit. If it spans several stages, identify the relevant sections and what should be deferred.
 5. Prefer official project, course, and documentation links. Do not guess installation commands, prices, prerequisites, or supported systems.
 6. Keep examples safe and within systems or labs for which permission is explicit.
@@ -34,3 +34,13 @@ You can contribute through the GitHub website; you do not need Kali Linux or a l
 - No secrets, private information, or copyrighted course material.
 
 Please read the [Safety and Ethics Rules](safety-and-ethics.md) and [CINS Content Standards](content-standards.md) before contributing.
+
+
+## Contribution templates and community expectations
+
+- Use the repository's **Bug report**, **Content improvement**, or **Resource suggestion** issue form for focused proposals.
+- Use the pull-request template to describe the scope, sources, safety boundary, and checks performed.
+- Read the [Code of Conduct](code-of-conduct.md). Be respectful, assume good intent, critique ideas rather than people, and help keep review welcoming to beginners.
+- Do not put credentials, personal data, private reports, or sensitive security details in public issues or pull requests.
+
+A contribution is not published automatically. Maintainers review technical accuracy, source quality, stage fit, accessibility, and safety before merging.

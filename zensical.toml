@@ -56,6 +56,11 @@ nav = [
     "club/safety-and-ethics.md",
     "club/contributing.md",
     "club/content-standards.md",
+    "club/content-audit.md",
+    "club/release-notes.md",
+    "club/code-of-conduct.md",
+    "club/resource-entry-template.md",
+    "club/tool-entry-template.md",
   ] },
 ]
 

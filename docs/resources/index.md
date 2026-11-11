@@ -2,6 +2,10 @@
 
 This is a **subject-based reference library**, not a second learning roadmap. The [Curriculum](../curriculum/index.md) defines the CINS stage sequence. Use this directory when you need an external course, website, video, official reference, lab, or community for a particular subject.
 
+
+
+> **Verification note:** A resource appearing in this catalogue does not mean CINS has completed its course, tested its lab, or independently verified every feature. Use an entry's **Review state** or **Review status** when present. If no review record is shown, treat the description as an editorial guide and check the provider's current official page before relying on it.
+
 ## Browse by subject
 
 | Subject | What belongs here |
