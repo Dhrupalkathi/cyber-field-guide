@@ -65,7 +65,7 @@ class PageAudit(HTMLParser):
         if tag == "title":
             self.in_title = False
         if tag == "a" and self._anchor is not None:
-            if not self._anchor["name"] and not str(self._anchor["text"]).strip():
+            if self._anchor["href_label"] and not self._anchor["name"] and not str(self._anchor["text"]).strip():
                 self.links_missing_name.append(str(self._anchor["href_label"]))
             self._anchor = None
         if tag in {"h1", "h2", "h3", "h4", "h5", "h6"}:
