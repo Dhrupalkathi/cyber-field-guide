@@ -59,6 +59,15 @@ Start with [contribution guide](docs/club/contributing.md) and the [CINS content
 
 The content is stored in portable Markdown files. The site is built with [Zensical](https://zensical.org/docs/) and published through GitHub Pages. The Zensical version is pinned in requirements.txt; upgrades are deliberate and should be tested before merging.
 
+## Licensing
+
+This repository uses separate licenses for original software and original educational material:
+
+- **Original source code, scripts, stylesheets, and project configuration:** MIT License — see [LICENSE](LICENSE).
+- **Original curriculum lessons, explanations, learning guidance, resource/tool descriptions, and original diagrams:** Creative Commons Attribution 4.0 International (CC BY 4.0) — see [LICENSE-CONTENT](LICENSE-CONTENT).
+
+Third-party material is not relicensed by these notices. External course content, quoted text, screenshots, logos, trademarks, institutional/club identity artwork, fonts, icons, packages, and copied or adapted code remain subject to their respective owners' terms. In particular, the CINS/DA-IICT identity artwork is excluded. See the [project licensing guide](docs/club/licensing.md) before reusing material.
+
 ## Current curriculum status
 
 Stages 0–5 are published. The learning sequence moves from orientation and computing foundations through Stage 2 technology foundations, Stage 3 shared cybersecurity principles, Stage 4 domain exploration, and Stage 5 selected specialisation pathways. The [Curriculum overview](docs/curriculum/index.md) is the authoritative source for the sequence and stage scope.
