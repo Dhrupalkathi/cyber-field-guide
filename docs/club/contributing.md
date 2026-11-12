@@ -36,6 +36,10 @@ You can contribute through the GitHub website; you do not need Kali Linux or a l
 Please read the [Safety and Ethics Rules](safety-and-ethics.md) and [CINS Content Standards](content-standards.md) before contributing.
 
 
+## Licensing contributions
+
+By submitting an original contribution, you confirm that you have the right to submit it and agree that, if accepted, original software contributions will be distributed under the repository's MIT License and original educational content contributions under CC BY 4.0. Identify any third-party material and provide its source and license or permission details. Do not submit copied course, book, website, or lab content unless its license or permission allows the proposed use. See the [project licensing guide](licensing.md).
+
 ## Contribution templates and community expectations
 
 - Use the repository's **Bug report**, **Content improvement**, or **Resource suggestion** issue form for focused proposals.
